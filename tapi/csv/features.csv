@@ -1,0 +1,973 @@
+	world	description	category	animating	footprintx	footprintz	height	filename	seqname	seqnameshad	animtrans	shadtrans	hitdensity	metal	damage	indestructible	seqnamereclamate	energy	seqnameburn	seqnameburnshad	featureburnt	burnmin	burnmax	sparktime	spreadchance	burnweapon	seqnamedie	featuredead	flamable	reclaimable	featurereclamamate	reproduce	reproducearea	blocking	geothermal	object	autoreclaimable	featurereclamate	nodisplayinfo	permanent
+Acid\AcidMetal.AcidMetal1	acid	Metal	metal	0	3	3	0	acidmetal	acidmetal01		0	1	5	86	32009	1																								
+Acid\AcidMetal.AcidMetal2	acid	Metal	metal	0	3	3	0	acidmetal	acidmetal02		0	1	5	140	32009	1																								
+Acid\AcidMetal.AcidMetal3	acid	Metal	metal	0	3	3	0	acidmetal	acidmetal03		0	1	5	235	32009	1																								
+Acid\AcidMetal.AcidAquaOre1	acid	Metal	metal	0	3	3	0	acidmetal	acidaquaore01		0	1	5	86	32009	1																								
+Acid\AcidMetal.AcidAquaOre2	acid	Metal	metal	0	3	3	0	acidmetal	acidaquaore02		0	1	5	127	32009	1																								
+Acid\AcidMetal.AcidAquaOre3	acid	Metal	metal	0	3	3	0	acidmetal	acidaquaore03		0	1	5	223	32009	1																								
+Acid\AcidPlants.AcidPlant01	acid	Gasbag	Gasplants	1	1	1	180	acidplant	acidplant01	acidplantshad01	0	1	20				acidplantrec01	525	acidplantburn01		acidscar1	5	15	5	75	Gasbag	acidp-boom01	acidscar1	1	1	acidscar1	0	6	1						
+Acid\AcidPlants.AcidPlant01b	acid	Gasbag	Gasplants	1	1	1	180	acidplant	acidplant01b	acidplantshad01b	0	1	20				acidplantrec01	530	acidplantburn01		acidscar1	5	15	5	75	Gasbag	acidp-boom01	acidscar1	1	1	acidscar1	0	6	1						
+Acid\AcidPlants.AcidPlant02	acid	Gasbag	Gasplants	1	1	1	220	acidplant	acidplant02	acidplantshad02	0	1	20				acidplantrec02	590	acidplantburn02		acidscar2	5	15	5	75	Gasbag	acidp-boom02	acidscar2	1	1	acidscar2	0	6	1						
+Acid\AcidPlants.AcidPlant02b	acid	Gasbag	Gasplants	1	1	1	220	acidplant	acidplant02b	acidplantshad02b	0	1	20				acidplantrec02	580	acidplantburn02		acidscar2	5	15	5	75	Gasbag	acidp-boom02	acidscar2	1	1	acidscar2	0	6	1						
+Acid\AcidPlants.AcidPlant03	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant03	acidplantshad03	0	1	20				acidplantrec03	550	acidplantburn03		acidscar3	5	15	5	75	Gasbag	acidp-boom03	acidscar3	1	1	acidscar3	0	6	1						
+Acid\AcidPlants.AcidPlant03b	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant03b	acidplantshad03b	0	1	20				acidplantrec03	555	acidplantburn03		acidscar3	5	15	5	75	Gasbag	acidp-boom03	acidscar3	1	1	acidscar3	0	6	1						
+Acid\AcidPlants.AcidPlant04	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant04	acidplantshad04	0	1	20				acidplantrec04	620	acidplantburn04		acidscar4	5	15	5	75	Gasbag	acidp-boom04	acidscar4	1	1	acidscar4	0	6	1						
+Acid\AcidPlants.AcidPlant04b	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant04b	acidplantshad04b	0	1	20				acidplantrec04	625	acidplantburn04		acidscar4	5	15	5	75	Gasbag	acidp-boom04	acidscar4	1	1	acidscar4	0	6	1						
+Acid\AcidPlants.AcidPlant05	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant05	acidplantshad05	0	1	20				acidplantrec05	650	acidplantburn05		acidscar5	5	15	5	75	Gasbag	acidp-boom05	acidscar5	1	1	acidscar5	0	6	1						
+Acid\AcidPlants.AcidPlant05b	acid	Gasbag	Gasplants	1	1	1	160	acidplant	acidplant05b	acidplantshad05b	0	1	20				acidplantrec05	645	acidplantburn05		acidscar5	5	15	5	75	Gasbag	acidp-boom05	acidscar5	1	1	acidscar5	0	6	1						
+Acid\AcidPlants.acidscar1	acid	Damaged Terrain	smudges	0	1	1	0	acidplant	acidp-smudge01		1		0															acidscar1	0	0		0	6	0						
+Acid\AcidPlants.acidscar2	acid	Damaged Terrain	smudges	0	1	1	0	acidplant	acidp-smudge02		1		0															acidscar2	0	0		0	6	0						
+Acid\AcidPlants.acidscar3	acid	Damaged Terrain	smudges	0	1	1	0	acidplant	acidp-smudge03		1		0															acidscar3	0	0		0	6	0						
+Acid\AcidPlants.acidscar4	acid	Damaged Terrain	smudges	0	1	1	0	acidplant	acidp-smudge04		1		0															acidscar4	0	0		0	6	0						
+Acid\AcidPlants.acidscar5	acid	Damaged Terrain	smudges	0	1	1	0	acidplant	acidp-smudge05		1		0															acidscar5	0	0		0	6	0						
+Acid\AcidVents.AcidVent01	acid	Thermal Vent	steamvents	1	1	1	0	acidvents	acidvent01				0			1																			1					
+Acid\AcidVents.AcidVent02	acid	Thermal Vent	steamvents	1	1	1	0	acidvents	acidvent02				0			1																			1					
+Acid\AcidVents.AcidVent03	acid	Thermal Vent	steamvents	1	1	1	0	acidvents	acidvent03				0			1																			1					
+All Worlds\Armfort_fort.Fortification	allworld	Fortification Wall	dragonteeth		2	2	55						97	23	1600		tree1reclamate											RockTeeth		1				1		armfort	0	smudge01		
+All Worlds\Corfort_fort.Fortification_Core	allworld	Fortification Wall	dragonteeth		2	2	55						95	21	1500		tree1reclamate											RockTeeth		1				1		corfort	0	smudge01		
+Corpses\armamb_dead.armamb_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	1602	1326		tree1reclamate											armamb_dead2		1				1		armamb_dead1		smudge01		
+Corpses\armamb_dead.armamb_dead2	All Worlds	Wreckage	arm_corpses		3	3	20						100	801	663		tree1reclamate											armamb_heap		1				1		armamb_dead2		smudge01		
+Corpses\armamb_dead.armamb_heap	All Worlds	Wreckage	heaps		3	3	4						100	496	624		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\Armckfus_dead.armckfus_dead	All Worlds	Wreckage	arm_corpses		5	4	40						100	4336	1760		tree1reclamate											armckfus_heap		1				1		armckfus_dead		smudge01		
+Corpses\Armckfus_dead.armckfus_heap	All Worlds	Wreckage	heaps		4	4	4						100	2168	880		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\ARMEMP_dead.armemp_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	1441	2048		tree1reclamate											armemp_heap		1				1		armemp_dead		smudge01		
+Corpses\ARMEMP_dead.armemp_heap	All Worlds	Wreckage	heaps		3	3	4						100	721	2048		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\Armfhlt_dead.Armfhlt_dead	All Worlds	Wreckage	arm_corpses		4	4	20						100	446	1108		tree1reclamate													1				1		Armfhlt_dead		smudge01		
+Corpses\armflak_dead.armflak_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	855	1219		tree1reclamate											armflak_heap		1				1		armflak_dead		smudge01		
+Corpses\armflak_dead.armflak_heap	All Worlds	Wreckage	heaps		2	2	4						100	428	609		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\armfrt_dead.armfrt_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	56.8	202		tree1reclamate													1				1		armfrt_dead		smudge01		
+Corpses\armlatnk_dead.armlatnk_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	262	794		tree1reclamate											armlatnk_heap		1				1		armlatnk_dead		smudge01		
+Corpses\armlatnk_dead.armlatnk_heap	All Worlds	Wreckage	heaps		2	2	4						100	66	794		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\Armmanni_dead.armmanni_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	2083	520		tree1reclamate											armmanni_heap		1				1		armmanni_dead		smudge01		
+Corpses\Armmanni_dead.armmanni_heap	All Worlds	Wreckage	heaps		3	3	4						100	1041	260		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\Armmark_dead.armmark_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	76	256		tree1reclamate											armmark_heap		1				1		armmark_dead		smudge01		
+Corpses\Armmark_dead.armmark_heap	All Worlds	Wreckage	heaps		2	2	4						100	38	128		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\Armmmkr_dead.armmmkr_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	46	320		tree1reclamate											armmmkr_heap		1				1		armmmkr_dead		smudge01		
+Corpses\Armmmkr_dead.armmmkr_heap	All Worlds	Wreckage	heaps		4	4	4						100	23	160		tree1reclamate													1				0		4x4c		smudge01		
+Corpses\armsjam_dead.armsjam_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	104.8	408		tree1reclamate													1				1		armsjam_dead		smudge01		
+Corpses\ARMsnipe_dead.armsnipe_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	748	400		tree1reclamate											armsnipe_heap		1				1		armsnipe_dead		smudge01		
+Corpses\ARMsnipe_dead.armsnipe_heap	All Worlds	Wreckage	heaps		2	2	4						100	374	200		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\Armwar_dead.armwar_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	157	680		tree1reclamate											armwar_heap		1				1		armwar_dead		smudge01		
+Corpses\Armwar_dead.armwar_heap	All Worlds	Wreckage	heaps		2	2	4						100	79	340		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\ARMYORK_dead.armyork_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	664	256		tree1reclamate											armyork_heap		1				1		armyork_dead		smudge01		
+Corpses\ARMYORK_dead.armyork_heap	All Worlds	Wreckage	heaps		2	2	4						100	332	128		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\arm_corpses.armaap_dead	All Worlds	Wreckage	arm_corpses		7	6	20						100	1768	1680		tree1reclamate											armaap_heap		1				1		armaap_dead		smudge01		
+Corpses\arm_corpses.armaca_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	176	288		tree1reclamate											armaca_heap		1				1		armaca_dead		smudge01		
+Corpses\arm_corpses.armack_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	240	832		tree1reclamate											armack_heap		1				1		armack_dead		smudge01		
+Corpses\arm_corpses.armacv_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	385	964		tree1reclamate											armacv_heap		1				1		armacv_dead		smudge01		
+Corpses\arm_corpses.armalab_dead	All Worlds	Wreckage	arm_corpses		5	6	20						100	1606	2404		tree1reclamate											armalab_heap		1				1		armalab_dead		smudge01		
+Corpses\arm_corpses.armamd_dead	All Worlds	Wreckage	arm_corpses		5	6	20						100	991	624		tree1reclamate											armamd_heap		1				1		armamd_dead		smudge01		
+Corpses\arm_corpses.armanni_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	3188	1128		tree1reclamate											armanni_heap		1				1		armanni_dead		smudge01		
+Corpses\arm_corpses.armap_dead	All Worlds	Wreckage	arm_corpses		7	6	40						100	680	1480		tree1reclamate											armap_heap		1				1		armap_dead		smudge01		
+Corpses\arm_corpses.armarad_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	36	44		tree1reclamate											armarad_heap		1				1		armarad_dead		smudge01		
+Corpses\arm_corpses.armaser_dead	All Worlds	Wreckage	arm_corpses		1	1	40						100	48	144		tree1reclamate											armaser_heap		1				1		armaser_dead		smudge01		
+Corpses\arm_corpses.armasp_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	340	544		tree1reclamate											armasp_heap		1				1		armasp_dead		smudge01		
+Corpses\arm_corpses.armasy_dead	All Worlds	Wreckage	arm_corpses		7	7	4						100	2019	24000		tree1reclamate													1				0		armasy_dead		smudge01		
+Corpses\arm_corpses.armatlas_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	95	120		tree1reclamate											armatlas_heap		1				1		armatlas_dead		smudge01		
+Corpses\arm_corpses.armavp_dead	All Worlds	Wreckage	arm_corpses		6	6	20						100	1587	1948		tree1reclamate											armavp_heap		1				1		armavp_dead		smudge01		
+Corpses\arm_corpses.armbats_dead	All Worlds	Wreckage	arm_corpses		6	6	4						100	3523	24000		tree1reclamate													1				0		armbats_dead		smudge01		
+Corpses\arm_corpses.armbrawl_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	287	960		tree1reclamate											armbrawl_heap		1				1		armbrawl_dead		smudge01		
+Corpses\arm_corpses.armbrtha_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	4147	1440		tree1reclamate											armbrtha_heap		1				1		armbrtha_dead		smudge01		
+Corpses\arm_corpses.armbull_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	374	1682		tree1reclamate											armbull_heap		1				1		armbull_dead		smudge01		
+Corpses\arm_corpses.armca_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	84	224		tree1reclamate											armca_heap		1				1		armca_dead		smudge01		
+Corpses\arm_corpses.armcarry_dead	All Worlds	Wreckage	arm_corpses		6	6	4						100	1098	24000		tree1reclamate													1				0		armcarry_dead		smudge01		
+Corpses\arm_corpses.armck_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	96	560		tree1reclamate											armck_heap		1				1		armck_dead		smudge01		
+Corpses\arm_corpses.armcroc_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	238	984		tree1reclamate											armcroc_heap		1				1		armcroc_dead		smudge01		
+Corpses\arm_corpses.armcrus_dead	All Worlds	Wreckage	arm_corpses		5	5	4						100	1375	24000		tree1reclamate													1				0		armcrus_dead		smudge01		
+Corpses\arm_corpses.armcs_dead	All Worlds	Wreckage	arm_corpses		5	5	4						100	204	24000		tree1reclamate													1				0		armcs_dead		smudge01		
+Corpses\arm_corpses.armcv_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	148	696		tree1reclamate											armcv_heap		1				1		armcv_dead		smudge01		
+Corpses\arm_corpses.armestor_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	192	800		tree1reclamate											armestor_heap		1				1		armestor_dead		smudge01		
+Corpses\arm_corpses.armfast_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	121	440		tree1reclamate											armfast_heap		1				1		armfast_dead		smudge01		
+Corpses\arm_corpses.armfav_dead	All Worlds	Wreckage	arm_corpses		2	2	4						100	30	63		tree1reclamate											armfav_heap		1				0		armfav_dead		smudge01		
+Corpses\arm_corpses.armfido_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	318	800		tree1reclamate											armfido_heap		1				1		armfido_dead		smudge01		
+Corpses\arm_corpses.armfig_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	126	160		tree1reclamate											armfig_heap		1				1		armfig_dead		smudge01		
+Corpses\arm_corpses.armflash_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	85	500		tree1reclamate											armflash_heap		1				1		armflash_dead		smudge01		
+Corpses\arm_corpses.armfus_dead	All Worlds	Wreckage	arm_corpses		5	4	40						100	4104	2480		tree1reclamate											armfus_heap		1				1		armfus_dead		smudge01		
+Corpses\arm_corpses.armgate_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	171172	2301		tree1reclamate											armgate_heap		1				1		armgate_dead		smudge01		
+Corpses\arm_corpses.armgeo_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	416	704		tree1reclamate											armgeo_heap		1				1		armgeo_dead		smudge01		
+Corpses\arm_corpses.armguard_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	1557	2302		tree1reclamate											armguard_heap		1				1		armguard_dead		smudge01		
+Corpses\arm_corpses.armham_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	121	640		tree1reclamate											armham_heap		1				1		armham_dead		smudge01		
+Corpses\arm_corpses.armhawk_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	174	400		tree1reclamate											armhawk_heap		1				1		armhawk_dead		smudge01		
+Corpses\arm_corpses.armhlt_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	467	984		tree1reclamate											armhlt_heap		1				1		armhlt_dead		smudge01		
+Corpses\arm_corpses.armjam_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	78	368		tree1reclamate											armjam_heap		1				1		armjam_dead		smudge01		
+Corpses\arm_corpses.armjeth_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	111	484		tree1reclamate											armjeth_heap		1				1		armjeth_dead		smudge01		
+Corpses\arm_corpses.armlab_dead	All Worlds	Wreckage	arm_corpses		5	6	40						100	564	2152		tree1reclamate											armlab_heap		1				1		armlab_dead		smudge01		
+Corpses\arm_corpses.armlance_dead	All Worlds	Wreckage	arm_corpses		5	6	40						100	126	160		tree1reclamate											armlance_heap		1				1		armlance_dead		smudge01		
+Corpses\arm_corpses.armllt_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	210	600		tree1reclamate											armllt_heap		1				1		armllt_dead		smudge01		
+Corpses\arm_corpses.armmakr_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	0	115		tree1reclamate											armmakr_heap		1				1		armmakr_dead		smudge01		
+Corpses\arm_corpses.armmart_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	211	420		tree1reclamate											armmart_heap		1				1		armmart_dead		smudge01		
+Corpses\arm_corpses.armmerl_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	370	432		tree1reclamate											armmerl_heap		1				1		armmerl_dead		smudge01		
+Corpses\arm_corpses.armmex_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	40	1700		tree1reclamate											armmex_heap		1				1		armmex_dead		smudge01		
+Corpses\arm_corpses.armmoho_dead	All Worlds	Wreckage	arm_corpses		5	5	40						100	1206	1258		tree1reclamate											armmoho_heap		1				1		armmoho_dead		smudge01		
+Corpses\arm_corpses.armmship_dead	All Worlds	Wreckage	arm_corpses		5	5	4						100	1878	24000		tree1reclamate													1				0		armmship_dead		smudge01		
+Corpses\arm_corpses.armmstor_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	244	1063		tree1reclamate											armmstor_heap		1				1		armmstor_dead		smudge01		
+Corpses\arm_corpses.armpeep_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	38	64		tree1reclamate											armpeep_heap		1				1		armpeep_dead		smudge01		
+Corpses\arm_corpses.armpnix_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	161	240		tree1reclamate											armpnix_heap		1				1		armpnix_dead		smudge01		
+Corpses\arm_corpses.armpt_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	80	24000		tree1reclamate													1				0		armpt_dead		smudge01		
+Corpses\arm_corpses.armpw_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	42	200		tree1reclamate											armpw_heap		1				1		armpw_dead		smudge01		
+Corpses\arm_corpses.armrad_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	15	41		tree1reclamate											armrad_heap		1				1		armrad_dead		smudge01		
+Corpses\arm_corpses.armrl_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	63	236		tree1reclamate											armrl_heap		1				1		armrl_dead		smudge01		
+Corpses\arm_corpses.armrock_dead	All Worlds	Wreckage	arm_corpses		2	2	40						100	103	576		tree1reclamate											armrock_heap		1				1		armrock_dead		smudge01		
+Corpses\arm_corpses.armroy_dead	All Worlds	Wreckage	arm_corpses		5	5	4						100	718	24000		tree1reclamate													1				0		armroy_dead		smudge01		
+Corpses\arm_corpses.armsam_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	114	739		tree1reclamate											armsam_heap		1				1		armsam_dead		smudge01		
+Corpses\arm_corpses.armseer_dead	All Worlds	Wreckage	arm_corpses		3	3	20						100	69	384		tree1reclamate											armseer_heap		1				1		armseer_dead		smudge01		
+Corpses\arm_corpses.armsilo_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	2734	1840		tree1reclamate											armsilo_heap		1				1		armsilo_dead		smudge01		
+Corpses\arm_corpses.armsolar_dead	All Worlds	Wreckage	arm_corpses		5	5	40						100	116	261		tree1reclamate											armsolar_heap		1				1		armsolar_dead		smudge01		
+Corpses\arm_corpses.armsonar_dead	All Worlds	Wreckage	arm_corpses		2	2	4						100	16	24000		tree1reclamate													1				0		armsonar_dead		smudge01		
+Corpses\arm_corpses.armspid_dead	All Worlds	Wreckage	arm_corpses		3	3	40						100	184	360		tree1reclamate											armspid_heap		1				1		armspid_dead		smudge01		
+Corpses\arm_corpses.armstump_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	132	794		tree1reclamate											armstump_heap		1				1		armstump_dead		smudge01		
+Corpses\arm_corpses.armsub_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	921	24000		tree1reclamate													1				0		armsub_dead		smudge01		
+Corpses\arm_corpses.armsubk_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	1158	24000		tree1reclamate													1				0		armsubk_dead		smudge01		
+Corpses\arm_corpses.armsy_dead	All Worlds	Wreckage	arm_corpses		7	7	4						100	492	24000		tree1reclamate													1				0		armsy_dead		smudge01		
+Corpses\arm_corpses.armtide_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	66	24000		tree1reclamate													1				0		armtide_dead		smudge01		
+Corpses\arm_corpses.armthund_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	161	240		tree1reclamate											armthund_heap		1				0		armthund_dead		smudge01		
+Corpses\arm_corpses.armtl_dead	All Worlds	Wreckage	arm_corpses		3	3	4						100	723	24000		tree1reclamate													1				0		armtl_dead		smudge01		
+Corpses\arm_corpses.armtship_dead	All Worlds	Wreckage	arm_corpses		5	5	4						100	735	24000		tree1reclamate													1				0		armtship_dead		smudge01		
+Corpses\arm_corpses.armvader_dead	All Worlds	Wreckage	arm_corpses		1	1	20						100	49	148		tree1reclamate											armvader_heap		1				1		armvader_dead		smudge01		
+Corpses\arm_corpses.armvp_dead	All Worlds	Wreckage	arm_corpses		6	6	40						100	496	2064		tree1reclamate											armvp_heap		1				1		armvp_dead		smudge01		
+Corpses\arm_corpses.armwin_dead	All Worlds	Wreckage	arm_corpses		4	4	40						100	42	141		tree1reclamate											armwin_heap		1				1		armwin_dead		smudge01		
+Corpses\arm_corpses.armzeus_dead	All Worlds	Wreckage	arm_corpses		2	2	20						100	214	700		tree1reclamate											armzeus_heap		1				1		armzeus_dead		smudge01		
+Corpses\arm_heaps.armaap_heap	All Worlds	Wreckage	heaps		6	6	4						100	884	1680		tree1reclamate													1				0		6x6a		smudge01		
+Corpses\arm_heaps.armaca_heap	All Worlds	Wreckage	heaps		2	2	4						100	88	288		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\arm_heaps.armack_heap	All Worlds	Wreckage	heaps		2	2	4						100	120	832		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\arm_heaps.armacv_heap	All Worlds	Wreckage	heaps		3	3	4						100	192	964		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\arm_heaps.armalab_heap	All Worlds	Wreckage	heaps		5	5	4						100	803	2404		tree1reclamate													1				0		5x5a		smudge01		
+Corpses\arm_heaps.armamd_heap	All Worlds	Wreckage	heaps		5	5	4						100	496	624		tree1reclamate													1				0		5x5b		smudge01		
+Corpses\arm_heaps.armanni_heap	All Worlds	Wreckage	heaps		3	3	4						100	1594	1128		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\arm_heaps.armap_heap	All Worlds	Wreckage	heaps		6	6	4						100	340	1480		tree1reclamate													1				0		6x6b		smudge01		
+Corpses\arm_heaps.armarad_heap	All Worlds	Wreckage	heaps		2	2	4						100	18	44		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\arm_heaps.armaser_heap	All Worlds	Wreckage	heaps		1	1	4						100	24	144		tree1reclamate													1				0		1x1a		smudge01		
+Corpses\arm_heaps.armasp_heap	All Worlds	Wreckage	heaps		1	1	4						100	170	544		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\arm_heaps.armatlas_heap	All Worlds	Wreckage	heaps		3	3	4						100	48	120		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\arm_heaps.armavp_heap	All Worlds	Wreckage	heaps		6	6	4						100	794	1948		tree1reclamate													1				0		6x6d		smudge01		
+Corpses\arm_heaps.armbrawl_heap	All Worlds	Wreckage	heaps		3	3	4						100	144	960		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\arm_heaps.armbrtha_heap	All Worlds	Wreckage	heaps		3	3	4						100	2074	1440		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\arm_heaps.armbull_heap	All Worlds	Wreckage	heaps		3	3	4						100	187	1682		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\arm_heaps.armca_heap	All Worlds	Wreckage	heaps		2	2	4						100	42	224		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\arm_heaps.armck_heap	All Worlds	Wreckage	heaps		2	2	4						100	48	560		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\arm_heaps.armcroc_heap	All Worlds	Wreckage	heaps		3	3	4						100	119	984		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\arm_heaps.armcv_heap	All Worlds	Wreckage	heaps		3	3	4						100	74	696		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\arm_heaps.armestor_heap	All Worlds	Wreckage	heaps		4	4	4						100	96	800		tree1reclamate													1				0		4x4c		smudge01		
+Corpses\arm_heaps.armfast_heap	All Worlds	Wreckage	heaps		2	2	4						100	61	440		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\arm_heaps.armfav_heap	All Worlds	Wreckage	heaps		2	2	4						100	15	63		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\arm_heaps.armfido_heap	All Worlds	Wreckage	heaps		2	2	4						100	159	800		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\arm_heaps.armfig_heap	All Worlds	Wreckage	heaps		2	2	4						100	63	160		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\arm_heaps.armflash_heap	All Worlds	Wreckage	heaps		2	2	4						100	43	500		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\arm_heaps.armfus_heap	All Worlds	Wreckage	heaps		4	4	4						100	2052	2480		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\arm_heaps.armgate_heap	All Worlds	Wreckage	heaps		2	2	4						100	85586	2301		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\arm_heaps.armgeo_heap	All Worlds	Wreckage	heaps		4	4	4						100	208	704		tree1reclamate													1				0		4x4b		smudge01		
+Corpses\arm_heaps.armguard_heap	All Worlds	Wreckage	heaps		3	3	4						100	778	2302		tree1reclamate													1				0		4x4d		smudge01		
+Corpses\arm_heaps.armham_heap	All Worlds	Wreckage	heaps		2	2	4						100	60	640		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\arm_heaps.armhawk_heap	All Worlds	Wreckage	heaps		2	2	4						100	87	400		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\arm_heaps.armhlt_heap	All Worlds	Wreckage	heaps		2	2	4						100	234	984		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\arm_heaps.armjam_heap	All Worlds	Wreckage	heaps		3	3	4						100	39	368		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\arm_heaps.armjeth_heap	All Worlds	Wreckage	heaps		2	2	4						100	56	484		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\arm_heaps.armlab_heap	All Worlds	Wreckage	heaps		5	5	4						100	282	2152		tree1reclamate													1				0		5x5b		smudge01		
+Corpses\arm_heaps.armlance_heap	All Worlds	Wreckage	heaps		5	5	4						100	63	160		tree1reclamate													1				0		5x5d		smudge01		
+Corpses\arm_heaps.armllt_heap	All Worlds	Wreckage	heaps		2	2	4						100	105	600		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\arm_heaps.armmakr_heap	All Worlds	Wreckage	heaps		3	3	4						100	0	115		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\arm_heaps.armmart_heap	All Worlds	Wreckage	heaps		3	3	4						100	106	420		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\arm_heaps.armmerl_heap	All Worlds	Wreckage	heaps		3	3	4						100	185	432		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\arm_heaps.armmex_heap	All Worlds	Wreckage	heaps		3	3	4						100	20	1700		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\arm_heaps.armmoho_heap	All Worlds	Wreckage	heaps		5	5	4						100	603	1258		tree1reclamate													1				0		5x5a		smudge01		
+Corpses\arm_heaps.armmstor_heap	All Worlds	Wreckage	heaps		4	4	4						100	122	1063		tree1reclamate													1				0		4x4e		smudge01		
+Corpses\arm_heaps.armpeep_heap	All Worlds	Wreckage	heaps		2	2	4						100	19	64		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\arm_heaps.armpnix_heap	All Worlds	Wreckage	heaps		2	2	4						100	80	240		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\arm_heaps.armpw_heap	All Worlds	Wreckage	heaps		2	2	4						100	21	200		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\arm_heaps.armrad_heap	All Worlds	Wreckage	heaps		2	2	4						100	7	41		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\arm_heaps.armrl_heap	All Worlds	Wreckage	heaps		3	3	4						100	32	236		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\arm_heaps.armrock_heap	All Worlds	Wreckage	heaps		2	2	4						100	52	576		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\arm_heaps.armsam_heap	All Worlds	Wreckage	heaps		3	3	4						100	57	739		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\arm_heaps.armseer_heap	All Worlds	Wreckage	heaps		3	3	4						100	34	384		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\arm_heaps.armsilo_heap	All Worlds	Wreckage	heaps		3	3	4						100	1367	1840		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\arm_heaps.armsolar_heap	All Worlds	Wreckage	heaps		5	5	4						100	58	261		tree1reclamate													1				0		5x5b		smudge01		
+Corpses\arm_heaps.armspid_heap	All Worlds	Wreckage	heaps		3	3	4						100	92	360		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\arm_heaps.armstump_heap	All Worlds	Wreckage	heaps		2	2	4						100	66	794		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\arm_heaps.armthund_heap	All Worlds	Wreckage	heaps		3	3	4						100	80	240		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\arm_heaps.armvader_heap	All Worlds	Wreckage	heaps		1	1	4						100	362	148		tree1reclamate													1				0		1x1b		smudge01		
+Corpses\arm_heaps.armvp_heap	All Worlds	Wreckage	heaps		6	6	4						100	248	2064		tree1reclamate													1				0		6x6a		smudge01		
+Corpses\arm_heaps.armwin_heap	All Worlds	Wreckage	heaps		4	4	4						100	21	141		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\arm_heaps.armzeus_heap	All Worlds	Wreckage	heaps		2	2	4						100	107	700		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\core_corpses.coraap_dead	All Worlds	Wreckage	core_corpses		7	6	20						100	1753	1760		tree1reclamate											coraap_heap		1				1		coraap_dead		smudge01		
+Corpses\core_corpses.coraca_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	185	296		tree1reclamate											coraca_heap		1				1		coraca_dead		smudge01		
+Corpses\core_corpses.corack_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	260	856		tree1reclamate											corack_heap		1				1		corack_dead		smudge01		
+Corpses\core_corpses.coracv_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	364	976		tree1reclamate											coracv_heap		1				1		coracv_dead		smudge01		
+Corpses\core_corpses.corak_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	45	212		tree1reclamate											corak_heap		1				1		corak_dead		smudge01		
+Corpses\core_corpses.coralab_dead	All Worlds	Wreckage	core_corpses		5	6	20						100	1578	2536		tree1reclamate											coralab_heap		1				1		coralab_dead		smudge01		
+Corpses\core_corpses.corap_dead	All Worlds	Wreckage	core_corpses		7	6	20						100	664	1540		tree1reclamate											corap_heap		1				1		corap_dead		smudge01		
+Corpses\core_corpses.corape_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	287	960		tree1reclamate											corape_heap		1				1		corape_dead		smudge01		
+Corpses\core_corpses.corarad_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	34	40		tree1reclamate											corarad_heap		1				1		corarad_dead		smudge01		
+Corpses\core_corpses.corasp_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	344	552		tree1reclamate											corasp_heap		1				1		corasp_dead		smudge01		
+Corpses\core_corpses.corasy_dead	All Worlds	Wreckage	core_corpses		7	7	4						100	1968	24000		tree1reclamate													1				0		corasy_dead		smudge01		
+Corpses\core_corpses.coravp_dead	All Worlds	Wreckage	core_corpses		6	6	20						100	1558	2060		tree1reclamate											coravp_heap		1				1		coravp_dead		smudge01		
+Corpses\core_corpses.corbats_dead	All Worlds	Wreckage	core_corpses		6	6	4						100	3345	24000		tree1reclamate													1				0		corbats_dead		smudge01		
+Corpses\core_corpses.corbuild_dead	All Worlds	Wreckage	core_corpses		5	5	4						100	3345	24000		tree1reclamate											corbuild_heap		1				0		corbuild_dead		smudge01		
+Corpses\core_corpses.corcan_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	336	2240		tree1reclamate											corcan_heap		1				1		corcan_dead		smudge01		
+Corpses\core_corpses.corcarry_dead	All Worlds	Wreckage	core_corpses		2	2	4						100	1103	24000		tree1reclamate													1				1		corcarry_dead		smudge01		
+Corpses\core_corpses.corck_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	104	568		tree1reclamate											corck_heap		1				1		corck_dead		smudge01		
+Corpses\core_corpses.corcrash_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	113	496		tree1reclamate											corcrash_heap		1				1		corcrash_dead		smudge01		
+Corpses\core_corpses.corcrus_dead	All Worlds	Wreckage	core_corpses		5	5	4						100	1379	24000		tree1reclamate													1				0		corcrus_dead		smudge01		
+Corpses\core_corpses.corcs_dead	All Worlds	Wreckage	core_corpses		5	5	4						100	208	24000		tree1reclamate													1				0		corcs_dead		smudge01		
+Corpses\core_corpses.corcv_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	140	660		tree1reclamate											corcv_heap		1				1		corcv_dead		smudge01		
+Corpses\core_corpses.cordoom_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	1712	2512		tree1reclamate											cordoom_heap		1				1		cordoom_dead		smudge01		
+Corpses\core_corpses.corestor_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	200	856		tree1reclamate											corestor_heap		1				1		corestor_dead		smudge01		
+Corpses\core_corpses.coreter_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	80	416		tree1reclamate											coreter_heap		1				1		coreter_dead		smudge01		
+Corpses\core_corpses.corfav_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	30	67		tree1reclamate											corfav_heap		1				1		corfav_dead		smudge01		
+Corpses\core_corpses.corfink_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	42	72		tree1reclamate											corfink_heap		1				1		corfink_dead		smudge01		
+Corpses\core_corpses.corfmd_dead	All Worlds	Wreckage	core_corpses		5	5	20						100	991	624		tree1reclamate											corfmd_heap		1				1		corfmd_dead		smudge01		
+Corpses\core_corpses.corfus_dead	All Worlds	Wreckage	core_corpses		5	5	20						100	4003	2400		tree1reclamate											corfus_heap		1				1		corfus_dead		smudge01		
+Corpses\core_corpses.corgate_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	157988	1975		tree1reclamate											corgate_heap		1				1		corgate_dead		smudge01		
+Corpses\core_corpses.corgator_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	88	522		tree1reclamate											corgator_heap		1				1		corgator_dead		smudge01		
+Corpses\core_corpses.corgeo_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	404	744		tree1reclamate											corgeo_heap		1				1		corgeo_dead		smudge01		
+Corpses\core_corpses.corgol_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	558	2276		tree1reclamate											corgol_heap		1				1		corgol_dead		smudge01		
+Corpses\core_corpses.corhlt_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	471	950		tree1reclamate											corhlt_heap		1				1		corhlt_dead		smudge01		
+Corpses\core_corpses.corhurc_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	161	240		tree1reclamate											corhurc_heap		1				1		corhurc_dead		smudge01		
+Corpses\core_corpses.corint_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	4267	1520		tree1reclamate											corint_heap		1				1		corint_dead		smudge01		
+Corpses\core_corpses.corlab_dead	All Worlds	Wreckage	core_corpses		6	6	20						100	544	2080		tree1reclamate											corlab_heap		1				1		corlab_dead		smudge01		
+Corpses\core_corpses.corllt_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	214	568		tree1reclamate											corllt_heap		1				1		corllt_dead		smudge01		
+Corpses\core_corpses.cormakr_dead	All Worlds	Wreckage	core_corpses		4	3	20						100	0	120		tree1reclamate											cormakr_heap		1				1		cormakr_dead		smudge01		
+Corpses\core_corpses.cormart_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	201	480		tree1reclamate											cormart_heap		1				1		cormart_dead		smudge01		
+Corpses\core_corpses.cormex_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	41	140		tree1reclamate											cormex_heap		1				1		cormex_dead		smudge01		
+Corpses\core_corpses.cormist_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	114	794		tree1reclamate											cormist_heap		1				1		cormist_dead		smudge01		
+Corpses\core_corpses.cormoho_dead	All Worlds	Wreckage	core_corpses		5	5	20						100	1160	1172		tree1reclamate											cormoho_heap		1				1		cormoho_dead		smudge01		
+Corpses\core_corpses.cormship_dead	All Worlds	Wreckage	core_corpses		6	6	4						100	1826	24000		tree1reclamate													1				0		cormship_dead		smudge01		
+Corpses\core_corpses.cormstor_dead	All Worlds	Wreckage	core_corpses		5	5	20						100	256	1045		tree1reclamate											cormstor_heap		1				1		cormstor_dead		smudge01		
+Corpses\core_corpses.corpt_dead	All Worlds	Wreckage	core_corpses		3	3	4						100	76	24000		tree1reclamate													1				0		corpt_dead		smudge01		
+Corpses\core_corpses.corpun_dead	All Worlds	Wreckage	core_corpses		4	3	20						100	1510	2352		tree1reclamate											corpun_heap		1				1		corpun_dead		smudge01		
+Corpses\core_corpses.corpyro_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	208	560		tree1reclamate											corpyro_heap		1				1		corpyro_dead		smudge01		
+Corpses\core_corpses.corrad_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	15	41		tree1reclamate											corrad_heap		1				1		corrad_dead		smudge01		
+Corpses\core_corpses.corraid_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	135	846		tree1reclamate											corraid_heap		1				1		corraid_dead		smudge01		
+Corpses\core_corpses.correap_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	378	1611		tree1reclamate											correap_heap		1				1		correap_dead		smudge01		
+Corpses\core_corpses.corrl_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	62	240		tree1reclamate											corrl_heap		1				1		corrl_dead		smudge01		
+Corpses\core_corpses.corroach_dead	All Worlds	Wreckage	core_corpses		1	1	20						100	52	156		tree1reclamate											corroach_heap		1				1		corroach_dead		smudge01		
+Corpses\core_corpses.corroy_dead	All Worlds	Wreckage	core_corpses		5	5	4						100	710	24000		tree1reclamate													1				0		corroy_dead		smudge01		
+Corpses\core_corpses.corseal_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	236	915		tree1reclamate											corseal_heap		1				1		corseal_dead		smudge01		
+Corpses\core_corpses.corshad_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	161	240		tree1reclamate											corshad_heap		1				1		corshad_dead		smudge01		
+Corpses\core_corpses.corshark_dead	All Worlds	Wreckage	core_corpses		6	6	4						100	1085	221		tree1reclamate													1				0		corshark_dead		smudge01		
+Corpses\core_corpses.corsilo_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	780	2048		tree1reclamate											corsilo_heap		1				1		corsilo_dead		smudge01		
+Corpses\core_corpses.corsolar_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	116	261		tree1reclamate											corsolar_heap		1				1		corsolar_dead		smudge01		
+Corpses\core_corpses.corsonar_dead	All Worlds	Wreckage	core_corpses		2	2	4						100	16	24000		tree1reclamate													1				0		corsonar_dead		smudge01		
+Corpses\core_corpses.corspec_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	48	144		tree1reclamate											corspec_heap		1				1		corspec_dead		smudge01		
+Corpses\core_corpses.corstorm_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	103	592		tree1reclamate											corstorm_heap		1				1		corstorm_dead		smudge01		
+Corpses\core_corpses.corsub_dead	All Worlds	Wreckage	core_corpses		4	4	4						100	903	24000		tree1reclamate													1				0		corsub_dead		smudge01		
+Corpses\core_corpses.corsy_dead	All Worlds	Wreckage	core_corpses		7	7	4						100	480	24000		tree1reclamate													1				0		corsy_dead		smudge01		
+Corpses\core_corpses.corthud_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	118	640		tree1reclamate											corthud_heap		1				1		corthud_dead		smudge01		
+Corpses\core_corpses.cortide_dead	All Worlds	Wreckage	core_corpses		4	4	4						100	65	24000		tree1reclamate													1				0		cortide_dead		smudge01		
+Corpses\core_corpses.cortitan_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	126	160		tree1reclamate											cortitan_heap		1				1		cortitan_dead		smudge01		
+Corpses\core_corpses.cortl_dead	All Worlds	Wreckage	core_corpses		3	3	4						100	745	24000		tree1reclamate													1				0		cortl_dead		smudge01		
+Corpses\core_corpses.cortruck_dead	All Worlds	Wreckage	core_corpses		2	2	4						100	710	24000		tree1reclamate											cortruck_heap		1				0		cortruck_dead		smudge01		
+Corpses\core_corpses.cortship_dead	All Worlds	Wreckage	core_corpses		5	5	4						100	710	24000		tree1reclamate													1				0		cortship_dead		smudge01		
+Corpses\core_corpses.corvalk_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	95	120		tree1reclamate											corvalk_heap		1				1		corvalk_dead		smudge01		
+Corpses\core_corpses.corvamp_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	174	400		tree1reclamate											corvamp_heap		1				1		corvamp_dead		smudge01		
+Corpses\core_corpses.corveng_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	126	160		tree1reclamate											corveng_heap		1				1		corveng_dead		smudge01		
+Corpses\core_corpses.corvp_dead	All Worlds	Wreckage	core_corpses		7	7	20						100	480	2040		tree1reclamate											corvp_heap		1				1		corvp_dead		smudge01		
+Corpses\core_corpses.corvrad_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	72	400		tree1reclamate											corvrad_heap		1				1		corvrad_dead		smudge01		
+Corpses\core_corpses.corvroc_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	342	482		tree1reclamate											corvroc_heap		1				1		corvroc_dead		smudge01		
+Corpses\core_corpses.corwin_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	44	1430		tree1reclamate											corwin_heap		1				1		corwin_dead		smudge01		
+Corpses\core_heaps.coraap_heap	All Worlds	Wreckage	heaps		6	6	4						100	876	1760		tree1reclamate													1				0		6x6a		smudge01		
+Corpses\core_heaps.coraca_heap	All Worlds	Wreckage	heaps		2	2	4						100	92	296		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\core_heaps.corack_heap	All Worlds	Wreckage	heaps		2	2	4						100	130	856		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\core_heaps.coracv_heap	All Worlds	Wreckage	heaps		3	3	4						100	182	976		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\core_heaps.corak_heap	All Worlds	Wreckage	heaps		2	2	4						100	22	212		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\core_heaps.coralab_heap	All Worlds	Wreckage	heaps		5	5	4						100	789	2536		tree1reclamate													1				0		5x5a		smudge01		
+Corpses\core_heaps.corap_heap	All Worlds	Wreckage	heaps		6	6	4						100	332	1540		tree1reclamate													1				0		6x6b		smudge01		
+Corpses\core_heaps.corape_heap	All Worlds	Wreckage	heaps		3	3	4						100	143	960		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\core_heaps.corarad_heap	All Worlds	Wreckage	heaps		3	3	4						100	17	40		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\core_heaps.corasp_heap	All Worlds	Wreckage	heaps		4	4	4						100	172	552		tree1reclamate													1				0		4x4c		smudge01		
+Corpses\core_heaps.coravp_heap	All Worlds	Wreckage	heaps		6	6	4						100	779	2060		tree1reclamate													1				0		6x6c		smudge01		
+Corpses\core_heaps.corbuild_heap	All Worlds	Wreckage	heaps		5	5	4						100	1672	24000		tree1reclamate													1				0		5x5c		smudge01		
+Corpses\core_heaps.corcan_heap	All Worlds	Wreckage	heaps		2	2	4						100	168	2240		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\core_heaps.corck_heap	All Worlds	Wreckage	heaps		2	2	4						100	52	568		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\core_heaps.corcrash_heap	All Worlds	Wreckage	heaps		2	2	4						100	56	496		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\core_heaps.corcv_heap	All Worlds	Wreckage	heaps		3	3	4						100	70	660		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\core_heaps.cordoom_heap	All Worlds	Wreckage	heaps		3	3	4						100	856	2512		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\core_heaps.corestor_heap	All Worlds	Wreckage	heaps		4	4	4						100	100	856		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\core_heaps.coreter_heap	All Worlds	Wreckage	heaps		3	3	4						100	40	416		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\core_heaps.corfav_heap	All Worlds	Wreckage	heaps		2	2	4						100	15	67		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\core_heaps.corfink_heap	All Worlds	Wreckage	heaps		2	2	4						100	21	72		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\core_heaps.corfmd_heap	All Worlds	Wreckage	heaps		5	5	4						100	496	624		tree1reclamate													1				0		5x5d		smudge01		
+Corpses\core_heaps.corfus_heap	All Worlds	Wreckage	heaps		5	5	4						100	2002	2400		tree1reclamate													1				0		5x5d		smudge01		
+Corpses\core_heaps.corgate_heap	All Worlds	Wreckage	heaps		2	2	4						100	78994	1975		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\core_heaps.corgator_heap	All Worlds	Wreckage	heaps		2	2	4						100	44	522		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\core_heaps.corgeo_heap	All Worlds	Wreckage	heaps		4	4	4						100	202	744		tree1reclamate													1				0		4x4b		smudge01		
+Corpses\core_heaps.corgol_heap	All Worlds	Wreckage	heaps		4	4	4						100	279	2276		tree1reclamate													1				0		4x4c		smudge01		
+Corpses\core_heaps.corhlt_heap	All Worlds	Wreckage	heaps		3	3	4						100	236	950		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\core_heaps.corhurc_heap	All Worlds	Wreckage	heaps		3	3	4						100	81	240		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\core_heaps.corint_heap	All Worlds	Wreckage	heaps		3	3	4						100	2133	1520		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\core_heaps.corlab_heap	All Worlds	Wreckage	heaps		6	6	4						100	272	2080		tree1reclamate													1				0		6x6b		smudge01		
+Corpses\core_heaps.corllt_heap	All Worlds	Wreckage	heaps		2	2	4						100	107	568		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\core_heaps.cormakr_heap	All Worlds	Wreckage	heaps		3	3	4						100	0	120		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\core_heaps.cormart_heap	All Worlds	Wreckage	heaps		2	2	4						100	100	480		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\core_heaps.cormex_heap	All Worlds	Wreckage	heaps		3	3	4						100	20	140		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\core_heaps.cormist_heap	All Worlds	Wreckage	heaps		3	3	4						100	57	794		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\core_heaps.cormoho_heap	All Worlds	Wreckage	heaps		5	5	4						100	580	1172		tree1reclamate													1				0		5x5a		smudge01		
+Corpses\core_heaps.cormstor_heap	All Worlds	Wreckage	heaps		5	5	4						100	128	1045		tree1reclamate													1				0		5x5a		smudge01		
+Corpses\core_heaps.corpun_heap	All Worlds	Wreckage	heaps		4	3	4						100	755	2352		tree1reclamate													1				0		3x3b		smudge01		
+Corpses\core_heaps.corpyro_heap	All Worlds	Wreckage	heaps		2	2	4						100	104	560		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\core_heaps.corrad_heap	All Worlds	Wreckage	heaps		2	2	4						100	8	41		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\core_heaps.corraid_heap	All Worlds	Wreckage	heaps		2	2	4						100	68	846		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\core_heaps.correap_heap	All Worlds	Wreckage	heaps		3	3	4						100	189	1611		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\core_heaps.corrl_heap	All Worlds	Wreckage	heaps		3	3	4						100	31	240		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\core_heaps.corroach_heap	All Worlds	Wreckage	heaps		1	1	4						100	26	156		tree1reclamate													1				0		1x1c		smudge01		
+Corpses\core_heaps.corseal_heap	All Worlds	Wreckage	heaps		3	3	4						100	118	915		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\core_heaps.corshad_heap	All Worlds	Wreckage	heaps		3	3	4						100	80	240		tree1reclamate													1				0		3x3f		smudge01		
+Corpses\core_heaps.corsilo_heap	All Worlds	Wreckage	heaps		3	3	4						100	390	2048		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\core_heaps.corsolar_heap	All Worlds	Wreckage	heaps		5	5	4						100	58	261		tree1reclamate													1				0		5x5c		smudge01		
+Corpses\core_heaps.corspec_heap	All Worlds	Wreckage	heaps		2	2	4						100	24	144		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\core_heaps.corstorm_heap	All Worlds	Wreckage	heaps		2	2	4						100	52	592		tree1reclamate													1				0		2x2c		smudge01		
+Corpses\core_heaps.corthud_heap	All Worlds	Wreckage	heaps		2	2	4						100	59	640		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\core_heaps.cortitan_heap	All Worlds	Wreckage	heaps		4	4	4						100	63	160		tree1reclamate													1				0		4x4f		smudge01		
+Corpses\core_heaps.cortruck_heap	All Worlds	Wreckage	heaps		2	2	4						100	109	24000		tree1reclamate													1				0		2x2d		smudge01		
+Corpses\core_heaps.corvalk_heap	All Worlds	Wreckage	heaps		3	3	4						100	47	120		tree1reclamate													1				0		3x3c		smudge01		
+Corpses\core_heaps.corvamp_heap	All Worlds	Wreckage	heaps		3	3	4						100	87	400		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\core_heaps.corveng_heap	All Worlds	Wreckage	heaps		2	2	4						100	63	160		tree1reclamate													1				0		2x2e		smudge01		
+Corpses\core_heaps.corvp_heap	All Worlds	Wreckage	heaps		7	7	4						100	240	2040		tree1reclamate													1				0		7x7b		smudge01		
+Corpses\core_heaps.corvrad_heap	All Worlds	Wreckage	heaps		2	2	4						100	36	400		tree1reclamate													1				0		2x2f		smudge01		
+Corpses\core_heaps.corvroc_heap	All Worlds	Wreckage	heaps		3	3	4						100	171	482		tree1reclamate													1				0		3x3e		smudge01		
+Corpses\core_heaps.corwin_heap	All Worlds	Wreckage	heaps		4	4	4						100	22	1430		tree1reclamate													1				0		4x4a		smudge01		
+Corpses\Corfhlt_dead.Corfhlt_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	446	1108		tree1reclamate													1				1		Corfhlt_dead		smudge01		
+Corpses\corflak_dead.corflak_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	855	1219		tree1reclamate											corflak_heap		1				1		corflak_dead		smudge01		
+Corpses\corflak_dead.corflak_heap	All Worlds	Wreckage	heaps		3	3	4						100	428	610		tree1reclamate													1				0		3x3d		smudge01		
+Corpses\Corfmkr_dead.corfmkr_dead	All Worlds	Wreckage	core_corpses		3	3	20						100		88		tree1reclamate													1				1		corfmkr_dead		smudge01		
+Corpses\Corfrt_dead.corfrt_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	57	232		tree1reclamate													1				1		corfrt_dead		smudge01		
+Corpses\corhrk_dead.corhrk_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	301	950		tree1reclamate											corhrk_heap		1				1		corhrk_dead		smudge01		
+Corpses\corhrk_dead.corhrk_heap	All Worlds	Wreckage	heaps		2	2	4						100	122	240		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\Corlevlr_dead.corlevlr_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	233	300		tree1reclamate											corlevlr_heap		1				1		corlevlr_dead		smudge01		
+Corpses\Corlevlr_dead.corlevlr_heap	All Worlds	Wreckage	heaps		2	2	4						100	116	150		tree1reclamate													1				0		2x2b		smudge01		
+Corpses\Cormort_dead.cormort_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	257	736		tree1reclamate											cormort_heap		1				1		cormort_dead		smudge01		
+Corpses\Cormort_dead.cormort_heap	All Worlds	Wreckage	heaps		2	2	4						100	129	368															1				0		2x2a				
+Corpses\Corsent_dead.corsent_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	709	2280		tree1reclamate											corsent_heap		1				1		corsent_dead		smudge01		
+Corpses\Corsent_dead.corsent_heap	All Worlds	Wreckage	heaps		2	2	4						100	354	1240		tree1reclamate													1				0		2x2a		smudge01		
+Corpses\Corsjam_dead.Corsjam_dead	All Worlds	Wreckage	core_corpses		4	4	20						100	108	456		tree1reclamate													1				1		Corsjam_dead		smudge01		
+Corpses\Corssub_dead.corssub_dead	All Worlds	Wreckage	core_corpses		3	3	4						100	1652	794		tree1reclamate													1				0		corssub_dead		smudge01		
+Corpses\Corsumo_dead.corsumo_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	674	3280		tree1reclamate											corsumo_heap		1				1		corsumo_dead		smudge01		
+Corpses\Corsumo_dead.corsumo_heap	All Worlds	Wreckage	heaps		3	3	4						100	417	2140		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\Cortoast_dead.cortoast_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	1160	1172		tree1reclamate											cortoast_dead2		1				1		cortoast_dead		smudge01		
+Corpses\Cortoast_dead.cortoast_dead2	All Worlds	Wreckage	core_corpses		2	2	20						100	1160	1172		tree1reclamate											cortoast_heap		1				1		cortoast_dead2		smudge01		
+Corpses\Cortoast_dead.cortoast_heap	All Worlds	Wreckage	heaps		2	2	4						100	580	1172															1				0		2x2a				
+Corpses\CORTRON_dead.cortron_dead	All Worlds	Wreckage	core_corpses		3	3	20						100	1366	2048		tree1reclamate											cortron_heap		1				1		cortron_dead		smudge01		
+Corpses\CORTRON_dead.cortron_heap	All Worlds	Wreckage	heaps		3	3	4						100	683	2048		tree1reclamate													1				0		3x3a		smudge01		
+Corpses\Corvoyr_dead.corvoyr_dead	All Worlds	Wreckage	core_corpses		2	2	20						100	74	280		tree1reclamate											corvoyr_heap		1				1		corvoyr_dead		smudge01		
+Corpses\Corvoyr_dead.corvoyr_heap	All Worlds	Wreckage	heaps		2	2	4						100	37	140		tree1reclamate													1				0		2x2a		smudge01		
+Crystal\Crystal-Metal.CrystalMetal1	crystal	Metal	metal	0	3	3	0	crys-metal	crys-metal01		0	1	5	86	32009	1																								
+Crystal\Crystal-Metal.CrystalMetal2	crystal	Metal	metal	0	3	3	0	crys-metal	crys-metal02		0	1	5	140	32009	1																								
+Crystal\Crystal-Metal.CrystalMetal3	crystal	Metal	metal	0	3	3	0	crys-metal	crys-metal03		0	1	5	235	32009	1																								
+Crystal\Crystal-Metal.CrystalAquaOre1	crystal	Metal	metal	0	3	3	0	crys-metal	crys-aquaore01		0	1	5	86	32009	1																								
+Crystal\Crystal-Metal.CrystalAquaOre2	crystal	Metal	metal	0	3	3	0	crys-metal	crys-aquaore02		0	1	5	127	32009	1																								
+Crystal\Crystal-Metal.CrystalAquaOre3	crystal	Metal	metal	0	3	3	0	crys-metal	crys-aquaore03		0	1	5	223	32009	1																								
+Crystal\Crystal-Spires.CrystalSpire01	crystal	Spire	spires	0	7	7	420	crys-spire	crystalspire01	crys-spireshad01	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire02	crystal	Spire	spires	0	6	5	240	crys-spire	crystalspire02	crys-spireshad02	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire03	crystal	Spire	spires	0	5	6	160	crys-spire	crystalspire03	crys-spireshad03	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire04	crystal	Spire	spires	0	6	4	120	crys-spire	crystalspire04	crys-spireshad04	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire05	crystal	Spire	spires	0	8	8	140	crys-spire	crystalspire05	crys-spireshad05	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire06	crystal	Spire	spires	0	8	8	200	crys-spire	crystalspire06	crys-spireshad06	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire07	crystal	Spire	spires	0	8	7	340	crys-spire	crystalspire07	crys-spireshad07	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire08	crystal	Spire	spires	0	8	8	160	crys-spire	crystalspire08	crys-spireshad08	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire09	crystal	Spire	spires	0	8	7	180	crys-spire	crystalspire09	crys-spireshad09	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire10	crystal	Spire	spires	0	5	6	100	crys-spire	crystalspire10	crys-spireshad10	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Spires.CrystalSpire11	crystal	Spire	spires	0	5	6	400	crys-spire	crystalspire11	crys-spireshad11	0	1	100		2000	1																		1					1	1
+Crystal\Crystal-Vents.CrystalVent01	crystal	Thermal Vent	steamvents	1	1	1	0	crys-vent	crys-therm01				0			1																			1					
+Crystal\Crystal-Vents.CrystalVent02	crystal	Thermal Vent	steamvents	1	1	1	0	crys-vent	crys-therm02				0			1																			1					
+Crystal\Crystal-Vents.CrystalVent03	crystal	Thermal Vent	steamvents	1	1	1	0	crys-vent	crys-therm03				0			1																			1					
+Crystal\Crystal-Vents.CrystalVent04	crystal	Thermal Vent	steamvents	1	1	1	0	crys-vent	crys-therm04				0			1																			1					
+Crystal\Crystal-Vents.CrystalVent05	crystal	Thermal Vent	steamvents	1	1	1	0	crys-vent	crys-therm05				0			1																			1					
+Green\Watermetal.GreenAquaOre1	greenworld	Metal	rocks	0	3	3	4	GreenAquaOre	greenaquaore01		0	1	5	116	32009	1																								
+Green\Watermetal.GreenAquaOre2	greenworld	Metal	rocks	0	3	3	4	GreenAquaOre	greenaquaore02		0	1	5	187	32009	1																								
+Green\Watermetal.GreenAquaOre3	greenworld	Metal	rocks	0	3	3	4	GreenAquaOre	greenaquaore03		0	1	5	250	32009	1																								
+Ice\IceWaterMetal.IceAquaOre1	ice	Metal Deposit	metal	0	3	3	4	iceAquaOre	iceaquaore1		0	1	5	86	32009	1																								
+Ice\IceWaterMetal.IceAquaOre2	ice	Metal Deposit	metal	0	3	3	4	iceAquaOre	iceaquaore2		0	1	5	127	32009	1																								
+Ice\IceWaterMetal.IceAquaOre3	ice	Metal Deposit	metal	0	3	3	4	iceAquaOre	iceaquaore3		0	1	5	223	32009	1																								
+lava\VENTS.Lavavent001	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent001				0			1																			1				1	
+lava\VENTS.Lavavent002	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent002				0			1																			1				1	
+lava\VENTS.Lavavent003	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent003				0			1																			1				1	
+lava\VENTS.Lavavent004	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent004				0			1																			1				1	
+lava\VENTS.Lavavent005	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent005				0			1																			1				1	
+lava\VENTS.Lavavent006	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent006				0			1																			1				1	
+lava\VENTS.Lavavent007	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent007				0			1																			1				1	
+lava\VENTS.Lavavent008	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent008				0			1																			1				1	
+lava\VENTS.Lavavent009	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent009		1		0			1																			1				1	
+lava\VENTS.Lavavent010	lava	Thermal Vent	steamvents	1	1	1	0	lavastuff2	tvent010				0			1																			1				1	
+Lush\METAL.LushMetal1	lush	Metal	metal	0	3	3	0	metals	lushmetal03		0	1	5	86	32009	1																								
+Lush\METAL.LushMetal2	lush	Metal	metal	0	3	3	0	metals	lushmetal01		0	1	5	127	32009	1																								
+Lush\METAL.LushMetal3	lush	Metal	metal	0	3	3	0	metals	lushmetal02		0	1	5	223	32009	1																								
+Lush\METAL.AquaOre1	lush	Metal	metal	0	3	3	0	metals	aquaore03		0	1	5	86	32009	1																								
+Lush\METAL.AquaOre2	lush	Metal	metal	0	3	3	0	metals	aquaore02		0	1	5	127	32009	1																								
+Lush\METAL.AquaOre3	lush	Metal	metal	0	3	3	0	metals	aquaore01		0	1	5	223	32009	1																								
+Lush\ROCKS.LushRock01	Lush	Rock	rocks	0	1	1	12	lushrocks	lushrock01	rock01shadow	0	1	100	50	2000		lushrock01rec											lushrockscar3		1				1				lushrocksmudge3		
+Lush\ROCKS.LushRock02	Lush	Rock	rocks	0	1	1	15	lushrocks	lushrock02	rock02shadow	0	1	100	50	2000		lushrock02rec											lushrockscar3		1				1				lushrocksmudge3		
+Lush\ROCKS.LushRock03	Lush	Rock	rocks	0	2	2	26	lushrocks	lushrock03	rock03shadow	0	1	100	25	2000		lushrock03rec											Lushcrushed03		1				1				lushrocksmudge2		
+Lush\ROCKS.LushRock04	Lush	Rock	rocks	0	2	2	34	lushrocks	lushrock04	rock04shadow	0	1	100	75	2000		lushrock04rec											Lushcrushed04		1				1				lushrocksmudge2		
+Lush\ROCKS.LushRock05	Lush	Rock	rocks	0	3	3	40	lushrocks	lushrock05	rock05shadow	0	1	100	25	2000		lushrock05rec											Lushcrushed05		1				1				lushrocksmudge5		
+Lush\ROCKS.LushRock06	Lush	Rock	rocks	0	4	4	66	lushrocks	lushrock06	rock06shadow	0	1	100	50	2000		lushrock06rec											Lushcrushed06		1				1				lushrocksmudge		
+Lush\ROCKS.LushRock07	Lush	Rock	rocks	0	5	5	74	lushrocks	lushrock07	rock07shadow	0	1	100	75	2000		lushrock07rec											lushcrushed07		1				1				lushrocksmudge4		
+Lush\ROCKS.LushRock08	Lush	Rock	rocks	0	5	5	68	lushrocks	lushrock08	rock08shadow	0	1	100	25	2000		lushrock08rec											Lushcrushed08		1				1				lushrocksmudge4		
+Lush\ROCKS.LushCrushed03	Lush	Rock	rocks	0	2	2	8	lushrocks	crushed03	crushshad03	0	1	100	25	2000		crushed03rec											lushrockscar2		1				1				lushrocksmudge2		
+Lush\ROCKS.LushCrushed04	Lush	Rock	rocks	0	2	2	9	lushrocks	crushed04	crushshad04	0	1	100	25	2000		crushed04rec											lushrockscar2		1				1				lushrocksmudge2		
+Lush\ROCKS.LushCrushed05	Lush	Rock	rocks	0	3	3	25	lushrocks	crushed05	crushshad05	0	1	100	25	2000		crushed05rec											Lushcrushed205		1				1				lushrocksmudge5		
+Lush\ROCKS.LushCrushed06	Lush	Rock	rocks	0	4	4	35	lushrocks	crushed06	crushshad06	0	1	100	25	2000		crushed06rec											lushcrushed206		1				1				lushrocksmudge		
+Lush\ROCKS.LushCrushed07	Lush	Rock	rocks	0	5	5	38	lushrocks	crushed07	crushshad07	0	1	100	25	2000		crushed07rec											lushcrushed207		1				1				lushrocksmudge4		
+Lush\ROCKS.LushCrushed08	Lush	Rock	rocks	0	5	5	31	lushrocks	crushed08	crushshad08	0	1	100	25	2000		crushed08rec											lushcrushed208		1				1				lushrocksmudge4		
+Lush\ROCKS.LushCrushed205	Lush	Rock	rocks	0	3	3	8	lushrocks	crushed205	crushshad205	0	1	100	25	2000		crushed205rec											lushrockscar5		1				1				lushrocksmudge5		
+Lush\ROCKS.LushCrushed206	Lush	Rock	rocks	0	4	4	14	lushrocks	crushed206	crushshad206	0	1	100	25	2000		crushed206rec											lushrockscar		1				1				lushrocksmudge		
+Lush\ROCKS.LushCrushed207	Lush	Rock	rocks	0	5	5	16	lushrocks	crushed207	crushshad207	0	1	100	25	2000		crushed207rec											lushrockscar4		1				1				lushrocksmudge4		
+Lush\ROCKS.LushCrushed208	Lush	Rock	rocks	0	5	5	14	lushrocks	crushed208	crushshad208	0	1	100	25	2000		crushed208rec											lushrockscar4		1				1				lushrocksmudge4		
+Lush\ROCKS.LushRockScar	Lush	Damaged Terrain	scars	0	4	4	0	lushrocks	lushrockscar		0	1	100		20000													lushrockscar						0						
+Lush\ROCKS.LushRockScar2	Lush	Damaged Terrain	scars	0	2	2	0	lushrocks	lushrockscar2		0	1	100		20000													lushrockscar2						0						
+Lush\ROCKS.LushRockScar3	Lush	Damaged Terrain	scars	0	1	1	0	lushrocks	lushrockscar3		0	1	100		20000													lushrockscar3						0						
+Lush\ROCKS.LushRockScar4	Lush	Damaged Terrain	scars	0	5	5	0	lushrocks	lushrockscar4		0	1	100		20000													lushrockscar4						0						
+Lush\ROCKS.LushRockScar5	Lush	Damaged Terrain	scars	0	3	3	0	lushrocks	lushrockscar5		0	1	100		20000													lushrockscar5						0						
+Lush\ROCKS.LushRockScar6	Lush	Damaged Terrain	scars	0	3	3	0	lushrocks	lushrockscar6		0	1	100		20000													lushrockscar6						0						
+Lush\ROCKS.LushRockSmudge	Lush	Damaged Terrain	smudges	0	4	4	0	lushrocks	lushrockscar		1	1	100		20000													lushrocksmudge						0						
+Lush\ROCKS.LushRockSmudge2	Lush	Damaged Terrain	smudges	0	2	2	0	lushrocks	lushrockscar2		1	1	100		20000													lushrocksmudge2						0						
+Lush\ROCKS.LushRockSmudge3	Lush	Damaged Terrain	smudges	0	1	1	0	lushrocks	lushrockscar3		1	1	100		20000													lushrocksmudge3						0						
+Lush\ROCKS.LushRockSmudge4	Lush	Damaged Terrain	smudges	0	5	5	0	lushrocks	lushrockscar4		1	1	100		20000													lushrocksmudge4						0						
+Lush\ROCKS.LushRockSmudge5	Lush	Damaged Terrain	smudges	0	3	3	0	lushrocks	lushrockscar5		1	1	100		20000													lushrocksmudge5						0						
+Lush\ROCKS.LushRockSmudge6	Lush	Damaged Terrain	smudges	0	3	3	0	lushrocks	lushrockscar6		1	1	100		20000													lushrocksmudge6						0						
+Lush\TREES.LushTree01	lush	Tree	trees	0	1	1	66	tall-tree	talltree1	tallshadow1	0	1	10				talltree1rec	250	tree1burn		Lush01crisp	5	15	5	40	TreeBurn	talltree3boom	tallsmudge	1	1		0	6	1				tallsmudge		
+Lush\TREES.Lush01crisp	lush	Burnt Tree	trees	0	1	1	66	tall-tree	talltree1crisp	crispshadow1	0	1	10				talltree1crec	50				5	15	5	70		talltree2cboom	tallsmudge	0	1		0	6	1				tallsmudge		
+Lush\TREES.Lush02	lush	Tree	trees	0	1	1	66	tall-tree	talltree2	tallshadow2	0	1	10				talltree2rec	250	tree2burn		Lush02crisp	5	15	5	40	TreeBurn	talltree3boom	tallsmudge2	1	1		0	6	1				tallsmudge2		
+Lush\TREES.Lush02crisp	lush	Burnt Tree	trees	0	1	1	66	tall-tree	talltree2crisp	crispshadow2	0	1	10				talltree2crec	50				5	15	5	70		talltree2cboom	tallsmudge2	0	1		0	6	1				tallsmudge2		
+Lush\TREES.Lush03	lush	Tree	trees	0	1	1	66	tall-tree	talltree3	tallshadow3	0	1	10				talltree3rec	250	tree3burn		Lush03crisp	5	15	5	40	TreeBurn	talltree3boom	tallsmudge	1	1		0	6	1				tallsmudge		
+Lush\TREES.Lush03crisp	lush	Burnt Tree	trees	0	1	1	66	tall-tree	talltree3crisp	crispshadow3	0	1	10				talltree3crec	50				5	15	5	70		talltree2cboom	tallsmudge	0	1		0	6	1				tallsmudge		
+Lush\TREES.Lush04	lush	Tree	trees	0	1	1	66	short-tree	tree04	treeshadow04	0	1	10				tree04rec	250	tree04burn		Lush04crisp	5	15	5	50	TreeBurn	tree05boom	shortsmudge	1	1		0	6	1				shortsmudge		
+Lush\TREES.Lush04crisp	lush	Burnt Tree	trees	0	1	1	66	short-tree	tree04crisp	crispshadow04	0	1	10				tree04crisprec	50				5	15	5	90		tree06crispboom	shortsmudge	0	1		0	6	1				shortsmudge		
+Lush\TREES.Lush05	lush	Tree	trees	0	1	1	66	short-tree	tree05	treeshadow05	0	1	10				tree05rec	250	tree05burn		Lush05crisp	5	15	5	50	TreeBurn	tree05boom	shortsmudge2	1	1		0	6	1				shortsmudge2		
+Lush\TREES.Lush05crisp	lush	Burnt Tree	trees	0	1	1	66	short-tree	tree05crisp	crispshadow05	0	1	10				tree05crisprec	50				5	15	5	90		tree06crispboom	shortsmudge2	0	1		0	6	1				shortsmudge2		
+Lush\TREES.Lush06	lush	Tree	trees	0	1	1	66	short-tree	tree06	treeshadow06	0	1	10				tree06rec	250	tree06burn		Lush06crisp	5	15	5	50	TreeBurn	tree05boom	shortsmudge3	1	1		0	6	1				shortsmudge3		
+Lush\TREES.Lush06crisp	lush	Burnt Tree	trees	0	1	1	66	short-tree	tree06crisp	crispshadow06	0	1	10				tree06crisprec	50				5	15	5	90		tree06crispboom	shortsmudge3	0	1		0	6	1				shortsmudge3		
+Lush\TREES.Lush07	lush	Oolok Tree	trees	0	1	1	66	tuber-tree	tree07	treeshadow07	0	1	10	50			tree07rec	150	tree07burn		Lush07crisp	5	15	5	70	TreeBurn	tree07boom	tubertreesmudge2	1	1		0	6	1				tubertreesmudge		
+Lush\TREES.Lush07crisp	lush	Burnt Tree	trees	0	1	1	66	tuber-tree	tree07crisp	crispshadow07	0	1	10				tree07crisprec	50				5	15	5	90		tree09crispboom	tubertreesmudge	0	1		0	6	1				tubertreesmudge2		
+Lush\TREES.Lush08	lush	Oolok Tree	trees	0	1	1	66	tuber-tree	tree08	treeshadow08	0	1	10	50			tree08rec	150	tree08burn		Lush08crisp	5	15	5	70	TreeBurn	tree07boom	tubertreesmudge2	1	1		0	6	1				tubertreesmudge		
+Lush\TREES.Lush08crisp	lush	Burnt Tree	trees	0	1	1	66	tuber-tree	tree08crisp	crispshadow08	0	1	10				tree08crisprec	50				5	15	5	90		tree09crispboom	tubertreesmudge	0	1		0	6	1				tubertreesmudge2		
+Lush\TREES.Lush09	lush	Oolok Tree	trees	0	1	1	66	tuber-tree	tree09	treeshadow09	0	1	10	50			tree09rec	150	tree09burn		Lush09crisp	5	15	5	70	TreeBurn	tree07boom	tubertreesmudge	1	1		0	6	1				tubertreesmudge2		
+Lush\TREES.Lush09crisp	lush	Burnt Tree	trees	0	1	1	66	tuber-tree	tree09crisp	crispshadow09	0	1	10				tree09crisprec	50				5	15	5	90		tree09crispboom	tubertreesmudge2	0	1		0	6	1				tubertreesmudge		
+Lush\TREES.tallsmudge	lush	Damaged Terrain	smudges	0	1	1	0	tall-tree	tallsmudge		1		0															tallsmudge	0	0		0	6	0						
+Lush\TREES.tallsmudge2	lush	Damaged Terrain	smudges	0	1	1	0	tall-tree	tallsmudge2		1		0															tallsmudge2	0	0		0	6	0						
+Lush\TREES.shortsmudge	lush	Damaged Terrain	smudges	0	1	1	0	short-tree	shortsmudge		1		0															shortsmudge	0	0		0	6	0						
+Lush\TREES.shortsmudge2	lush	Damaged Terrain	smudges	0	1	1	0	short-tree	shortsmudge2		1		0															shortsmudge2	0	0		0	6	0						
+Lush\TREES.shortsmudge3	lush	Damaged Terrain	smudges	0	1	1	0	short-tree	shortsmudge3		1		0															shortsmudge3	0	0		0	6	0						
+Lush\TREES.tubertreesmudge	lush	Damaged Terrain	smudges	0	1	1	0	tuber-tree	tubertreesmudge		1		0															tubertreesmudge	0	0		0	6	0						
+Lush\TREES.tubertreesmudge2	lush	Damaged Terrain	smudges	0	1	1	0	tuber-tree	tubertreesmudge2		1		0															tubertreesmudge2	0	0		0	6	0						
+Lush\VENTS.LushVent01	lush	Thermal Vent	steamvents	1	1	1	0	lushvents	geovent01				0			1																			1					
+Lush\VENTS.LushVent02	lush	Thermal Vent	steamvents	1	1	1	0	lushvents	geovent02				0			1																			1					
+Lush\VENTS.LushVent03	lush	Thermal Vent	steamvents	1	1	1	0	lushvents	geovent03				0			1																			1					
+Lush\WEEDS.lushfoliage01	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant01		0	1	10				lushplant01rec	75	lushplant01burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage02	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant02		0	1	10				lushplant02rec	75	lushplant02burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage03	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant03		0	1	10				lushplant03rec	75	lushplant03burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage04	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant04		0	1	10				lushplant04rec	75	lushplant04burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage05	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant05		0	1	10				lushplant05rec	75	lushplant05burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage06	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant06		0	1	10				lushplant06rec	75	lushplant06burn		lushpsmudge01	5	15	5	90	ShrubBurn		lushpsmudge01	1	1		0	6	0				lushpsmudge01		
+Lush\WEEDS.lushfoliage07	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant07		0	1	10				lushplant07rec	75	lushplant07burn		lushpsmudge02	5	15	5	90	ShrubBurn		lushpsmudge02	1	1		0	6	0				lushpsmudge02		
+Lush\WEEDS.lushfoliage2-01	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant201	lushpshad201	0	1	10				lushplant201rec	75	lushplant201burn		lushpsmudge01	5	15	5	90	ShrubBurn		lushpsmudge01	1	1		0	6	0				lushpsmudge01		
+Lush\WEEDS.lushfoliage2-02	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant202	lushpshad202	0	1	10				lushplant202rec	75	lushplant202burn		lushpsmudge02	5	15	5	90	ShrubBurn		lushpsmudge02	1	1		0	6	0				lushpsmudge02		
+Lush\WEEDS.lushfoliage2-03	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant203	lushpshad203	0	1	10				lushplant203rec	75	lushplant203burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage2-04	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant204	lushpshad204	0	1	10				lushplant204rec	75	lushplant204burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushfoliage2-05	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushplant205	lushpshad205	0	1	10				lushplant205rec	75	lushplant205burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.lushvine01	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushvine01	lushvineshad01	0	1	10				lushvine01rec	75	lushvine01burn		lushpsmudge04	5	15	5	90	ShrubBurn		lushpsmudge04	1	1		0	6	0				lushpsmudge04		
+Lush\WEEDS.lushvine02	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushvine02	lushvineshad02	0	1	10				lushvine02rec	75	lushvine02burn		lushpsmudge02	5	15	5	90	ShrubBurn		lushpsmudge02	1	1		0	6	0				lushpsmudge02		
+Lush\WEEDS.lushvine03	lush	Foliage	foliage	0	1	1	1	lushfoliage	lushvine03	lushvineshad03	0	1	10				lushvine03rec	75	lushvine03burn		lushpsmudge03	5	15	5	90	ShrubBurn		lushpsmudge03	1	1		0	6	0				lushpsmudge03		
+Lush\WEEDS.Lushpsmudge01	Lush	Damaged Terrain	smudges	0	1	1	0	lushfoliage	lushpsmudge01		1		0															lushpsmudge01	0	0		0	6	0						
+Lush\WEEDS.Lushpsmudge02	Lush	Damaged Terrain	smudges	0	1	1	0	lushfoliage	lushpsmudge02		1		0															lushpsmudge02	0	0		0	6	0						
+Lush\WEEDS.Lushpsmudge03	Lush	Damaged Terrain	smudges	0	1	1	0	lushfoliage	lushpsmudge03		1		0															lushpsmudge03	0	0		0	6	0						
+Lush\WEEDS.Lushpsmudge04	Lush	Damaged Terrain	smudges	0	1	1	0	lushfoliage	lushpsmudge04		1		0															lushpsmudge04	0	0		0	6	0						
+Mars\watermetal.marsaquaore1	mars	Metal	metal	0	3	3	0	marsaquaore	marsaquaore1		0	1	5	88	32009	1																								
+Mars\watermetal.marsaquaore2	mars	Metal	metal	0	3	3	0	marsaquaore	marsaquaore2		0	1	5	121	32009	1																								
+Mars\watermetal.marsaquaore3	mars	Metal	metal	0	3	3	0	marsaquaore	marsaquaore3		0	1	5	244	32009	1																								
+Metal\buildings.MetalTower01	Metal	Comm Uplink	building	0	5	5	75	towers	tower01	tower01shad	0	1	100	150	2000		tower01rec										bigboom	tower01scar		1				1				tower01scar		
+Metal\buildings.Tower01Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower01scar		0	1	100		20000													tower01scar						0						
+Metal\buildings.MetalTower02	Metal	Comm Uplink	building	0	5	5	75	towers	tower02	tower02shad	0	1	100	150	2000		tower02rec										bigboom	tower02scar		1				1				tower02scar		
+Metal\buildings.Tower02Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower02scar		0	1	100		20000													tower02scar						0						
+Metal\buildings.MetalTower03	Metal	Ventilation Engine	building	0	8	7	20	towers	tower03	tower03shad	0	1	100	100	2000		tower03rec										bigboom	tower03scar		1				1				tower03scar		
+Metal\buildings.Tower03Scar	Metal	Damaged Surface	scars	0	8	7	0	towerscars	tower03scar		0	1	100		20000													tower03scar						0						
+Metal\buildings.MetalTower04	Metal	Ventilation Engine	building	0	7	7	0	towers	tower04	tower04shad	0	1	100	100	2000		tower04rec										bigboom	tower04scar		1				1				tower04scar		
+Metal\buildings.Tower04Scar	Metal	Damaged Surface	scars	0	7	7	0	towerscars	tower04scar		0	1	100		20000													tower04scar						0						
+Metal\buildings.MetalTower05	Metal	Thermal Regulator	building	0	5	5	0	towers	tower05	tower05shad	0	1	100	75	2000		tower05rec										smallboom	tower05scar		1				1				tower05scar		
+Metal\buildings.Tower05Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower05scar		0	1	100		20000													tower05scar						0						
+Metal\buildings.MetalTower06	Metal	Thermal Regulator	building	0	5	5	0	towers	tower06	tower06shad	0	1	100	75	2000		tower06rec										smallboom	tower06scar		1				1				tower06scar		
+Metal\buildings.Tower06Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower06scar		0	1	100		20000													tower06scar						0						
+Metal\buildings.MetalTower07	Metal	Seismic Monitor	building	0	6	5	0	towers	tower07	tower07shad	0	1	100	75	2000		tower07rec										smallboom	tower07scar		1				1				tower07scar		
+Metal\buildings.Tower07Scar	Metal	Damaged Surface	scars	0	6	5	0	towerscars	tower07scar		0	1	100		20000													tower07scar						0						
+Metal\buildings.MetalTower08	Metal	Seismic Monitor	building	0	5	6	0	towers	tower08	tower08shad	0	1	100	75	2000		tower08rec										smallboom	tower08scar		1				1				tower08scar		
+Metal\buildings.Tower08Scar	Metal	Damaged Surface	scars	0	5	6	0	towerscars	tower08scar		0	1	100		20000													tower08scar						0						
+Metal\buildings.MetalTower09	Metal	Regulator Complex	building	0	3	4	10	towers	tower09	tower09shad	0	1	100	50	2000		tower09rec										smallboom	tower09scar		1				1				tower09scar		
+Metal\buildings.Tower09Scar	Metal	Damaged Surface	scars	0	3	4	0	towerscars	tower09scar		0	1	100		20000													tower09scar						0						
+Metal\buildings.MetalTower10	Metal	Pressure Valve	building	0	1	2	3	towers	tower10	tower10shad	0	1	100	25	2000		tower10rec											tower10scar		1				1				tower10scar		
+Metal\buildings.Tower10Scar	Metal	Damaged Surface	scars	0	1	2	0	towerscars	tower10scar		0	1	100		20000													tower10scar						0						
+Metal\buildings.MetalTower11	Metal	Thermal Regulator	building	0	5	5	0	towers	tower11	tower11shad	0	1	100	75	2000		tower11rec										smallboom	tower11scar		1				1				tower11scar		
+Metal\buildings.Tower11Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower11scar		0	1	100		20000													tower11scar						0						
+Metal\buildings.MetalTower12	Metal	Thermal Regulator	building	0	5	5	0	towers	tower12	tower12shad	0	1	100	75	2000		tower12rec										smallboom	tower12scar		1				1				tower12scar		
+Metal\buildings.Tower12Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower12scar		0	1	100		20000													tower12scar						0						
+Metal\buildings.MetalTower13	Metal	Comm Uplink	building	0	5	5	75	towers	tower13	tower13shad	0	1	100	150	2000		tower13rec										bigboom	tower13scar		1				1				tower13scar		
+Metal\buildings.Tower13Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower13scar		0	1	100		20000													tower13scar						0						
+Metal\buildings.MetalTower14	Metal	Comm Uplink	building	0	5	5	75	towers	tower14	tower14shad	0	1	100	150	2000		tower14rec										bigboom	tower14scar		1				1				tower14scar		
+Metal\buildings.Tower14Scar	Metal	Damaged Surface	scars	0	5	5	0	towerscars	tower14scar		0	1	100		20000													tower14scar						0						
+Moon\ROCKS.MoonRock01	MOON	Rock	rocks	0	1	1	2	moonrocks2	rock01		0	1	100	25	2000		rock01rec											moonrock01scar		1				1				moonrock01scar		
+Moon\ROCKS.MoonRock01Scar	MOON	Damaged Terrain	scars	0	1	1	0	moonscars	rock01scar		0	1	100		20000													moonrock01scar						0						
+Moon\ROCKS.MoonRock02	MOON	Rock	rocks	0	1	1	2	moonrocks	rock02		0	1	100	25	2000		rock02rec											moonrock02scar		1				1				moonrock02scar		
+Moon\ROCKS.MoonRock02Scar	MOON	Damaged Terrain	scars	0	1	1	0	moonscars	rock02scar		0	1	100		20000													moonrock02scar						0						
+Moon\ROCKS.MoonRock03	MOON	Rock	rocks	0	1	1	3	moonrocks	rock03	rock03shad	0	1	100	25	2000		rock03rec											moonrock03scar		1				1				moonrock03scar		
+Moon\ROCKS.MoonRock03Scar	MOON	Damaged Terrain	scars	0	1	1	0	moonscars	rock03scar		0	1	100		20000													moonrock03scar						0						
+Moon\ROCKS.MoonRock04	MOON	Rock	rocks	0	1	1	2	moonrocks	rock04	rock04shad	0	1	100	25	2000		rock04rec											moonrock04scar		1				1				moonrock04scar		
+Moon\ROCKS.MoonRock04Scar	MOON	Damaged Terrain	scars	0	1	1	0	moonscars	rock04scar		0	1	100		20000													moonrock04scar						0						
+Moon\ROCKS.MoonRock05	MOON	Rock	rocks	0	1	1	1	moonrocks	rock05	rock05shad	0	1	100	25	2000		rock05rec											moonrock05scar		1				1				moonrock05scar		
+Moon\ROCKS.MoonRock05Scar	MOON	Damaged Terrain	scars	0	1	1	0	moonscars	rock05scar		0	1	100		20000													moonrock05scar						0						
+Moon\ROCKS.MoonRock06	MOON	Rock	rocks	0	3	1	3	moonrocks	rock06	rock06shad	0	1	100	25	2000		rock06rec											moonrock06scar		1				1				moonrock06scar		
+Moon\ROCKS.MoonRock06Scar	MOON	Damaged Terrain	scars	0	3	1	0	moonscars	rock06scar		0	1	100		20000													moonrock06scar						0						
+Moon\ROCKS.MoonRock07	MOON	Rock	rocks	0	3	2	4	moonrocks	rock07	rock07shad	0	1	100	25	2000		rock07rec										rockboom	moonrock07scar		1				1				moonrock07scar		
+Moon\ROCKS.MoonRock07Scar	MOON	Damaged Terrain	scars	0	3	2	0	moonscars	rock07scar		0	1	100		20000													moonrock07scar						0						
+Moon\ROCKS.MoonRock08	MOON	Rock	rocks	0	3	3	4	moonrocks	rock08	rock08shad	0	1	100	50	2000		rock08rec										rockboom	moonrock08scar		1				1				moonrock08scar		
+Moon\ROCKS.MoonRock08Scar	MOON	Damaged Terrain	scars	0	3	3	0	moonscars	rock08scar		0	1	100		20000													moonrock08scar						0						
+Moon\ROCKS.MoonRock09	MOON	Rock	rocks	0	3	3	4	moonrocks	rock09	rock09shad	0	1	100	50	2000		rock09rec										rockboom	moonrock09scar		1				1				moonrock09scar		
+Moon\ROCKS.MoonRock09Scar	MOON	Damaged Terrain	scars	0	3	3	0	moonscars	rock09scar		0	1	100		20000													moonrock09scar						0						
+Moon\ROCKS.MoonRock10	MOON	Rock	rocks	0	3	4	5	moonrocks	rock10	rock10shad	0	1	100	50	2000		rock10rec										rock10boom	mooncrush10		1				1				moonrock10scar		
+Moon\ROCKS.MoonRock10Scar	MOON	Damaged Terrain	scars	0	3	4	0	moonscars	rock10scar		0	1	100		20000													moonrock10scar						0						
+Moon\ROCKS.MoonRock11	MOON	Rock	rocks	0	5	4	5	moonrocks	rock11	rock11shad	0	1	100	75	2000		rock11rec										rock11boom	mooncrush11		1				1				moonrock11scar		
+Moon\ROCKS.MoonRock11Scar	MOON	Damaged Terrain	scars	0	5	4	0	moonscars	rock11scar		0	1	100		20000													moonrock11scar						0						
+Moon\ROCKS.MoonRock12	MOON	Rock	rocks	0	4	4	2	moonrocks	rock12	rock12shad	0	1	100	75	2000		rock12rec										rock12boom	mooncrush12		1				1				moonrock12scar		
+Moon\ROCKS.MoonRock12Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rock12scar		0	1	100		20000													moonrock12scar						0						
+Moon\ROCKS.MoonRock13	MOON	Rock	rocks	0	5	5	9	moonrocks	rock13	rock13shad	0	1	100	75	2000		rock13rec										rock13boom	mooncrush13		1				1				moonrock13scar		
+Moon\ROCKS.MoonRock13Scar	MOON	Damaged Terrain	scars	0	5	5	0	moonscars	rock13scar		0	1	100		20000													moonrock13scar						0						
+Moon\ROCKS.MoonRock14	MOON	Rock	rocks	0	4	4	6	moonrocks	rock14	rock14shad	0	1	100	75	2000		rock14rec										rock14boom	mooncrush14		1				1				moonrock14scar		
+Moon\ROCKS.MoonRock14Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rock14scar		0	1	100		20000													moonrock14scar						0						
+Moon\ROCKS.MoonRock15	MOON	Rock	rocks	0	6	6	8	moonrocks	rock15	rock15shad	0	1	100	100	2000		rock15rec										rock15boom	mooncrush15		1				1				moonrock15scar		
+Moon\ROCKS.MoonRock15Scar	MOON	Damaged Terrain	scars	0	6	6	0	moonscars	rock15scar		0	1	100		20000													moonrock15scar						0						
+Moon\ROCKS.MoonRock16	MOON	Rock	rocks	0	4	4	8	moonrocks	rock16	rock16shad	0	1	100	75	2000		rock16rec										rock16boom	mooncrush16		1				1				moonrock16scar		
+Moon\ROCKS.MoonRock16Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rock16scar		0	1	100		20000													moonrock16scar						0						
+Moon\ROCKS.MoonRock17	MOON	Rock	rocks	0	5	5	8	moonrocks	rock17	rock17shad	0	1	100	100	2000		rock17rec										rock17boom	mooncrush17		1				1				moonrock17scar		
+Moon\ROCKS.MoonRock17Scar	MOON	Damaged Terrain	scars	0	5	5	0	moonscars	rock17scar		0	1	100		20000													moonrock17scar						0						
+Moon\ROCKS.MoonRock18	MOON	Rock	rocks	0	9	9	12	moonrocks	rock18	rock18shad	0	1	100	250	2000		rock18rec										rock18boom	mooncrush18		1				1				moonrock18scar		
+Moon\ROCKS.MoonRock18Scar	MOON	Damaged Terrain	scars	0	9	9	0	moonscars	rock18scar		0	1	100		20000													moonrock18scar						0						
+Moon\ROCKS.MoonRock19	MOON	Rock	rocks	0	6	7	8	moonrocks	rock19	rock19shad	0	1	100	150	2000		rock19rec										rock19boom	mooncrush19		1				1				moonrock19scar		
+Moon\ROCKS.MoonRock19Scar	MOON	Damaged Terrain	scars	0	6	7	0	moonscars	rock19scar		0	1	100		20000													moonrock19scar						0						
+Moon\ROCKS.MoonCrushA	MOON	Rock	rocks	0	8	6	0	mooncrush	rockcrush01	rockcrush01shad	0	1	100	50	2000		rockcrush01rec										rockcrush01boom	mooncrushAscar		1				1				mooncrushAscar		
+Moon\ROCKS.MoonCrushAScar	MOON	Damaged Terrain	scars	0	8	6	0	moonscars	rockcrush01scar		0	1	100		20000													mooncrushAscar						0						
+Moon\ROCKS.MoonCrushB	MOON	Rock	rocks	0	5	5	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrushBscar		1				1				mooncrushBscar		
+Moon\ROCKS.MoonCrushBScar	MOON	Damaged Terrain	scars	0	5	5	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrushBscar						0						
+Moon\ROCKS.MoonCrushC	MOON	Rock	rocks	0	2	2	0	mooncrush	rockcrush03	rockcrush03shad	0	1	100	25	2000		rockcrush03rec											mooncrushCscar		1				1				mooncrushCscar		
+Moon\ROCKS.MoonCrushCScar	MOON	Damaged Terrain	scars	0	8	6	0	moonscars	rockcrush03scar		0	1	100		20000													mooncrushCscar						0						
+Moon\ROCKS.MoonCrush18	MOON	Rock	rocks	0	9	9	0	mooncrush	rockcrush01	rockcrush01shad	0	1	100	50	2000		rockcrush01rec										rockcrush01boom	mooncrush18scar		1				1				mooncrush18scar		
+Moon\ROCKS.MoonCrush18Scar	MOON	Damaged Terrain	scars	0	9	9	0	moonscars	rockcrush01scar		0	1	100		20000													mooncrush18scar						0						
+Moon\ROCKS.MoonCrush19	MOON	Rock	rocks	0	6	7	0	mooncrush	rockcrush01	rockcrush01shad	0	1	100	50	2000		rockcrush01rec										rockcrush01boom	mooncrush19scar		1				1				mooncrush19scar		
+Moon\ROCKS.MoonCrush19Scar	MOON	Damaged Terrain	scars	0	6	7	0	moonscars	rockcrush01scar		0	1	100		20000													mooncrush19scar						0						
+Moon\ROCKS.MoonCrush10	MOON	Rock	rocks	0	3	4	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush10scar		1				1				mooncrush10scar		
+Moon\ROCKS.MoonCrush10Scar	MOON	Damaged Terrain	scars	0	3	4	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush10scar						0						
+Moon\ROCKS.MoonCrush11	MOON	Rock	rocks	0	5	4	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush11scar		1				1				mooncrush11scar		
+Moon\ROCKS.MoonCrush11Scar	MOON	Damaged Terrain	scars	0	5	4	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush11scar						0						
+Moon\ROCKS.MoonCrush12	MOON	Rock	rocks	0	4	4	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush12scar		1				1				mooncrush12scar		
+Moon\ROCKS.MoonCrush12Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush12scar						0						
+Moon\ROCKS.MoonCrush13	MOON	Rock	rocks	0	5	5	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush13scar		1				1				mooncrush13scar		
+Moon\ROCKS.MoonCrush13Scar	MOON	Damaged Terrain	scars	0	5	5	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush13scar						0						
+Moon\ROCKS.MoonCrush14	MOON	Rock	rocks	0	4	4	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush14scar		1				1				mooncrush14scar		
+Moon\ROCKS.MoonCrush14Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush14scar						0						
+Moon\ROCKS.MoonCrush15	MOON	Rock	rocks	0	6	6	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush15scar		1				1				mooncrush15scar		
+Moon\ROCKS.MoonCrush15Scar	MOON	Damaged Terrain	scars	0	6	6	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush15scar						0						
+Moon\ROCKS.MoonCrush16	MOON	Rock	rocks	0	4	4	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush16scar		1				1				mooncrush16scar		
+Moon\ROCKS.MoonCrush16Scar	MOON	Damaged Terrain	scars	0	4	4	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush16scar						0						
+Moon\ROCKS.MoonCrush17	MOON	Rock	rocks	0	5	5	0	mooncrush	rockcrush02	rockcrush02shad	0	1	100	50	2000		rockcrush02rec										rockcrush02boom	mooncrush17scar		1				1				mooncrush17scar		
+Moon\ROCKS.MoonCrush17Scar	MOON	Damaged Terrain	scars	0	5	5	0	moonscars	rockcrush02scar		0	1	100		20000													mooncrush17scar						0						
+Slate\METAL.SlateMetal1	slate	Metal	metal	0	3	3	0	slateveins	slatevein03		0	1	5	165	32009	1																								
+Slate\METAL.SlateMetal2	slate	Metal	metal	0	3	3	0	slateveins	slatevein02		0	1	5	174	32009	1																								
+Slate\METAL.SlateMetal3	slate	Metal	metal	0	3	3	0	slateveins	slatevein03		0	1	5	173	32009	1																								
+Slate\METAL.SlateMetal4	slate	Metal	metal	0	3	3	0	slateveins	slatevein05		0	1	5	250	32009	1																								
+Slate\METAL.SlateMetal5	slate	Metal	metal	0	3	3	0	slateveins	slatevein09		0	1	5	194	32009	1																								
+Slate\METAL.SlateMetal6	slate	Metal	metal	0	6	3	0	slateveins	slatevein06		0	1	5	241	32009	1																								
+Slate\METAL.SlateMetal7	slate	Metal	metal	0	3	3	0	slateveins	slatevein07		0	1	5	154	32009	1																								
+Slate\METAL.SlateMetal8	slate	Metal	metal	0	3	3	0	slateveins	slatevein04		0	1	5	195	32009	1																								
+Slate\METAL.SlateMetal9	slate	Metal	metal	0	3	3	0	slateveins	slatevein08		0	1	5	210	32009	1																								
+Slate\METAL.SlateMetal10	slate	Metal	metal	0	3	3	0	slateveins	slatevein11		0	1	5	197	32009	1																								
+Slate\METAL.SlateMetal11	slate	Metal	metal	0	3	3	0	slateveins	slatevein16		0	1	5	185	32009	1																								
+Slate\METAL.SlateMetal12	slate	Metal	metal	0	3	3	0	slateveins	slatevein14		0	1	5	168	32009	1																								
+Slate\METAL.SlateMetal13	slate	Metal	metal	0	6	3	0	slateveins	slatevein10		0	1	5	230	32009	1																								
+Slate\METAL.SlateMetal14	slate	Metal	metal	0	3	3	0	slateveins	slatevein15		0	1	5	176	32009	1																								
+Slate\METAL.SlateMetal15	slate	Metal	metal	0	3	3	0	slateveins	slatevein13		0	1	5	182	32009	1																								
+Slate\METAL.SlateMetal16	slate	Metal	metal	0	3	3	0	slateveins	slatevein12		0	1	5	198	32009	1																								
+Slate\ROCKS1.SlateRock01	Slate	Rock	rocks	0	1	1	18	slaterocks1	sl-rock01	sl-rock01shad	0	1	100	40	2000		sl-rock01rec											sl-rockscar1		1				1				sl-rocksmudge1		
+Slate\ROCKS1.SlateRock02	Slate	Rock	rocks	0	1	1	17	slaterocks1	sl-rock02	sl-rock02shad	0	1	100	42	2000		sl-rock02rec											sl-rockscar1		1				1				sl-rocksmudge1		
+Slate\ROCKS1.SlateRock03	Slate	Rock	rocks	0	2	2	26	slaterocks1	sl-rock03	sl-rock03shad	0	1	100	55	2000		sl-rock03rec											SlateCrushed03		1				1				sl-rocksmudge3		
+Slate\ROCKS1.SlateRock04	Slate	Rock	rocks	0	2	2	25	slaterocks1	sl-rock04	sl-rock04shad	0	1	100	60	2000		sl-rock04rec											SlateCrushed04		1				1				sl-rocksmudge4		
+Slate\ROCKS1.SlateRock05	Slate	Rock	rocks	0	3	3	50	slaterocks1	sl-rock05	sl-rock05shad	0	1	100	106	2000		sl-rock05rec											SlateCrushed05		1				1				sl-rocksmudge5		
+Slate\ROCKS1.SlateCrushed03	Slate	Rock	rocks	0	2	2	18	slaterocks1	sl-crush03	sl-crush03shad	0	1	100	20	2000		sl-crush03rec											sl-rockscar3		1				1				sl-rocksmudge3		
+Slate\ROCKS1.SlateCrushed04	Slate	Rock	rocks	0	2	2	15	slaterocks1	sl-crush04	sl-crush04shad	0	1	100	55	2000		sl-crush04rec											sl-rockscar4		1				1				sl-rocksmudge4		
+Slate\ROCKS1.SlateCrushed05	Slate	Rock	rocks	0	3	3	25	slaterocks1	sl-crush05	sl-crush05shad	0	1	100	20	2000		sl-crush05rec											slatecrushed205		1				1				sl-rocksmudge5		
+Slate\ROCKS1.SlateCrushed205	Slate	Rock	rocks	0	3	3	11	slaterocks1	sl-crush205	sl-crush205shad	0	1	100	15	2000		sl-crush205rec											sl-rockscar5		1				1				sl-rocksmudge5		
+Slate\ROCKS1.Sl-RockScar1	Slate	Damaged Terrain	scars	0	1	1	0	slaterocks1	sl-rockscar1		0	1	100		20000													sl-rockscar1						0						
+Slate\ROCKS1.Sl-RockScar2	Slate	Damaged Terrain	scars	0	1	1	0	slaterocks1	sl-rockscar2		0	1	100		20000													sl-rockscar2						0						
+Slate\ROCKS1.Sl-RockScar3	Slate	Damaged Terrain	scars	0	2	2	0	slaterocks1	sl-rockscar3		0	1	100		20000													sl-rockscar3						0						
+Slate\ROCKS1.Sl-RockScar4	Slate	Damaged Terrain	scars	0	2	2	0	slaterocks1	sl-rockscar4		0	1	100		20000													sl-rockscar4						0						
+Slate\ROCKS1.Sl-RockScar5	Slate	Damaged Terrain	scars	0	3	3	0	slaterocks1	sl-rockscar5		0	1	100		20000													sl-rockscar5						0						
+Slate\ROCKS1.Sl-RockSmudge1	Slate	Damaged Terrain	scars	0	1	1	0	slaterocks1	sl-rockscar1		1	1	100		20000													sl-rocksmudge1						0						
+Slate\ROCKS1.Sl-RockSmudge2	Slate	Damaged Terrain	scars	0	1	1	0	slaterocks1	sl-rockscar2		1	1	100		20000													sl-rocksmudge2						0						
+Slate\ROCKS1.Sl-RockSmudge3	Slate	Damaged Terrain	scars	0	2	2	0	slaterocks1	sl-rockscar3		1	1	100		20000													sl-rocksmudge3						0						
+Slate\ROCKS1.Sl-RockSmudge4	Slate	Damaged Terrain	scars	0	2	2	0	slaterocks1	sl-rockscar4		1	1	100		20000													sl-rocksmudge4						0						
+Slate\ROCKS1.Sl-RockSmudge5	Slate	Damaged Terrain	scars	0	3	3	0	slaterocks1	sl-rockscar5		1	1	100		20000													sl-rocksmudge5						0						
+Slate\ROCKS2.SlateRock06	slate	Rock	rocks	0	3	3	60	slaterocks2	sl-rock06	sl-rock06shad	0	1	100	110	2000		sl-rock06rec											slatecrushed06		1				1				sl-rocksmudge6		
+Slate\ROCKS2.SlateRock07	slate	Rock	rocks	0	4	4	62	slaterocks2	sl-rock07	sl-rock07shad	0	1	100	175	2000		sl-rock07rec											slatecrushed07		1				1				sl-rocksmudge7		
+Slate\ROCKS2.SlateRock08	slate	Rock	rocks	0	5	5	88	slaterocks2	sl-rock08	sl-rock08shad	0	1	100	240	2000		sl-rock08rec											slatecrushed08		1				1				sl-rocksmudge8		
+Slate\ROCKS2.SlateRock09	slate	Rock	rocks	0	5	5	70	slaterocks2	sl-rock09	sl-rock09shad	0	1	100	249	2000		sl-rock09rec											slatecrushed09		1				1				sl-rocksmudge9		
+Slate\ROCKS2.SlateCrushed06	slate	Rock	rocks	0	3	3	26	slaterocks2	sl-crush06	sl-crush06shad	0	1	100	40	2000		sl-crush06rec											slatecrushed206		1				1				sl-rocksmudge6		
+Slate\ROCKS2.SlateCrushed07	slate	Rock	rocks	0	4	4	29	slaterocks2	sl-crush07	sl-crush07shad	0	1	100	60	2000		sl-crush07rec											slatecrushed207		1				1				sl-rocksmudge7		
+Slate\ROCKS2.SlateCrushed08	slate	Rock	rocks	0	5	5	42	slaterocks2	sl-crush08	sl-crush08shad	0	1	100	65	2000		sl-crush08rec											slatecrushed208		1				1				sl-rocksmudge8		
+Slate\ROCKS2.SlateCrushed09	slate	Rock	rocks	0	5	5	31	slaterocks2	sl-crush09	sl-crush09shad	0	1	100	85	2000		sl-crush09rec											slatecrushed209		1				1				sl-rocksmudge9		
+Slate\ROCKS2.SlateCrushed206	slate	Rock	rocks	0	3	3	6	slaterocks2	sl-crush206	sl-crush206shad	0	1	100	25	2000		sl-crush206rec											sl-rockscar6		1				1				sl-rocksmudge6		
+Slate\ROCKS2.SlateCrushed207	slate	Rock	rocks	0	4	4	8	slaterocks2	sl-crush207	sl-crush207shad	0	1	100	50	2000		sl-crush207rec											sl-rockscar7		1				1				sl-rocksmudge7		
+Slate\ROCKS2.SlateCrushed208	slate	Rock	rocks	0	5	5	11	slaterocks2	sl-crush208	sl-crush208shad	0	1	100	50	2000		sl-crush208rec											sl-rockscar8		1				1				sl-rocksmudge8		
+Slate\ROCKS2.SlateCrushed209	slate	Rock	rocks	0	5	5	9	slaterocks2	sl-crush209	sl-crush209shad	0	1	100	75	2000		sl-crush209rec											sl-rockscar9		1				1				sl-rocksmudge9		
+Slate\ROCKS2.Sl-RockScar6	slate	Damaged Terrain	scars	0	3	3	0	slaterocks2	sl-rockscar6		0	1	100		20000													sl-rockscar6						0						
+Slate\ROCKS2.Sl-RockScar7	slate	Damaged Terrain	scars	0	4	4	0	slaterocks2	sl-rockscar7		0	1	100		20000													sl-rockscar7						0						
+Slate\ROCKS2.Sl-RockScar8	slate	Damaged Terrain	scars	0	5	5	0	slaterocks2	sl-rockscar8		0	1	100		20000													sl-rockscar8						0						
+Slate\ROCKS2.Sl-RockScar9	slate	Damaged Terrain	scars	0	5	5	0	slaterocks2	sl-rockscar9		0	1	100		20000													sl-rockscar9						0						
+Slate\ROCKS2.Sl-RockSmudge6	slate	Damaged Terrain	scars	0	3	3	0	slaterocks2	sl-rockscar6		1	1	100		20000													sl-rocksmudge6						0						
+Slate\ROCKS2.Sl-RockSmudge7	slate	Damaged Terrain	scars	0	4	4	0	slaterocks2	sl-rockscar7		1	1	100		20000													sl-rocksmudge7						0						
+Slate\ROCKS2.Sl-RockSmudge8	slate	Damaged Terrain	scars	0	5	5	0	slaterocks2	sl-rockscar8		1	1	100		20000													sl-rocksmudge8						0						
+Slate\ROCKS2.Sl-RockSmudge9	slate	Damaged Terrain	scars	0	5	5	0	slaterocks2	sl-rockscar9		1	1	100		20000													sl-rocksmudge9						0						
+Slate\SPIRES.SlateStrata01	slate	Spire	spires	0	8	3	94	slatestrata	sl-strata01	sl-strata01shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata02	slate	Spire	spires	0	9	7	220	slatestrata	sl-strata02	sl-strata02shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata03	slate	Spire	spires	0	11	7	350	slatestrata	sl-strata03	sl-strata03shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata04	slate	Spire	spires	0	9	5	300	slatestrata	sl-strata04	sl-strata04shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata05	slate	Spire	spires	0	8	7	200	slatestrata	sl-strata05	sl-strata05shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata06	slate	Spire	spires	0	5	6	160	slatestrata	sl-strata06	sl-strata06shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.SlateStrata07	slate	Spire	spires	0	7	4	80	slatestrata	sl-strata07	sl-strata07shad	0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata01	slate	Spire	spires	0	7	5	360	slatestrata	sl-fogstrata01		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata02	slate	Spire	spires	0	4	4	310	slatestrata	sl-fogstrata02		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata03	slate	Spire	spires	0	7	14	460	slatestrata	sl-fogstrata03		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata04	slate	Spire	spires	0	5	13	440	slatestrata	sl-fogstrata04		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata05	slate	Spire	spires	0	6	4	260	slatestrata	sl-fogstrata05		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata06	slate	Spire	spires	0	10	8	110	slatestrata	sl-fogstrata06		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata07	slate	Spire	spires	0	8	3	140	slatestrata	sl-fogstrata07		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata08	slate	Spire	spires	0	12	11	160	slatestrata	sl-fogstrata08		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata09	slate	Spire	spires	0	7	9	160	slatestrata	sl-fogstrata09		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata10	slate	Spire	spires	0	11	8	400	slatestrata	sl-fogstrata10		0	1	100		2000	1																		1					1	1
+Slate\SPIRES.FogStrata11	slate	Spire	spires	0	4	2	160	slatestrata	sl-fogstrata11		0	1	100		2000	1																		1					1	1
+Slate\VENTS.SlateVent01	slate	Thermal Vent	steamvents	1	3	3	0	slatevents	slatevent1				0			1																			1					
+Slate\VENTS.SlateVent02	slate	Thermal Vent	steamvents	1	3	3	0	slatevents	slatevent2				0			1																			1					
+Slate\VENTS.SlateVent03	slate	Thermal Vent	steamvents	1	3	3	0	slatevents	slatevent3				0			1																			1					
+Urban\BARRIERS.Barrier01	urban	barrier	barriers	0	1	2	20	barriers	barrier01		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier02	urban	barrier	barriers	0	1	2	20	barriers	barrier02		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier03	urban	barrier	barriers	0	1	4	20	barriers	barrier03		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier04	urban	barrier	barriers	0	1	5	80	barriers	barrier04		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier05	urban	barrier	barriers	0	1	2	20	barriers	barrier05		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier06	urban	barrier	barriers	0	2	1	20	barriers	barrier06	barriershad06	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier07	urban	barrier	barriers	0	2	1	20	barriers	barrier07	barriershad07	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier08	urban	barrier	barriers	0	4	1	20	barriers	barrier08	barriershad08	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier09	urban	barrier	barriers	0	5	1	20	barriers	barrier09	barriershad09	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier10	urban	barrier	barriers	0	5	1	20	barriers	barrier10	barriershad10	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier11	urban	barrier	barriers	0	2	1	20	barriers	barrier11		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier12	urban	barrier	barriers	0	3	2	20	barriers	barrier12	barriershad12	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier13	urban	barrier	barriers	0	3	2	20	barriers	barrier13	barriershad1	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier14	urban	barrier	barriers	0	3	2	20	barriers	barrier14	barriershad14	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier15	urban	barrier	barriers	0	3	2	20	barriers	barrier15	barriershad15	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier16	urban	barrier	barriers	0	4	4	20	barriers	barrier16	barriershad16	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier17	urban	barrier	barriers	0	4	4	20	barriers	barrier17		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier18	urban	barrier	barriers	0	4	4	20	barriers	barrier18	barriershad18	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier19	urban	barrier	barriers	0	4	4	20	barriers	barrier19	barriershad19	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier20	urban	barrier	barriers	0	2	2	20	barriers	barrier20	barriershad20	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier21	urban	barrier	barriers	0	2	2	20	barriers	barrier21	barriershad21	0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier22	urban	barrier	barriers	0	2	2	20	barriers	barrier22		0	1	100		2000	1																		1					1	1
+Urban\BARRIERS.Barrier23	urban	barrier	barriers	0	2	2	20	barriers	barrier23	barriershad23	0	1	100		2000	1																		1					1	1
+Urban\buildings_b.Building01	urban	Building	buildings	0	11	10	460	ur-buildings1	ur-building01	u-buildshad01	0	1	100	10400	3000		u-buildrec01										ur-boom01	Building01b	0	1		0	6	1				Buildingscar01		
+Urban\buildings_b.Building01b	urban	Building	buildings	0	11	10	400	ur-buildings1	u-buildwreck01	u-wreckshad01	0	1	100	8000	1500		u-wreckrec01										ur-boom01b	Building01c	0	1		0	6	1				Buildingscar01		
+Urban\buildings_b.Building01c	urban	Building	buildings	0	11	10	100	ur-buildings1	u-gird01	u-girdshad01	0	1	100	4000	1000		u-girdrec01										ur-boom01c	Buildingscar01	0	1		0	6	1				Buildingscar01		
+Urban\buildings_b.Building02	urban	Willy Gates Bldg	buildings	0	9	11	200	ur-buildings1	ur-building02	u-buildshad02	0	1	100	6000	2000		u-buildrec02										ur-boom02	Building02b	0	1		0	6	1				Buildingscar02		
+Urban\buildings_b.Building02b	urban	Willy Gates Bldg	buildings	0	9	11	175	ur-buildings1	u-buildwreck02	u-wreckshad02	0	1	100	4000	1500		u-wreckrec02										ur-boom02b	Building02c	0	1		0	6	1				Buildingscar02		
+Urban\buildings_b.Building02c	urban	Willy Gates Bldg	buildings	0	9	11	385	ur-buildings1	u-gird02	u-girdshad02	0	1	100	3000	1000		u-girdrec02										ur-boom02c	Buildingscar02	0	1		0	6	1				Buildingscar02		
+Urban\buildings_b.Building03	urban	Building	buildings	0	9	10	280	ur-buildings1	ur-building03	u-buildshad03	0	1	100	7500	2000		u-buildrec03										ur-boom03	Building03b	0	1		0	6	1				Buildingscar03		
+Urban\buildings_b.Building03b	urban	Building	buildings	0	9	10	200	ur-buildings1	u-buildwreck03	u-wreckshad03	0	1	100	5000	1500		u-wreckrec03										ur-boom03b	Building03c	0	1		0	6	1				Buildingscar03		
+Urban\buildings_b.Building03c	urban	Building	buildings	0	9	10	185	ur-buildings1	u-gird03	u-girdshad03	0	1	100	2500	1000		u-girdrec03										ur-boom03c	Buildingscar03	0	1		0	6	1				Buildingscar03		
+Urban\buildings_b.Building04	urban	Building	buildings	0	12	8	490	ur-buildings1	ur-building04	u-buildshad04	0	1	100	10000	4000		u-buildrec04										ur-boom04	Building04b	0	1		0	6	1				Buildingscar04		
+Urban\buildings_b.Building04b	urban	Building	buildings	0	12	8	400	ur-buildings1	u-buildwreck04	u-wreckshad04	0	1	100	7000	2500		u-wreckrec04										ur-boom04b	Building04c	0	1		0	6	1				Buildingscar04		
+Urban\buildings_b.Building04c	urban	Building	buildings	0	12	8	385	ur-buildings1	u-gird04	u-girdshad04	0	1	100	4000	1500		u-girdrec04										ur-boom04c	Buildingscar04	0	1		0	6	1				Buildingscar04		
+Urban\buildings_b.Building05	urban	Building	buildings	0	9	7	420	ur-buildings1	ur-building05	u-buildshad05	0	1	100	7000	3000		u-buildrec05										ur-boom05	Building05b	0	1		0	6	1				Buildingscar05		
+Urban\buildings_b.Building05b	urban	Building	buildings	0	9	7	380	ur-buildings1	u-buildwreck05	u-wreckshad05	0	1	100	4000	1500		u-wreckrec05										ur-boom05b	Building05c	0	1		0	6	1				Buildingscar05		
+Urban\buildings_b.Building05c	urban	Building	buildings	0	9	7	325	ur-buildings1	u-gird05	u-girdshad05	0	1	100	2500	1000		u-girdrec05										ur-boom05c	Buildingscar05	0	1		0	6	1				Buildingscar05		
+Urban\buildings_b.Buildingscar01	urban	Damaged Terrain	scars	0	11	10	0	ur-leftovers	ur-buildscar01		1		0															Buildingscar01	0	0		0	6	0						
+Urban\buildings_b.Buildingscar02	urban	Damaged Terrain	scars	0	9	14	0	ur-buildings1	ur-buildscar02		1		0															Buildingscar02	0	0		0	6	0						
+Urban\buildings_b.Buildingscar03	urban	Damaged Terrain	scars	0	9	10	0	ur-buildings1	ur-buildscar03		1		0															Buildingscar03	0	0		0	6	0						
+Urban\buildings_b.Buildingscar04	urban	Damaged Terrain	scars	0	12	10	0	ur-buildings1	ur-buildscar04		1		0															Buildingscar04	0	0		0	6	0						
+Urban\buildings_b.Buildingscar05	urban	Damaged Terrain	scars	0	9	7	0	ur-buildings1	ur-buildscar05		1		0															Buildingscar05	0	0		0	6	0						
+Urban\buildings_b.Building06	urban	Building	buildings	0	12	6	220	ur-buildings2	ur-building06	u-buildshad06	0	1	100	11000	4000		u-buildrec06										ur-boom06	Building06b	0	1		0	6	1				Buildingscar06		
+Urban\buildings_b.Building06b	urban	Building	buildings	0	12	6	220	ur-buildings2	u-buildwreck06	u-wreckshad06	0	1	100	9000	2500		u-wreckrec06										ur-boom06b	Building06c	0	1		0	6	1				Buildingscar06		
+Urban\buildings_b.Building06c	urban	Building	buildings	0	12	6	180	ur-buildings2	u-gird06	u-girdshad06	0	1	100	5000	2000		u-girdrec06										ur-boom06c	Buildingscar06	0	1		0	6	1				Buildingscar06		
+Urban\buildings_b.Building07	urban	Building	buildings	0	12	10	460	ur-buildings2	ur-building07	u-buildshad07	0	1	100	9985	3800		u-buildrec07										ur-boom07	Building07b	0	1		0	6	1				Buildingscar07		
+Urban\buildings_b.Building07b	urban	Building	buildings	0	12	10	420	ur-buildings2	u-buildwreck07	u-wreckshad07	0	1	100	5800	2500		u-wreckrec07										ur-boom07b	Building07c	0	1		0	6	1				Buildingscar07		
+Urban\buildings_b.Building07c	urban	Building	buildings	0	12	10	250	ur-buildings2	u-gird07	u-girdshad07	0	1	100	3500	1500		u-girdrec07										ur-boom07c	Buildingscar07	0	1		0	6	1				Buildingscar07		
+Urban\buildings_b.Building08	urban	Building	buildings	0	6	4	110	ur-buildings2	ur-building08	u-buildshad08	0	1	100	2000	1500		u-buildrec08										ur-boom08	Building08b	0	1		0	6	1				Buildingscar08		
+Urban\buildings_b.Building08b	urban	Building	buildings	0	6	4	100	ur-buildings2	u-buildwreck08	u-wreckshad08	0	1	100	1000	925		u-wreckrec08										ur-boom08b	Building08c	0	1		0	6	1				Buildingscar08		
+Urban\buildings_b.Building08c	urban	Building	buildings	0	6	4	85	ur-buildings2	u-gird08	u-girdshad08	0	1	100	500	500		u-girdrec08										ur-boom08c	Buildingscar08	0	1		0	6	1				Buildingscar08		
+Urban\buildings_b.Building09	urban	Building	buildings	0	5	5	110	ur-buildings2	ur-building09	u-buildshad09	0	1	100	1850	1000		u-buildrec09										ur-boom09	Building09b	0	1		0	6	1				Buildingscar09		
+Urban\buildings_b.Building09b	urban	Building	buildings	0	5	5	95	ur-buildings2	u-buildwreck09	u-wreckshad09	0	1	100	875	750		u-wreckrec09										ur-boom09b	Building09c	0	1		0	6	1				Buildingscar09		
+Urban\buildings_b.Building09c	urban	Building	buildings	0	5	5	70	ur-buildings2	u-gird09	u-girdshad09	0	1	100	500	500		u-girdrec09										ur-boom09c	Buildingscar09	0	1		0	6	1				Buildingscar09		
+Urban\buildings_b.Building10	urban	Cheese Factory	buildings	0	7	11	105	ur-buildings2	ur-building10	u-buildshad10	0	1	100	6500	2000		u-buildrec10										ur-boom10	Building10b	0	1		0	6	1				Buildingscar10		
+Urban\buildings_b.Building10b	urban	Cheese Factory	buildings	0	7	11	95	ur-buildings2	u-buildwreck10	u-wreckshad10	0	1	100	3500	1500		u-buildrec10										ur-boom10b	Building10c	0	1		0	6	1				Buildingscar10		
+Urban\buildings_b.Building10c	urban	Cheese Factory	buildings	0	7	11	85	ur-buildings2	u-gird10	u-girdshad10	0	1	100	1500	875		u-girdrec10										ur-boom10c	Buildingscar10	0	1		0	6	1				Buildingscar10		
+Urban\buildings_b.Buildingscar06	urban	Damaged Terrain	scars	0	12	6	0	ur-leftovers	ur-buildscar06		1		0															Buildingscar06	0	0		0	6	0						
+Urban\buildings_b.Buildingscar07	urban	Damaged Terrain	scars	0	12	10	0	ur-buildings2	ur-buildscar07		1		0															Buildingscar07	0	0		0	6	0						
+Urban\buildings_b.Buildingscar08	urban	Damaged Terrain	scars	0	6	4	0	ur-buildings2	ur-buildscar08		1		0															Buildingscar08	0	0		0	6	0						
+Urban\buildings_b.Buildingscar09	urban	Damaged Terrain	scars	0	5	5	0	ur-buildings2	ur-buildscar09		1		0															Buildingscar09	0	0		0	6	0						
+Urban\buildings_b.Buildingscar10	urban	Damaged Terrain	scars	0	7	11	0	ur-buildings2	ur-buildscar10		1		0															Buildingscar10	0	0		0	6	0						
+Urban\buildings_b.Building11	urban	Building	buildings	0	5	8	140	ur-buildings3	ur-building11	u-buildshad11	0	1	100	7000	2500		u-buildrec11										ur-boom11	Building11b	0	1		0	6	1				Buildingscar11		
+Urban\buildings_b.Building11b	urban	Building	buildings	0	5	8	120	ur-buildings3	u-buildwreck11	u-wreckshad11	0	1	100	5000	2000		u-wreckrec11										ur-boom11b	Building11c	0	1		0	6	1				Buildingscar11		
+Urban\buildings_b.Building11c	urban	Building	buildings	0	5	8	95	ur-buildings3	u-gird11	u-girdshad11	0	1	100	3000	1000		u-girdrec11										ur-boom11c	Buildingscar11	0	1		0	6	1				Buildingscar11		
+Urban\buildings_b.Building12	urban	Building	buildings	0	5	5	230	ur-buildings3	ur-building12	u-buildshad12	0	1	95	4250	1000		u-buildrec12										ur-boom12	Building12b	0	1		0	6	1				Buildingscar12		
+Urban\buildings_b.Building12b	urban	Building	buildings	0	5	5	200	ur-buildings3	u-buildwreck12	u-wreckshad12	0	1	95	2600	750		u-wreckrec12										ur-boom12b	Building12c	0	1		0	6	1				Buildingscar12		
+Urban\buildings_b.Building12c	urban	Building	buildings	0	5	5	200	ur-buildings3	u-gird12	u-girdshad12	0	1	90	908	500		u-girdrec12										ur-boom12c	Buildingscar12	0	1		0	6	1				Buildingscar12		
+Urban\buildings_b.Building13	urban	Building	buildings	0	4	4	140	ur-buildings3	ur-building13	u-buildshad13	0	1	100	4000	1000		u-buildrec13										ur-boom13	Building13b	0	1		0	6	1				Buildingscar13		
+Urban\buildings_b.Building13b	urban	Building	buildings	0	4	4	100	ur-buildings3	u-buildwreck13	u-wreckshad13	0	1	100	1500	750		u-wreckrec13										ur-boom13b	Building13c	0	1		0	6	1				Buildingscar13		
+Urban\buildings_b.Building13c	urban	Building	buildings	0	4	4	385	ur-buildings3	u-gird13	u-girdshad13	0	1	100	975	500		u-girdrec13										ur-boom13c	Buildingscar13	0	1		0	6	1				Buildingscar13		
+Urban\buildings_b.Building14	urban	Building	buildings	0	5	5	160	ur-buildings3	ur-building14	u-buildshad14	0	1	100	5000	2000		u-buildrec14										ur-boom14	Building14b	0	1		0	6	1				Buildingscar14		
+Urban\buildings_b.Building14b	urban	Building	buildings	0	5	5	100	ur-buildings3	u-buildwreck14	u-wreckshad14	0	1	70	1000	975		u-wreckrec14										ur-boom14b	Building14c	0	1		0	6	1				Buildingscar14		
+Urban\buildings_b.Building14c	urban	Building	buildings	0	5	5	50	ur-buildings3	u-gird14	u-girdshad14	0	1	55	500	500		u-girdrec14										ur-boom14c	Buildingscar14	0	1		0	6	1				Buildingscar14		
+Urban\buildings_b.Building15	urban	Building	buildings	0	3	3	170	ur-buildings3	ur-building15	u-buildshad15	0	1	100	2900	2000		u-buildrec15										ur-boom15	Building15b	0	1		0	6	1				Buildingscar15		
+Urban\buildings_b.Building15b	urban	Building	buildings	0	3	3	95	ur-buildings3	u-buildwreck15	u-wreckshad15	0	1	90	1005	1500		u-wreckrec15										ur-boom15b	Building15c	0	1		0	6	1				Buildingscar15		
+Urban\buildings_b.Building15c	urban	Building	buildings	0	3	3	90	ur-buildings3	u-gird15	u-girdshad15	0	1	85	753	975		u-girdrec15										ur-boom15c	Buildingscar15	0	1		0	6	1				Buildingscar15		
+Urban\buildings_b.Buildingscar11	urban	Damaged Terrain	scars	0	5	7	0	ur-leftovers	ur-buildscar11		1		0															Buildingscar11	0	0		0	6	0						
+Urban\buildings_b.Buildingscar12	urban	Damaged Terrain	scars	0	5	5	0	ur-buildings3	ur-buildscar12		1		0															Buildingscar12	0	0		0	6	0						
+Urban\buildings_b.Buildingscar13	urban	Damaged Terrain	scars	0	4	4	0	ur-buildings3	ur-buildscar13		1		0															Buildingscar13	0	0		0	6	0						
+Urban\buildings_b.Buildingscar14	urban	Damaged Terrain	scars	0	5	5	0	ur-buildings3	ur-buildscar14		1		0															Buildingscar14	0	0		0	6	0						
+Urban\buildings_b.Buildingscar15	urban	Damaged Terrain	scars	0	3	3	0	ur-buildings3	ur-buildscar15		1		0															Buildingscar15	0	0		0	6	0						
+Urban\CARS.Car01	urban	Car	cars	0	1	1	14	cars	car01	carshad01	0	1	100	25	250		carec01										carboom01	carscar05	0	1		0	6	1				carscar05		
+Urban\CARS.Car02	urban	Car	cars	0	2	1	14	cars	car02	carshad02	0	1	100	30	250		carec02										carboom01	carscar01	0	1		0	6	1				carscar01		
+Urban\CARS.Car03	urban	Car	cars	0	2	1	15	cars	car03	carshad03	0	1	10	25			carec03										carboom01	carscar01	0	1		0	6	1				carscar01		
+Urban\CARS.Car04	urban	Car	cars	0	2	1	14	cars	car04	carshad04	0	1	100	35	250		carec04										carboom01	carscar01	0	1		0	6	1				carscar01		
+Urban\CARS.Car05	urban	Car	cars	0	2	1	15	cars	car05	carshad05	0	1	100	25	250		carec05										carboom01	carscar01	0	1		0	6	1				carscar01		
+Urban\CARS.Car06	urban	Car	cars	0	1	2	15	cars	car06	carshad06	0	1	100	30	250		carec06										carboom02	carscar02	0	1		0	6	1				carscar02		
+Urban\CARS.Car07	urban	Car	cars	0	1	2	15	cars	car07	carshad07	0	1	100	25	250		carec07										carboom02	carscar02	0	1		0	6	1				carscar02		
+Urban\CARS.Car08	urban	Car	cars	0	1	2	15	cars	car08	carshad08	0	1	100	35	250		carec08										carboom02	carscar02	0	1		0	6	1				carscar02		
+Urban\CARS.Car09	urban	Car	cars	0	1	2	15	cars	car09	carshad09	0	1	100	25	250		carec09										carboom02	carscar02	0	1		0	6	1				carscar02		
+Urban\CARS.Car10	urban	Car	cars	0	1	2	15	cars	car10	carshad10	0	1	100	37	250		carec10										carboom02	carscar02	0	1		0	6	1				carscar02		
+Urban\CARS.Car11	urban	Car	cars	0	1	1	15	cars	car11	carshad11	0	1	100	25	250		carec11										carboom02	carscar05	0	1		0	6	1				carscar05		
+Urban\CARS.CarScar01	urban	Damaged Terrain	scars	0	2	1	0	cars	carscar01		1		0															carscar01	0	0		0	6	0						
+Urban\CARS.CarScar02	urban	Damaged Terrain	scars	0	1	2	0	cars	carscar02		1		0															carscar02	0	0		0	6	0						
+Urban\CARS.CarScar05	urban	Damaged Terrain	scars	0	1	1	0	cars	carscar05		1		0															carscar05	0	0		0	6	0						
+Urban\CARS2.Car12	urban	Car	cars	0	1	1	15	cars2	car12	carshad12	0	1	100	30	250		carec12										carboom02	carscar05	0	1		0	6	1				carscar05		
+Urban\CARS2.Car13	urban	Car	cars	0	1	2	15	cars2	car13	carshad13	0	1	100	30	250		carec13										carboom02	carscar03	0	1		0	6	1				carscar03		
+Urban\CARS2.Car14	urban	Car	cars	0	1	2	15	cars2	car14	carshad14	0	1	100	20	250		carec14										carboom02	carscar03	0	1		0	6	1				carscar03		
+Urban\CARS2.Car15	urban	Car	cars	0	1	2	15	cars2	car15	carshad15	0	1	100	30	250		carec15										carboom02	carscar03	0	1		0	6	1				carscar03		
+Urban\CARS2.Car16	urban	Car	cars	0	1	1	15	cars2	car16	carshad16	0	1	100	25	250		carec16										carboom01	carscar05	0	1		0	6	1				carscar05		
+Urban\CARS2.Car17	urban	Car	cars	0	1	1	15	cars2	car17	carshad17	0	1	100	20	250		carec17										carboom01	carscar05	0	1		0	6	1				carscar05		
+Urban\CARS2.Car18	urban	Car	cars	0	2	1	15	cars2	car18	carshad18	0	1	100	35	250		carec18										carboom01	carscar04	0	1		0	6	1				carscar04		
+Urban\CARS2.Car19	urban	Car	cars	0	2	1	15	cars2	car19	carshad19	0	1	100	25	250		carec19										carboom01	carscar04	0	1		0	6	1				carscar04		
+Urban\CARS2.Car20	urban	Car	cars	0	2	1	15	cars2	car20	carshad20	0	1	100	24	250		carec20										carboom01	carscar04	0	1		0	6	1				carscar04		
+Urban\CARS2.Car21	urban	Car	cars	0	2	1	15	cars2	car21	carshad21	0	1	100	30	250		carec21										carboom01	carscar04	0	1		0	6	1				carscar04		
+Urban\CARS2.CarScar03	urban	Damaged Terrain	scars	0	1	2	0	cars2	carscar03		1		0															carscar03	0	0		0	6	0						
+Urban\CARS2.CarScar04	urban	Damaged Terrain	scars	0	2	1	0	cars2	carscar04		1		0															carscar04	0	0		0	6	0						
+Urban\CARS2.CarScar05	urban	Damaged Terrain	scars	0	1	1	0	cars2	carscar05		1		0															carscar05	0	0		0	6	0						
+Urban\comstatue.comstat01	urban	Public Art	monuments	0	3	3	240	statue	comstat01	comstatshad01	0	1	90	8757	1000		comstatrec01										comstatboom01	comscar01	0	1		0	6	1				comscar01		
+Urban\comstatue.comstat02	urban	Public Art	monuments	0	3	4	275	statue	comstat02	comstatshad02	0	1	85	8997	1000		comstatrec02										comstatboom02	comscar02	0	1		0	6	1				comscar02		
+Urban\comstatue.pasta01	urban	Public Art	monuments	0	5	4	240	statue	pasta	pastashad	0	1	80	6549	850		pastarec										pastaboom	pastascar01	0	1		0	6	1				pastascar01		
+Urban\comstatue.Widget19	urban	Public Hygiene Pod	machines	0	2	2	50	statue	hygiene	hygieneshad	0	1	80	100	850		hygienerec										hygieneboom	hygienescar	0	1		0	6	1				hygienescar		
+Urban\comstatue.comscar01	urban	Damaged Terrain	scars	0	3	3	0	statue	comscar01		1		0															comscar01	0	0		0	6	0						
+Urban\comstatue.comscar02	urban	Damaged Terrain	scars	0	3	4	0	statue	comscar02		1		0															comscar02	0	0		0	6	0						
+Urban\comstatue.hygienescar	urban	Damaged Terrain	scars	0	2	2	0	statue	hygienescar		1		0															hygienescar	0	0		0	6	0						
+Urban\comstatue.Pastascar01	urban	Damaged Terrain	scars	0	5	4	0	statue	pastascar		1		0															pastascar01	0	0		0	6	0						
+Urban\LIGHTS.Light01	urban	Streetlight	machines	0	1	1	80	u-lights	u-light01	u-lightshad01	0	1	90	25	100		u-lightrec01										u-lightboom01	lightscar01	0	1		0	6	1				lightscar01		
+Urban\LIGHTS.Light02	urban	Streetlight	machines	0	1	1	110	u-lights	u-light02	u-lightshad02	0	1	90	25	100		u-lightrec02										u-lightboom01	lightscar01	0	1		0	6	1				lightscar01		
+Urban\LIGHTS.Light03	urban	Streetlight	machines	0	1	1	30	u-lights	u-light03	u-lightshad03	0	1	90	25	100		u-lightrec03										u-lightboom03	lightscar01	0	1		0	6	1				lightscar01		
+Urban\LIGHTS.Light04	urban	Streetlight	machines	0	1	1	95	u-lights	u-light04	u-lightshad04	0	1	90	25	100		u-lightrec04										u-lightboom02	lightscar01	0	1		0	6	1				lightscar01		
+Urban\LIGHTS.Light05	urban	Streetlight	machines	0	1	1	50	u-lights	u-light05	u-lightshad05	0	1	90	25	100		u-lightrec05										u-lightboom02	lightscar02	0	1		0	6	1				lightscar02		
+Urban\LIGHTS.Light06	urban	Streetlight	machines	0	1	1	30	u-lights	u-light06	u-lightshad06	0	1	90	25	100		u-lightrec06										u-lightboom02	lightscar02	0	1		0	6	1				lightscar02		
+Urban\LIGHTS.Light07	urban	Streetlight	machines	0	1	1	50	u-lights	u-light07	u-lightshad07	0	1	90	25	100		u-lightrec07										u-lightboom02	lightscar02	0	1		0	6	1				lightscar02		
+Urban\LIGHTS.Light08	urban	Streetlight	machines	0	1	1	98	u-lights	u-light08	u-lightshad08	0	1	90	25	100		u-lightrec08										u-lightboom01	lightscar02	0	1		0	6	1				lightscar02		
+Urban\LIGHTS.LightScar01	urban	Damaged Terrain	scars	0	1	1	0	u-lights	u-lightscar01		1		0															LightScar01	0	0		0	6	0						
+Urban\LIGHTS.LightScar02	urban	Damaged Terrain	scars	0	1	1	0	u-lights	u-lightscar02		1		0															LightScar02	0	0		0	6	0						
+Urban\manholes.Manhole01	urban	Manhole	steamvents	1	2	2	0	urbanvent	urbanvent01				0			1																			1					
+Urban\manholes.Manhole02	urban	Manhole	steamvents	1	2	2	0	urbanvent	urbanvent02				0			1																			1					
+Urban\manholes.Manhole03	urban	Manhole	steamvents	1	2	2	0	urbanvent	urbanvent03				0			1																			1					
+Urban\MONORAIL.Rail01	urban	Monorail Track	tracks	0	2	2	200	rails	rail01	railshad01	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail02	urban	Monorail Track	tracks	0	2	2	200	rails	rail02	railshad02	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail03	urban	Monorail Track	tracks	0	2	2	200	rails	rail03	railshad03	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail04	urban	Monorail Track	tracks	0	2	2	200	rails	rail04	railshad04	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail05	urban	Monorail Track	tracks	0	4	4	200	rails	rail05	railshad05	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail06	urban	Monorail Track	tracks	0	4	4	200	rails	rail06	railshad06	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail07	urban	Monorail Track	tracks	0	4	4	200	rails	rail07	railshad07	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail08	urban	Monorail Track	tracks	0	2	2	200	rails	rail08	railshad08	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail09	urban	Monorail Track	tracks	0	4	4	200	rails	rail09	railshad09	0	1	80		2000	1																		1					1	1
+Urban\MONORAIL.Rail10	urban	Monorail Track	tracks	0	2	2	200	rails	rail10	railshad10	0	1	80		2000	1																		1					1	1
+Urban\TRUCKS.Truck01	urban	Truck	trucks	0	5	3	42	trucks	truck01	truckshad01	0	1	100	55	350		truckrec01										truckboom01	truckscar01	0	1		0	6	1				truckscar01		
+Urban\TRUCKS.Truck02	urban	Truck	trucks	0	5	3	42	trucks	truck02	truckshad02	0	1	100	60	350		truckrec02										truckboom01	truckscar01	0	1		0	6	1				truckscar01		
+Urban\TRUCKS.Truck03	urban	Truck	trucks	0	2	5	42	trucks	truck03	truckshad03	0	1	10	55			truckrec03										truckboom02	truckscar02	0	1		0	6	1				truckscar02		
+Urban\TRUCKS.Truck04	urban	Truck	trucks	0	3	5	42	trucks	truck04	truckshad04	0	1	100	60	350		truckrec04										truckboom02	truckscar05	0	1		0	6	1				truckscar05		
+Urban\TRUCKS.Truck05	urban	Truck	trucks	0	2	5	42	trucks	truck05	truckshad05	0	1	100	50	350		truckrec05										truckboom02	truckscar02	0	1		0	6	1				truckscar02		
+Urban\TRUCKS.Truck06	urban	Truck	trucks	0	2	5	55	trucks	truck06	truckshad06	0	1	100	65	350		truckrec06										truckboom02	truckscar02	0	1		0	6	1				truckscar02		
+Urban\TRUCKS.Truck07	urban	Truck	trucks	0	5	2	42	trucks	truck07	truckshad07	0	1	100	60	350		truckrec07										truckboom01	truckscar03	0	1		0	6	1				truckscar03		
+Urban\TRUCKS.Truck08	urban	Truck	trucks	0	5	3	42	trucks	truck08	truckshad08	0	1	100	55	350		truckrec08										truckboom01	truckscar04	0	1		0	6	1				truckscar04		
+Urban\TRUCKS.truckscar01	urban	Damaged Terrain	scars	0	5	3	0	trucks	truckscar01		0		0															truckscar01	0	0		0	6	0						
+Urban\TRUCKS.truckscar02	urban	Damaged Terrain	scars	0	2	5	0	trucks	truckscar02		0		0															truckscar02	0	0		0	6	0						
+Urban\TRUCKS.truckscar03	urban	Damaged Terrain	scars	0	5	2	0	trucks	truckscar03		0		0															truckscar03	0	0		0	6	0						
+Urban\TRUCKS.truckscar04	urban	Damaged Terrain	scars	0	5	3	0	trucks	truckscar04		0		0															truckscar04	0	0		0	6	0						
+Urban\TRUCKS.truckscar05	urban	Damaged Terrain	scars	0	3	5	0	trucks	truckscar05		0		0															truckscar05	0	0		0	6	0						
+Urban\WIDGETS.widget01	urban	Transit Node	machines	0	2	2	15	machines	widget01	widgetshad01	0	1	85	25	100		widgetrec01										widgetboom01	widgetscar01	0	1		0	6	1				widgetscar01		
+Urban\WIDGETS.widget02	urban	Transit Node	machines	0	2	2	15	machines	widget02	widgetshad02	0	1	85	35	100		widgetrec02										widgetboom01	widgetscar02	0	1		0	6	1				widgetscar02		
+Urban\WIDGETS.widget03	urban	Transit Node	machines	0	2	2	17	machines	widget03	widgetshad03	0	1	85	40	100		widgetrec03										widgetboom01	widgetscar01	0	1		0	6	1				widgetscar01		
+Urban\WIDGETS.widget04	urban	Transit Node	machines	0	2	2	15	machines	widget04	widgetshad04	0	1	85	45	100		widgetrec04										widgetboom01	widgetscar02	0	1		0	6	1				widgetscar02		
+Urban\WIDGETS.widget05	urban	Transit Node	machines	0	2	2	15	machines	widget05	widgetshad05	0	1	85	30	100		widgetrec05										widgetboom01	widgetscar01	0	1		0	6	1				widgetscar01		
+Urban\WIDGETS.widget06	urban	Transit Node	machines	0	2	2	15	machines	widget06	widgetshad06	0	1	85	20	100		widgetrec06										widgetboom01	widgetscar02	0	1		0	6	1				widgetscar02		
+Urban\WIDGETS.widget07	urban	Microwave Relay	machines	0	2	3	55	machines	widget07	widgetshad07	0	1	95	50	200		widgetrec07										widgetboom02	widgetscar03	0	1		0	6	1				widgetscar03		
+Urban\WIDGETS.widget08	urban	Microwave Relay	machines	0	3	2	50	machines	widget08	widgetshad08	0	1	95	60	200		widgetrec08										widgetboom02	widgetscar04	0	1		0	6	1				widgetscar04		
+Urban\WIDGETS.widget09	urban	Microwave Relay	machines	0	3	2	45	machines	widget09	widgetshad09	0	1	95	25	200		widgetrec09										widgetboom02	widgetscar04	0	1		0	6	1				widgetscar04		
+Urban\WIDGETS.widget10	urban	Microwave Relay	machines	0	2	3	55	machines	widget10	widgetshad10	0	1	95	60	200		widgetrec10										widgetboom02	widgetscar03	0	1		0	6	1				widgetscar03		
+Urban\WIDGETS.widget11	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget11	widgetshad11	0	1	100	35	250		widgetrec11										widgetboom03	widgetscar05	0	1		0	6	1				widgetscar05		
+Urban\WIDGETS.widget12	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget12	widgetshad12	0	1	100	30	250		widgetrec12										widgetboom03	widgetscar05	0	1		0	6	1				widgetscar05		
+Urban\WIDGETS.widget13	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget13	widgetshad13	0	1	100	40	250		widgetrec13										widgetboom03	widgetscar05	0	1		0	6	1				widgetscar05		
+Urban\WIDGETS.widget14	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget14	widgetshad14	0	1	100	20	250		widgetrec14										widgetboom03	widgetscar05	0	1		0	6	1				widgetscar05		
+Urban\WIDGETS.widget15	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget15	widgetshad15	0	1	100	30	250		widgetrec15										widgetboom03	widgetscar05	0	1		0	6	1				widgetscar05		
+Urban\WIDGETS.widget16	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget16	widgetshad16	0	1	100	45	250		widgetrec16										widgetboom03	widgetscar06	0	1		0	6	1				widgetscar06		
+Urban\WIDGETS.widget17	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget17	widgetshad17	0	1	100	40	250		widgetrec17										widgetboom03	widgetscar06	0	1		0	6	1				widgetscar06		
+Urban\WIDGETS.widget18	urban	Climatic Optimizer	machines	0	3	3	80	machines	widget18	widgetshad18	0	1	100	35	250		widgetrec18										widgetboom03	widgetscar06	0	1		0	6	1				widgetscar06		
+Urban\WIDGETS.widgetscar01	urban	Damaged Terrain	scars	0	2	2	0	machines	widgetscar01		1		0															widgetscar01	0	0		0	6	0						
+Urban\WIDGETS.widgetscar02	urban	Damaged Terrain	scars	0	2	2	0	machines	widgetscar02		1		0															widgetscar02	0	0		0	6	0						
+Urban\WIDGETS.widgetscar03	urban	Damaged Terrain	scars	0	2	3	0	machines	widgetscar03		1		0															widgetscar03	0	0		0	6	0						
+Urban\WIDGETS.widgetscar04	urban	Damaged Terrain	scars	0	3	2	0	machines	widgetscar04		1		0															widgetscar04	0	0		0	6	0						
+Urban\WIDGETS.widgetscar05	urban	Damaged Terrain	scars	0	3	3	0	machines	widgetscar05		1		0															widgetscar05	0	0		0	6	0						
+Urban\WIDGETS.widgetscar06	urban	Damaged Terrain	scars	0	3	3	0	machines	widgetscar06		1		0															widgetscar06	0	0		0	6	0						
+Water\ANEMONES.anemone01	water	Anemone	anemones	0	2	2	1	anemones	anemonie01		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone02	water	Anemone	anemones	0	2	2	1	anemones	anemonie02		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone03	water	Anemone	anemones	0	2	2	1	anemones	anemonie03		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone04	water	Anemone	anemones	0	2	2	1	anemones	anemonie04		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone05	water	Anemone	anemones	0	2	2	1	anemones	anemonie05		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone06	water	Anemone	anemones	0	2	2	1	anemones	anemonie06		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone07	water	Anemone	anemones	0	2	2	1	anemones	anemonie07		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone08	water	Anemone	anemones	0	2	2	1	anemones	anemonie08		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone09	water	Anemone	anemones	0	2	2	1	anemones	anemonie09		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone10	water	Anemone	anemones	0	2	2	1	anemones	anemonie10		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone11	water	Anemone	anemones	0	2	2	1	anemones	anemonie11		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone12	water	Anemone	anemones	0	2	2	1	anemones	anemonie12		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone13	water	Anemone	anemones	0	2	2	1	anemones	anemonie13		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone14	water	Anemone	anemones	0	2	2	1	anemones	anemonie14		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone15	water	Anemone	anemones	0	2	2	1	anemones	anemonie15		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone16	water	Anemone	anemones	0	2	2	1	anemones	anemonie16		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone17	water	Anemone	anemones	0	2	2	1	anemones	anemonie17		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone18	water	Anemone	anemones	0	2	2	1	anemones	anemonie18		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone19	water	Anemone	anemones	0	2	2	1	anemones	anemonie19		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone20	water	Anemone	anemones	0	2	2	1	anemones	anemonie20		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone21	water	Anemone	anemones	0	2	2	1	anemones	anemonie21		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone22	water	Anemone	anemones	0	2	2	1	anemones	anemonie22		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone23	water	Anemone	anemones	0	2	2	1	anemones	anemonie23		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone24	water	Anemone	anemones	0	2	2	1	anemones	anemonie24		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone25	water	Anemone	anemones	0	2	2	1	anemones	anemonie25		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone26	water	Anemone	anemones	0	2	2	1	anemones	anemonie26		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone27	water	Anemone	anemones	0	2	2	1	anemones	anemonie27		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone28	water	Anemone	anemones	0	2	2	1	anemones	anemonie28		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone29	water	Anemone	anemones	0	2	2	1	anemones	anemonie29		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone30	water	Anemone	anemones	0	2	2	1	anemones	anemonie30		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone31	water	Anemone	anemones	0	2	2	1	anemones	anemonie31		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone32	water	Anemone	anemones	0	2	2	1	anemones	anemonie32		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone33	water	Anemone	anemones	0	2	2	1	anemones	anemonie33		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone34	water	Anemone	anemones	0	2	2	1	anemones	anemonie34		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone35	water	Anemone	anemones	0	2	2	1	anemones	anemonie35		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone36	water	Anemone	anemones	0	2	2	1	anemones	anemonie36		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone37	water	Anemone	anemones	0	2	2	1	anemones	anemonie37		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone38	water	Anemone	anemones	0	2	2	1	anemones	anemonie38		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone39	water	Anemone	anemones	0	2	2	1	anemones	anemonie39		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone40	water	Anemone	anemones	0	2	2	1	anemones	anemonie40		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone41	water	Anemone	anemones	0	2	2	1	anemones	anemonie41		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone42	water	Anemone	anemones	0	2	2	1	anemones	anemonie42		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone43	water	Anemone	anemones	0	2	2	1	anemones	anemonie43		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone44	water	Anemone	anemones	0	2	2	1	anemones	anemonie44		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone45	water	Anemone	anemones	0	2	2	1	anemones	anemonie45		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone46	water	Anemone	anemones	0	2	2	1	anemones	anemonie46		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone47	water	Anemone	anemones	0	2	2	1	anemones	anemonie47		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone48	water	Anemone	anemones	0	2	2	1	anemones	anemonie48		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone49	water	Anemone	anemones	0	2	2	1	anemones	anemonie49		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone50	water	Anemone	anemones	0	2	2	1	anemones	anemonie50		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone51	water	Anemone	anemones	0	2	2	1	anemones	anemonie51		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone52	water	Anemone	anemones	0	2	2	1	anemones	anemonie52		0	1	100		2000	1																		0					1	1
+Water\ANEMONES.anemone53	water	Anemone	anemones	0	2	2	1	anemones	anemonie53		0	1	100		2000	1																		0					1	1
+Water\aquacoral.AquaCoral01	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral01		0	1	100		2000	1																		1					1	1
+Water\aquacoral.AquaCoral02	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral02		0	1	100		2000	1																		0					1	1
+Water\aquacoral.AquaCoral03	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral03		0	1	100		2000	1																		0					1	1
+Water\aquacoral.AquaCoral04	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral04		0	1	100		2000	1																		0					1	1
+Water\aquacoral.AquaCoral05	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral05		0	1	100		2000	1																		0					1	1
+Water\aquacoral.AquaCoral06	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral06		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral07	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral07		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral08	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral08		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral09	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral09		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral10	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral10		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral11	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral11		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral12	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral12		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral13	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral13		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral14	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral14		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral15	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral15		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral16	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral16		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral17	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral17		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral18	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral18		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral19	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral19		0	1	100		2000	1																		0					1	1
+Water\aquacoral.aquacoral20	water	Coral	aquacorals	0	2	2	1	aquacoral	aquacoral20		0	1	100		2000	1																		0					1	1
+Water\CORALS.Coral01	water	Coral	corals	0	3	3	120	Coral	coral01	coralshad01	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral02	water	Coral	corals	0	2	3	120	Coral	coral02	coralshad02	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral03	water	Coral	corals	0	2	4	120	Coral	coral03	coralshad03	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral04	water	Coral	corals	0	5	3	120	Coral	coral04	coralshad04	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral05	water	Coral	corals	0	5	5	120	Coral	coral05	coralshad05	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral06	water	Coral	corals	0	3	3	120	Coral	coral06	coralshad06	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral07	water	Coral	corals	0	4	5	120	Coral	Coral07	coralshad07	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral08	water	Coral	corals	0	5	4	120	Coral	Coral08	coralshad08	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral09	water	Coral	corals	0	4	4	120	Coral	Coral09	coralshad09	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral10	water	Coral	corals	0	5	4	120	Coral	Coral10	coralshad10	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral11	water	Coral	corals	0	4	5	120	Coral	Coral11	coralshad11	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral12	water	Coral	corals	0	4	5	120	Coral	Coral12	coralshad12	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral13	water	Coral	corals	0	6	3	120	Coral	Coral13	coralshad13	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral14	water	Coral	corals	0	4	5	120	Coral	Coral14	coralshad14	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral15	water	Coral	corals	0	4	4	120	Coral	Coral15	coralshad15	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral16	water	Coral	corals	0	3	3	120	Coral	Coral16	coralshad16	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral17	water	Coral	corals	0	5	9	120	Coral	Coral17	coralshad17	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral18	water	Coral	corals	0	4	8	120	Coral	Coral18	coralshad18	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral19	water	Coral	corals	0	6	9	120	Coral	Coral19	coralshad19	0	1	100		2000	1																		1					1	1
+Water\CORALS.Coral20	water	Coral	corals	0	7	1	120	Coral	Coral20	coralshad20	0	1	100		2000	1																		1					1	1
+Water\kelp.Kelp-WithShadow	water	seaweed	kelp	0	5	5	250	kelp	kelp01	kelp01shad	0	1	100		2000	1																		1					1	1
+Water\kelp.Kelp-NoShadow	water	seaweed	kelp	0	5	5	250	kelp	kelp01		0	1	100		2000	1																		1					1	1
+Water\metal.WaterAquaOre1	water	Metal	metal	0	3	3	4	WaterAquaOre	wateraquaore1		0	1	5	86	32009	1																								
+Water\metal.WaterAquaOre2	water	Metal	metal	0	3	3	4	WaterAquaOre	wateraquaore2		0	1	5	127	32009	1																								
+Water\metal.WaterAquaOre3	water	Metal	metal	0	3	3	4	WaterAquaOre	wateraquaore3		0	1	5	223	32009	1																								
+WetDesert\metal.WetMetal01	WetDesert	Metal Deposit	metal	0	3	3	0	wetmetal	metal01		0	1	5	122	32009	1																								
+WetDesert\metal.WetMetal02	WetDesert	Metal Deposit	metal	0	3	3	0	wetmetal	metal02		0	1	5	76	32009	1																								
+WetDesert\metal.WetMetal03	WetDesert	Metal Deposit	metal	0	3	3	0	wetmetal	metal03		0	1	5	223	32009	1																								
+WetDesert\rocks.WetRock01	WetDesert	Rock	rocks	0	3	2	31	wetrocks	rock01	rock01shad	0	1	100	50	2000		rock01rec										rock01boom	wetcrush32		1				1				wetrock01scar		
+WetDesert\rocks.WetRock01Scar	WetDesert	Damaged Terrain	scars	0	3	2	0	wetscars	rock01scar		0	1	100		20000													wetrock01scar						0						
+WetDesert\rocks.WetRock02	WetDesert	Rock	rocks	0	2	2	38	wetrocks	rock02	rock02shad	0	1	100	25	2000		rock02rec										rock02boom	wetcrush22		1				1				wetrock02scar		
+WetDesert\rocks.WetRock02Scar	WetDesert	Damaged Terrain	scars	0	2	2	0	wetscars	rock02scar		0	1	100		20000													wetrock02scar						0						
+WetDesert\rocks.WetRock03	WetDesert	Rock	rocks	0	2	2	26	wetrocks	rock03	rock03shad	0	1	100	50	2000		rock03rec										rock03boom	wetcrush22		1				1				wetrock03scar		
+WetDesert\rocks.WetRock03Scar	WetDesert	Damaged Terrain	scars	0	2	2	0	wetscars	rock03scar		0	1	100		20000													wetrock03scar						0						
+WetDesert\rocks.WetRock04	WetDesert	Rock	rocks	0	7	4	67	wetrocks	rock04	rock04shad	0	1	100	150	2000		rock04rec										rock04boom	wetcrush74		1				1				wetrock04scar		
+WetDesert\rocks.WetRock04Scar	WetDesert	Damaged Terrain	scars	0	7	4	0	wetscars	rock04scar		0	1	100		20000													wetrock04scar						0						
+WetDesert\rocks.WetRock05	WetDesert	Rock	rocks	0	2	2	80	wetrocks	rock05	rock05shad	0	1	100	100	2000		rock05rec										rock05boom	wetcrush22		1				1				wetrock05scar		
+WetDesert\rocks.WetRock05Scar	WetDesert	Damaged Terrain	scars	0	2	2	0	wetscars	rock05scar		0	1	100		20000													wetrock05scar						0						
+WetDesert\rocks.WetRock06	WetDesert	Rock	rocks	0	4	3	57	wetrocks	rock06	rock06shad	0	1	100	75	2000		rock06rec										rock06boom	wetcrush43		1				1				wetrock06scar		
+WetDesert\rocks.WetRock06Scar	WetDesert	Damaged Terrain	scars	0	4	3	0	wetscars	rock06scar		0	1	100		20000													wetrock06scar						0						
+WetDesert\rocks.WetRock07	WetDesert	Rock	rocks	0	4	3	80	wetrocks	rock07	rock07shad	0	1	100	100	2000		rock07rec										rock07boom	wetcrush43		1				1				wetrock07scar		
+WetDesert\rocks.WetRock07Scar	WetDesert	Damaged Terrain	scars	0	4	3	0	wetscars	rock07scar		0	1	100		20000													wetrock07scar						0						
+WetDesert\rocks.WetRock08	WetDesert	Rock	rocks	0	3	2	32	wetrocks	rock08	rock08shad	0	1	100	50	2000		rock08rec										rock08boom	wetcrush32		1				1				wetrock08scar		
+WetDesert\rocks.WetRock08Scar	WetDesert	Damaged Terrain	scars	0	3	2	0	wetscars	rock08scar		0	1	100		20000													wetrock08scar						0						
+WetDesert\rocks.WetRock09	WetDesert	Rock	rocks	0	4	3	60	wetrocks	rock09	rock09shad	0	1	100	75	2000		rock09rec										rock09boom	wetcrush43		1				1				wetrock09scar		
+WetDesert\rocks.WetRock09Scar	WetDesert	Damaged Terrain	scars	0	4	3	0	wetscars	rock09scar		0	1	100		20000													wetrock09scar						0						
+WetDesert\rocks.WetRock10	WetDesert	Rock	rocks	0	2	1	1	wetrocks	rock10	rock10shad	0	1	100	25	2000		rock10rec											wetrock10scar		1				1				wetrock10scar		
+WetDesert\rocks.WetRock10Scar	WetDesert	Damaged Terrain	scars	0	2	1	0	wetscars	rock10scar		0	1	100		20000													wetrock10scar						0						
+WetDesert\rocks.WetRock11	WetDesert	Rock	rocks	0	1	1	1	wetrocks	rock11	rock11shad	0	1	100	25	2000		rock11rec											wetrock11scar		1				1				wetrock11scar		
+WetDesert\rocks.WetRock11Scar	WetDesert	Damaged Terrain	scars	0	1	1	0	wetscars	rock11scar		0	1	100		20000													wetrock11scar						0						
+WetDesert\rocks.WetRock12	WetDesert	Rock	rocks	0	2	2	15	wetrocks	rock12	rock12shad	0	1	100	25	2000		rock12rec										rock12boom	wetcrush22		1				1				wetrock12scar		
+WetDesert\rocks.WetRock12Scar	WetDesert	Damaged Terrain	scars	0	2	2	0	wetscars	rock12scar		0	1	100		20000													wetrock12scar						0						
+WetDesert\rocks.WetRock13	WetDesert	Rock	rocks	0	3	2	112	wetrocks	rock13	rock13shad	0	1	100	75	2000		rock13rec										rock13boom	wetcrush32		1				1				wetrock13scar		
+WetDesert\rocks.WetRock13Scar	WetDesert	Damaged Terrain	scars	0	3	2	0	wetscars	rock13scar		0	1	100		20000													wetrock13scar						0						
+WetDesert\rocks.WetRock14	WetDesert	Rock	rocks	0	3	3	80	wetrocks	rock14	rock14shad	0	1	100	75	2000		rock14rec										rock14boom	wetcrush33		1				1				wetrock14scar		
+WetDesert\rocks.WetRock14Scar	WetDesert	Damaged Terrain	scars	0	3	3	0	wetscars	rock14scar		0	1	100		20000													wetrock14scar						0						
+WetDesert\rocks.WetRock15	WetDesert	Rock	rocks	0	3	3	45	wetrocks	rock15	rock15shad	0	1	100	50	2000		rock15rec										rock15boom	wetcrush33		1				1				wetrock15scar		
+WetDesert\rocks.WetRock15Scar	WetDesert	Damaged Terrain	scars	0	3	3	0	wetscars	rock15scar		0	1	100		20000													wetrock15scar						0						
+WetDesert\rocks.WetRock16	WetDesert	Rock	rocks	0	3	2	20	wetrocks	rock16	rock16shad	0	1	100	25	2000		rock16rec										rock16boom	wetcrush32		1				1				wetrock16scar		
+WetDesert\rocks.WetRock16Scar	WetDesert	Damaged Terrain	scars	0	3	2	0	wetscars	rock16scar		0	1	100		20000													wetrock16scar						0						
+WetDesert\rocks.WetCrush74	WetDesert	Rock	rocks	0	7	4	0	wetcrush	rockcrush74	rockcrush74shad	0	1	100	75	2000		rockcrush74rec										rockcrush74boom	wetcrush74scar		1				1				wetcrush74scar		
+WetDesert\rocks.WetCrush74Scar	WetDesert	Damaged Terrain	scars	0	7	4	0	wetscars	rockcrush74scar		0	1	100		20000													wetcrush74scar						0						
+WetDesert\rocks.WetCrush43	WetDesert	Rock	rocks	0	4	3	0	wetcrush	rockcrush43	rockcrush43shad	0	1	100	50	2000		rockcrush43rec										rockcrush43boom	wetcrush43scar		1				1				wetcrush43scar		
+WetDesert\rocks.WetCrush43Scar	WetDesert	Damaged Terrain	scars	0	4	3	0	wetscars	rockcrush43scar		0	1	100		20000													wetcrush43scar						0						
+WetDesert\rocks.WetCrush33	WetDesert	Rock	rocks	0	3	3	0	wetcrush	rockcrush33	rockcrush33shad	0	1	100	50	2000		rockcrush33rec										rockcrush33boom	wetcrush33scar		1				1				wetcrush33scar		
+WetDesert\rocks.WetCrush33Scar	WetDesert	Damaged Terrain	scars	0	3	3	0	wetscars	rockcrush33scar		0	1	100		20000													wetcrush33scar						0						
+WetDesert\rocks.WetCrush32	WetDesert	Rock	rocks	0	3	2	0	wetcrush	rockcrush32	rockcrush32shad	0	1	100	25	2000		rockcrush32rec										rockcrush32boom	wetcrush32scar		1				1				wetcrush32scar		
+WetDesert\rocks.WetCrush32Scar	WetDesert	Damaged Terrain	scars	0	3	2	0	wetscars	rockcrush32scar		0	1	100		20000													wetcrush32scar						0						
+WetDesert\rocks.WetCrush22	WetDesert	Rock	rocks	0	2	2	0	wetcrush	rockcrush22	rockcrush22shad	0	1	100	25	2000		rockcrush22rec										rockcrush22boom	wetcrush22scar		1				1				wetcrush22scar		
+WetDesert\rocks.WetCrush22Scar	WetDesert	Damaged Terrain	scars	0	2	2	0	wetscars	rockcrush22scar		0	1	100		20000													wetcrush22scar						0						
+WetDesert\vents.WetVent01	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent01				0			1																			1					
+WetDesert\vents.WetVent02	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent02				0			1																			1					
+WetDesert\vents.WetVent03	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent03				0			1																			1					
+WetDesert\vents.WetVent04	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent04				0			1																			1					
+WetDesert\vents.WetVent05	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent05				0			1																			1					
+WetDesert\vents.WetVent06	WetDesert	Thermal Vent	steamvents	1	1	1	0	wetvents	vent06				0			1																			1					
+WetDesert\watermetal.wetaquaore1	WetDesert	Metal	metal	0	3	3	0	wetaquaore	wetaquaore1		0	1	5	84	32009	1																								
+WetDesert\watermetal.wetaquaore2	WetDesert	Metal	metal	0	3	3	0	wetaquaore	wetaquaore2		0	1	5	133	32009	1																								
+WetDesert\watermetal.wetaquaore3	WetDesert	Metal	metal	0	3	3	0	wetaquaore	wetaquaore3		0	1	5	220	32009	1																								
