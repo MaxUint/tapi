@@ -2,6 +2,7 @@
 API For Total Annihilation unit configuration
 <h1> Example code </h1>
 <code>
+	
 const tapi = require('./tapi');
 (function(){
 	if(tapi.init('hpi_out', verbose = false)) {
@@ -37,4 +38,5 @@ const tapi = require('./tapi');
 		}
 	}
 })();
+	
 </code>
