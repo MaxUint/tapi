@@ -714,7 +714,6 @@ exports.create = function(engine, fromversion = false) {
     }
     exports.version = ++engine.version;
     newBuildFolder();
-    pers.save(engine.name, engine);
     if (typeof engine.folders.units != 'undefined') {
         exports.units.bind(engine.folders.units, true);
     }
