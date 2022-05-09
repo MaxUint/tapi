@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=CORESTOR;
+	version=1;
+	side=CORE;
+	objectname=CORESTOR;
+	designation=ES-22;
+	name=Energy Storage;
+	description=Increases Energy Storage;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=2490;
+	buildcostmetal=250;
+	maxdamage=1070;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=12750;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_ESTOR;
+	energystorage=3000;
+	metalstorage=0;
+	explodeas=ESTOR_BUILDINGEX;
+	selfdestructas=ESTOR_BUILDING;
+	category=CORE ENERGY LEVEL1 NOWEAPON  NOTAIR NOTSUB STORAGE;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooooooooooo;
+	corpse=corestor_dead;
+	germanname=Energiespeicher;
+	germandescription=Vergrößert Lager für Energievorräte;
+	unitnumber=101;
+	frenchname=Dépôt d'énergie;
+	frenchdescription=Augmente le stockage d'énergie;
+	spanishname=Almacén de Energía;
+	spanishdescription=Incrementa capacidad de alm.energía;
+	italianname=Deposito di Energia;
+	italiandescription=Incrementa l'immagazzinamento di energia;
+	buildangle=8196;
+	activatewhenbuilt=1;
+	ovradjust=1;
+}
+

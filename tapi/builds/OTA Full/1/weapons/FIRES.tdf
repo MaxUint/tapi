@@ -1,0 +1,39 @@
+[TREEBURN]
+{
+	id=245;
+	name=Burning Tree;
+	unitsonly=1;
+	areaofeffect=64;
+	edgeeffectiveness=0.5;
+		[DAMAGE]
+		{
+			default=100;
+		}
+}
+
+[SHRUBBURN]
+{
+	id=246;
+	name=Burning Bush;
+	unitsonly=1;
+	areaofeffect=48;
+	edgeeffectiveness=0.5;
+		[DAMAGE]
+		{
+			default=50;
+		}
+}
+
+[GASBAG]
+{
+	id=99;
+	name=Gas Bag;
+	unitsonly=1;
+	areaofeffect=140;
+	edgeeffectiveness=0.5;
+		[DAMAGE]
+		{
+			default=500;
+		}
+}
+

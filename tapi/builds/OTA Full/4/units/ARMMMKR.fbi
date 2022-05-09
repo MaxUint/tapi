@@ -1,0 +1,52 @@
+[UNITINFO]
+{
+	unitname=ARMMMKR;
+	version=1.2;
+	side=ARM;
+	objectname=ARMMMKR;
+	designation=AEM-MEM;
+	name=Moho Metal Maker;
+	description=Converts Energy into Metal;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=9350;
+	buildcostmetal=58;
+	maxdamage=400;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=800;
+	buildtime=34980;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_MAKER;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=BIG_BUILDINGEX;
+	selfdestructas=BIG_BUILDING;
+	category=ARM METAL LEVEL2 NOWEAPON NOTAIR NOTSUB  ;
+	tedclass=METAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooo ooo ooo;
+	corpse=armmmkr_dead;
+	germanname=Moho-Metallschmelze;
+	germandescription=Metallgewinnung;
+	unitnumber=268;
+	frenchname=Métallo avançé;
+	frenchdescription=Convertisseur d'énergie en métal avançée;
+	spanishname=Productor de Metal Moho;
+	spanishdescription=Complejo de producción de metal;
+	italianname=Crea-Metalli Moho;
+	italiandescription=Complesso per la creazione di metalli;
+	buildangle=8192;
+	downloadable=1;
+	activatewhenbuilt=1;
+	onoffable=1;
+	makesmetal=16;
+}
+

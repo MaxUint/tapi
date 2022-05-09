@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<style>
+			.disabled  {
+				visibility: hidden;
+				position: absolute;
+			}
+			.panelItem {
+				margin: 5px;
+				border: 1mm ridge rgba(211, 220, 50, .6);
+			}
+			html,body {
+				padding:0;
+				margin:0;
+				height:100%;
+			}
+			.panelhalf {
+				width:100%;
+				height:50%;
+			}
+			.panel {
+				display: block;
+				width:50%;
+				height:100%;
+				float:left;
+			}
+		</style>
+		<script>
+			<!-###SCRIPT###!->
+		</script>
+	</head>
+	<body>
+		<h1>TAPI Html Client!!</h1>
+		<button onclick = "page.createAsk()">New Engine</button>
+		<button onclick="client.RESTART_TAPI()">BIG RED BUTTON</button>
+		<button onclick="client.compile()">Compile</button>
+		<span id = "message"></span>
+		<div id="builds"></div>
+		<br>
+		<div id="engine" class="disabled">
+			<select id="archetype" onchange="handles.changeType(this)">
+				<option value="Units">Units</option>
+				<option value="Weapons">Weapons</option>
+			</select>
+			<span id="workingTypeMessage"></span>
+			<br />
+			Search 
+				<input id="searchName" placeHolder="name"></input>
+				<input id="searchVariable" placeHolder="variable"></input>
+				<input id="searchValue" placeHolder="value"></input>
+		</div>
+		<div id="panels">
+			<div class="panelhalf">
+				<div id="panel1" class="panel"></div>
+				<div id="panel2" class="panel"></div>
+			</div>
+			<div class="panelhalf">
+				<div id="panel3" class="panel"></div>
+				<code id="terminal" class="panel"></code>
+			</div>
+		</div>
+	</body>
+</html>

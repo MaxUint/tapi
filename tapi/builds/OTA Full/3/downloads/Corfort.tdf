@@ -1,0 +1,24 @@
+[MENUENTRY1]
+{
+	unitmenu=CORACK;
+	menu=3;
+	button=4;
+	unitname=CORFORT;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORACV;
+	menu=3;
+	button=4;
+	unitname=CORFORT;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORACA;
+	menu=3;
+	button=4;
+	unitname=CORFORT;
+}
+

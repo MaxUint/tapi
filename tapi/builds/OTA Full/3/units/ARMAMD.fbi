@@ -1,0 +1,57 @@
+[UNITINFO]
+{
+	unitname=ARMAMD;
+	version=1;
+	side=ARM;
+	objectname=ARMAMD;
+	designation=ARM-AMD1;
+	name=Protector;
+	description=Anti Missile Defense System;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=88000;
+	buildcostmetal=1437;
+	maxdamage=780;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=95678;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=1;
+	sightdistance=155;
+	radardistance=0;
+	soundcategory=ARM_AMD;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=CRAWL_BLASTSML;
+	category=ARM SPECIAL DEFENSIVE WEAPON LEVEL3 NOTAIR NOTSUB ;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooooooo;
+	corpse=armamd_dead;
+	germanname=Protector;
+	germandescription=Atomare Raketenabwehr;
+	unitnumber=6;
+	frenchname=Protector;
+	frenchdescription=Missile nucléaire de défense;
+	firestandorders=1;
+	standingfireorder=2;
+	spanishname=Protector;
+	spanishdescription=Sistema de Defensa Antimisiles;
+	italianname=Protector;
+	italiandescription=Sistema di difesa anti-missili;
+	shootme=1;
+	buildangle=4096;
+	weapon1=AMD_ROCKET;
+	wpri_badtargetcategory=NOTAIR;
+	badtargetcategory=NOTAIR;
+	damagemodifier=0.5;
+	antiweapons=1;
+	ovradjust=1;
+}
+
