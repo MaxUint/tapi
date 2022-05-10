@@ -4,15 +4,15 @@
 function makeUnitField(cache, excluded = {}, mergeExclude = {}) {
     let tempField = new unitField();
     for (const key in mergeExclude) {
-        tempField[key] = mergeExclude[key];
+        tempField[key] = structuredClone(mergeExclude[key]);
     }
     for (const key in cache) {
         if (cache.hasOwnProperty(key)) {
-            tempField[key] = cache[key];
+            tempField[key] = structuredClone(cache[key]);
         }
     };
     for (const key in excluded) {
-        tempField.__proto__.__excluded[key] = excluded[key];
+        tempField.__proto__.__excluded[key] = structuredClone(excluded[key]);
     }
     return tempField;
 }
@@ -63,7 +63,8 @@ function advancedTdfSearch(field = '', value = '', tdfObj) {
     return false;
 }
 class unitField {
-    constructor() {
+    constructor(type) {
+		this.__proto__.__type = type;
         this.__proto__.__excluded = {};
         this.__proto__.__search = function(variable = '', data = '') {
             let newCache = {};
@@ -111,12 +112,21 @@ class unitField {
             }
             return makeUnitField(newCache, excluded);
         };
-        this.__proto__.__foreach = function(vartype, variable, func) {
+        this.__proto__.__foreach = function(vartype, variable, func) {		
             if (['normal', 'version', 'damage', 'common'].includes(vartype)) {
                 for (const key in this) {
                     if (this.hasOwnProperty(key)) {
                         if (typeof this[key][vartype][variable] != 'undefined') {
+							let value = this[key][vartype][variable];
+							if(value.toString() == parseFloat(value)) {
+								this[key][vartype][variable] = parseFloat(value);
+							}
                             let newValue = ((new Function(variable, func))(this[key][vartype][variable]));
+							let item = page.newPanel(
+								`${this[key].__name} ${vartype}.${variable} changed from '${this[key][vartype][variable]}' to '${newValue}'`,
+								this[key][vartype], false
+							);
+							client.changes.push(item);
                             this[key][vartype][variable] = newValue;
                         } else {
                             console.warn(this[vartype][key][variable], 'error', variable, 'at', key, 'does not exist');
@@ -180,12 +190,11 @@ class archClass {
             return this.cache.__search(term1, term2)
         };
 		this.__proto__.__getall = function() { return this.cache.__getall(...arguments); }
-		
-    };
-	commit(results) {
-        this.cache = makeUnitField(results, {}, results.__excluded);
-		client.commit(this.archetype, results);
-        return true;
+		this.commit = function(results) {
+			this.cache = makeUnitField(results, {}, results.__excluded);
+			client.commit(this.archetype, results);
+			return true;
+		}
     };
 }
 const tapi = {};
@@ -196,9 +205,10 @@ tapi.guis = new archClass('guis');
 tapi.downloads = new archClass('downloads');
 /* END */
 
-var verbose = true;
+var verbose = false;
 var xhr;
 var debug;
+var changes = [];
 
 var page = {}; //page operations
 
@@ -206,9 +216,9 @@ page.get = function(id) { return document.getElementById(id); }
 
 function log() 
 {
-	debug = Array.prototype.slice.call(arguments);
-	let msg = debug.join(' ');
 	if(verbose) {
+		debug = Array.prototype.slice.call(arguments);
+		let msg = debug.join(' ');
 		let term = page.get('terminal');
 		let newMsg = document.createElement('span');
 		newMsg.innerHTML = `${msg}<br>`;
@@ -235,11 +245,12 @@ function msg() {
 }
 
 function pipeCreate(request, handler) {
+	request.packet = client.uid64();
+	request.id = client.uniqueID;
 	request.args = JSON.stringify(request.args);
 	let pool = {};
 	let poolSize = 0;
 	let maxSend = 4096;
-	
 	while(request.args.length > 0)
 	{
 		pool[poolSize] = request.args.slice(0, maxSend);
@@ -258,6 +269,7 @@ function pipeCreate(request, handler) {
 		request.args = pool[i];
 		pipeSend(request, handler);
 	}
+	
 }
 
 function pipeSend(request, handler) {
@@ -268,35 +280,29 @@ function pipeSend(request, handler) {
 	{
 		if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText != '')
 		{
-			pipe(JSON.parse(xhr.responseText), handler);
+			try{
+				handler(JSON.parse(xhr.responseText));
+			} catch {
+				handler(xhr.responseText);
+			}
 		}
+		
 	};
 	xhr.open("POST", '127.0.0.1', true);
 	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.send(request);
 }
 
-var pipeCalls = [], pipeData = [];
+var pipeFun = [];
+var pipeRes = [];
+
 var handles = {};
-
-
-function pipe(data, handler) 
-{
-	pipeData.push(data);
-	pipeCalls.push(handler);
-	pipeProc();
-}
-
-function pipeProc() 
-{
-	console.log(pipeData,pipeCalls);
-	pipeCalls.shift()(pipeData.shift());
-}
-
-client = {};
+var client = {};
 
 function update(response) {
+	msg('Loaded!');
 	page.get('engine').className = '';
+	client.changes = [];
 	page.resetTable();
 	tapi.units = new archClass('units');
 	tapi.weapons = new archClass('weapons');
@@ -344,6 +350,8 @@ function update(response) {
 	client.archetype = firstBuilt;
 	page.get('archetype').options[0].selected = true;
 	page.get('archetype').onchange();
+	panelSet(buildEnginePanel(), 'engineDetails');
+	client.getBuilds();
 }
 
 handles.loadBuild = function(response)
@@ -360,9 +368,10 @@ handles.loadBuild = function(response)
 	update(response);
 	
 }
-
+client.lastBuilt = [];
 client.loadBuild = function(name, number) 
 {
+	client.lastBuilt = [name, number];
 	page.get('engine').className = 'disabled';
 	msg('Loading...');
 	pipeCreate(
@@ -374,8 +383,41 @@ client.loadBuild = function(name, number)
 		}),
 		handles.loadBuild
 	);
+	client.changes = [];
+	panelSet('', 'panelDR');
+	panelSet('', 'panelDL');
 }
-
+client.loadLast = function() {
+	if(client.lastBuilt.length > 1) {
+		client.changes = [];
+		client.loadBuild(client.lastBuilt [0], client.lastBuilt [1]);
+	}
+	client.changes = [];
+	client.reviewChanges();
+}
+handles.deleteBuild = function(response) {
+	if(response == '"DELETED"')
+	{
+		msg('Deleted');
+		client.getBuilds();
+		panelSet('', 'panelUR');
+		panelSet('', 'panelDL')
+		panelSet('', 'panelDR')
+	} else if(response!=='"\\"DELETED\\""') {
+		msg('Deletion Error');
+	}
+}
+client.deleteBuild = function(name, number) {
+	pipeCreate(
+		({func:'deleteBuild', args:
+			([
+				name,
+				number
+			])
+		}),
+		handles.deleteBuild
+	);
+}
 handles.getBuilds = function(builds)
 {
 	log('Received', builds, JSON.stringify(builds));
@@ -432,7 +474,6 @@ client.commit = function(type, results) {
 handles.create = function(response) {
 	if(response) {
 		update(response);
-		client.getBuilds();
 		msg('created successfully!');
 	} else {
 		msg('creation error!')
@@ -441,7 +482,6 @@ handles.create = function(response) {
 }
 
 client.create = function(engine){
-	page.get('engine').className = 'disabled';
 	page.resetTable();
 	pipeCreate(
 		({func:'create', args:
@@ -451,14 +491,33 @@ client.create = function(engine){
 	);
 }
 
+function compilerDebug(r) { 
+	console.log('debugging compiler', r); 
+}
+
+handles.compile = function(response) {
+	msg('handling compile response');
+	if(response)
+	{
+		msg('Loaded!');
+	} else
+	{
+		msg('Compile Error!');
+		return;
+	}
+	client.getBuilds();
+	update(response);
+}
+
 client.compile = function() {
+	msg('Compiling');
+	client.changes = [];
 	pipeCreate(
 		({func:'compile', args:
 			([])
 		}),
-		handles.compile
+		compilerDebug
 	);
-	client.getBuilds();
 }
 
 handles.RESTART_TAPI = function(response) {
@@ -508,9 +567,12 @@ function destoryAsk(form) {
 }
 function ask(form, handler) {
 	if(Array.from(document.querySelectorAll('input[id*=var]')).length) { return; }
-	page.get('engine').className = 'disabled';
 	let clonedForm = JSON.parse(JSON.stringify(form));
 	let askPanel = newEle('div');
+	askPanel.style.margin = 'auto';
+	askPanel.style.width = '50%';
+	askPanel.style.border = '3px solid black';
+	askPanel.style.padding = '10px'
 	askPanel.id = 'askPanel';
 	let entry;
 	while( (entry = clonedForm.shift()) ) {
@@ -530,7 +592,7 @@ function ask(form, handler) {
 		destoryAsk();
 	}
 	askPanel.appendChild(finish);
-	page.get('panel3').appendChild(askPanel);
+	panelSet(askPanel, 'panelDL');
 }
 
 handles.createAsk = function (formData) {
@@ -566,6 +628,7 @@ handles.changeType = function(element) {
 	client.results = tapi[client.archetype].__search();
 	msg('Found', client.results.__count(), 'results');
 	page.constructTable(client.results);
+	client.reviewChanges();
 }
  
 handles.timer = 0;
@@ -609,30 +672,30 @@ handles.search = function(element) {
 	}
 }
 
-page.grabItem = function(item) {
-	panelSet(editor(item), 'panel2');
+page.grabItem = function(item, archetype) {
+	panelSet(editor(item, archetype), 'panelDR');
 }
 
-page.newPanel = function (name, item) {
+page.newPanel = function (name, item, floats = true) {
 	let newItem = newEle('span');
-	newItem.meta = name;
-	newItem.style.float = 'left';
+	newItem.meta = item.__name;
+	if(floats) newItem.style.float = 'left';
 	newItem.className = 'panelItem';
+	let type = `${client.archetype}`;
 	newItem.onclick = (function(){
-		let meta = arguments[0].target.meta;
-		page.grabItem(tapi[client.archetype].cache[meta]);
+		page.grabItem(item, type);
 	});
 	newItem.innerText = `${name}`;
 	return newItem;
 }
 
 page.resetTable = function() {
-	let panel = page.get('panel1');
+	let panel = page.get('panelDL');
 	panel.innerHTML = '';
 }
 
 page.constructTable = function(results) {
-	let panel = page.get('panel1');
+	let panel = page.get('panelDL');
 	panel.innerHTML = '';
 	panel.style.display = 'block';
 	panel.style.float = 'left';
@@ -643,19 +706,19 @@ page.constructTable = function(results) {
 	});
 }
 
-function generateHeader(text) {
+function generateHeader(text, size = 4) {
 	let body = newEle('span');
-	let label = newEle('span');
+	let label = newEle(`h${size}`);
 	label.innerText = text;
 	body.appendChild(label);
-	body.appendChild(newEle('br'));
 	return body;
 }
 
-function generateInput(type, name, value) {
+function generateInput(type, name, value, archetype) {
 	let input = newEle('input');
 	input.id = `editor.${type}.${name}`;
 	input.value = value;
+	input.type=archetype;
 	input.style.display = "inline-block";
 	input.style.width = "65%";
 	let label = newEle('span');
@@ -670,40 +733,71 @@ function generateInput(type, name, value) {
 	return combined;
 }
 
+client.changes = [];
+
 client.editorSave = function() {
 	let inputs = Array.from(document.querySelectorAll('input[id*=editor]'));
 	inputs.forEach(function(input){
 		let id = input.id;
 		let vartype = id.split('.')[1];
 		let varname = id.split('.')[2];
+		let type = input.getAttribute('type');
 		let value = input.value;
 		if(vartype == 'meta') {
-			tapi[client.archetype].cache[client.workingItem]['__'+varname]=value;
+			if(tapi[type].cache[client.workingItem]['__'+varname] != value) {
+				let item = page.newPanel(
+					`${tapi[type].cache[client.workingItem].__name} ${vartype}.${varname} changed from '${tapi[type].cache[client.workingItem]['__'+varname]}' to '${value}'`,
+					tapi[type].cache[client.workingItem], false
+					);
+				client.changes.push(item);
+				tapi[type].cache[client.workingItem]['__'+varname]=value;
+			}
 		} else {
-			tapi[client.archetype].cache[client.workingItem][vartype][varname]=value;
+			if(tapi[type].cache[client.workingItem][vartype][varname] != value) {
+				let item = page.newPanel(`${tapi[type].cache[client.workingItem].__name} ${vartype}.${varname} changed from '${tapi[type].cache[client.workingItem][vartype][varname]}' to '${value}'`,
+					tapi[type].cache[client.workingItem], false
+					);
+				client.changes.push(item);
+				tapi[type].cache[client.workingItem][vartype][varname]=value;
+			}
 		}
 	});
 	tapi[client.archetype].commit(tapi[client.archetype].cache);
 	msg('Saved!');
+	client.reviewChanges();
 }
 
 client.workingItem = '';
 
-function editor(item) {
+function editor(item, archetype) {
 	client.workingItem = item.__name;
 	let body = newEle('div');
 	body.style.width="100%";
-	body.appendChild(generateHeader('Meta data'));
 	
-	let saveButton = newEle('button');
-	saveButton.innerText = 'Save';
-	saveButton.onclick = function() {
+	body.appendChild(generateHeader(item.__name));
+	
+	let btnRow = newEle('span');
+	
+	let saveBtn = newEle('button');
+	saveBtn.innerText = 'Commit';
+	saveBtn.onclick = function() {
 		client.editorSave();
 	}
-	body.appendChild(saveButton);
+	
+	let exitBtn = newEle('button');
+	exitBtn.innerText = 'Back';
+	exitBtn.onclick = function() {
+		client.reviewChanges();
+	}
+	
+	btnRow.appendChild(saveBtn);
+	btnRow.appendChild(exitBtn);
+	body.appendChild(btnRow);
+	
+	body.appendChild(generateHeader('Meta data'));
 	
 	['name', 'gadgetname', 'filename', 'folder'].forEach(function(meta) {
-		body.appendChild(generateInput('meta', meta, item['__'+meta]));
+		body.appendChild(generateInput('meta', meta, item['__'+meta], archetype));
 	});
 	
 	if(Object.keys(item.normal).length > 0) {
@@ -711,7 +805,7 @@ function editor(item) {
 		body.appendChild(generateHeader('Variables'));
 		
 		Object.keys(item.normal).forEach(function(key) {
-			body.appendChild(generateInput('normal', key, item.normal[key]));
+			body.appendChild(generateInput('normal', key, item.normal[key], archetype));
 		});
 	}
 	
@@ -720,7 +814,7 @@ function editor(item) {
 		body.appendChild(generateHeader('COMMON'));
 		
 		Object.keys(item.common).forEach(function(key) {
-			body.appendChild(generateInput('common', key, item.common[key]));
+			body.appendChild(generateInput('common', key, item.common[key],archetype));
 		});
 	}
 	
@@ -729,7 +823,7 @@ function editor(item) {
 		body.appendChild(generateHeader('VERSION'));
 		
 		Object.keys(item.version).forEach(function(key) {
-			body.appendChild(generateInput('version', key, item.version[key]));
+			body.appendChild(generateInput('version', key, item.version[key], archetype));
 		});
 	}
 	
@@ -738,28 +832,106 @@ function editor(item) {
 		body.appendChild(generateHeader('DAMAGE'));
 		
 		Object.keys(item.damage).forEach(function(key) {
-			body.appendChild(generateInput('damage', key, item.damage[key]));
+			body.appendChild(generateInput('damage', key, item.damage[key], archetype));
 		});
 	}
 	
-	return body;
-	
+	return body;	
 }
 
-window.onload = function() {
+client.reviewChanges = function() {
+	
+	let body = newEle('div');
+	body.style.width="100%";
+	
+	body.appendChild(generateHeader('Changes'));
+	
+	let saveButton = newEle('button');
+	saveButton.innerText = 'Compile';
+	saveButton.onclick = function() {
+		client.compile();
+		panelSet('', 'panelDR');
+	}
+	body.appendChild(saveButton);
+	
+	client.changes.forEach(function(change) {
+		body.appendChild(newEle('br'));
+		body.appendChild(change);
+	});
+	
+	panelSet(body, 'panelDR');
+}
+
+client.uid64 = function() {
+	return ''+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16));
+}
+
+client.uniqueID = client.uid64();
+
+handles.aliveKeeper = function(response) {
+	if(!client.initialized && response == 'GOOD') {
+		client.initialize();
+		msg('Builds loaded');
+	}
+	if(!client.initialized && response == 'BAD')
+	{
+		msg("Client already open somewhere, waiting 5 seconds");
+	}
+}
+
+client.keepAlive = function() {
+	pipeCreate(
+		({func:'keepAlive', args:
+			([])
+		}),
+		handles.aliveKeeper
+	);
+}
+client.keepAlive();
+setInterval(client.keepAlive , 2500);
+
+client.initialized = false;
+
+client.initialize = function() {
 	log("Welcome to the tapi client testing facility!");
 	log("source: hpi_out");
 	log("folders in hpi_out: units, weapons, features, guis, downloads");
 	log("F12 for console, tapi (for tapi.units.__search etc), client.results (for search results)");
 	client.getBuilds();
 	setInterval(handles.search, 100);
+	client.initialized = true;
 }
 
+function buildEnginePanel(){
+	let body = newEle('div');
+	body.style.margin = 'auto';
+	body.style.width = '50%';
+	body.style.border = '3px solid black';
+	body.style.padding = '10px';
+	body.appendChild(generateHeader('Active Build'));
+	body.appendChild(generateHeader(tapi.engine.name + ', version ' + tapi.engine.version));
+	
+	let delBtn = newEle('button');
+	delBtn.onclick = function() { 
+		client.deleteBuild(tapi.engine.name, tapi.engine.version);
+	};
+	delBtn.innerText = 'DELETE';
+	body.appendChild(delBtn);
+	return body;
+}
 
-
-
-
-
-
-
+client.foreach = function() {
+	let vt = page.get('foreachVartype').value;
+	let v = page.get('foreachVar').value;
+	let f = page.get('foreachFunc').value;
+	try {
+		tapi[client.archetype].commit(
+			client.results.__foreach(vt, v, f)
+		);
+	} catch (error){
+		console.warn(error);
+		msg('foreach Error');
+	}
+	client.reviewChanges();
+}
 

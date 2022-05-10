@@ -7,32 +7,59 @@ function log()
 	console.log(__filename.slice(__filename.lastIndexOf('\\')+1)+' \t: ', ...arguments);
 }
 
+var lockedTo = false;
+var locked = false;
+var dontLock = false;
 
-var pool = {size:0};
-
-function constructPool()
-{
-	
-	let args = '';
-	for(let i = 0; i < pool.size; i++)
-	{
-		args += pool[i];
+function keeper() {
+	if(!locked) return;
+	if(dontLock) {
+		dontLock = false;
+	} else {
+		log('unlocking');
+		locked = false;
 	}
-	log('constructing network request from', pool.size, 'packets')
+}
+
+setInterval(keeper, 5000);
+
+var pool = {};
+
+
+function constructPool(packet)
+{
+	let args = '';
+	for(let i = 0; i < pool[packet].size; i++)
+	{
+		args += pool[packet][i];
+	}
 	args = JSON.parse(args);
-	pool = {size:0};
+	delete pool[packet];
 	return args;
 }
 
-function SocketHandler(incoming) {
+async function SocketHandler(incoming) { 
 	incoming = JSON.parse(incoming); 
+	if(!(typeof pool[incoming.packet] == 'object')) {
+		pool[incoming.packet] = {size:0};
+	}
 	let outgoing = '';
-	pool[incoming.poolNumber] = incoming.args;
-	pool.size++;
-	if(pool.size == incoming.poolSize) {
-		if(incoming.func) {
-			let args = constructPool();
-			
+	pool[incoming.packet][incoming.poolNumber] = incoming.args;
+	pool[incoming.packet].size++;
+	if(pool[incoming.packet].size == incoming.poolSize) {
+		let args = constructPool([incoming.packet]);
+		if(incoming.func == 'keepAlive')  {
+			if(incoming.id == lockedTo) dontLock = true;
+			if(!locked) {
+				lockedTo = incoming.id;
+			}
+			locked = true;
+			if(lockedTo != incoming.id) {
+				return JSON.stringify('BAD');
+			}
+			return JSON.stringify('GOOD');
+		} else 
+		if(incoming.func && incoming.id == lockedTo) {
 			let funcCall = tapi;
 			incoming.func.split('.').forEach(
 				function(func){  

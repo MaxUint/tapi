@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=ARMAAP;
-	menu=3;
-	button=0;
-	unitname=ARMAWAC;
-}
-

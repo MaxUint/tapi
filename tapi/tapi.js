@@ -1,6 +1,7 @@
 const fs = require('fs');
 const pers = require('./persistence');
 
+
 function log() 
 {
 	console.log(__filename.slice(__filename.lastIndexOf('\\')+1)+' \t: ', ...arguments);
@@ -17,7 +18,7 @@ makeExist(outputBase);
 const formats = {
     'units': '.fbi',
     'weapons': '.tdf',
-    'features': 'tdf',
+    'features': '.tdf',
     'guis': '.gui',
     'downloads': '.tdf'
 };
@@ -242,6 +243,7 @@ exports.compile = function(rewrite = false) {
         compileMain(exports.downloads.cache, exports.downloads.archetype, formats.downloads, exports.downloads.location);
     }
     exports.save();
+	return exports;
 }
 const compileMain = function(cache, archetype, format, location, overwrite = false) {
     if (exports.verbose) console.time('verbose: ' + archetype + '\t compiled in \t ');
@@ -598,6 +600,17 @@ exports.getBuild = function(name, number)
     }
     return exports;
 }
+exports.deleteBuild = function(name, number) {
+	exports.engine.version = number;
+	exports.engine.name = name;
+	exports.mainOutput = getBuildFolder();
+	fs.rmSync(exports.mainOutput , {
+		recursive: true,
+		force: true
+      });
+	reloadTapi();
+	return JSON.stringify('DELETED');
+}
 exports.commit = function(type, results) {
 	let unitField = makeUnitField(results);
 	exports[type].commit(unitField);
@@ -608,9 +621,13 @@ exports.getBuilds = function()
 	let JSON = {};
 	let engines = fs.readdirSync(outputBase);
 	engines.forEach(function(engineName) { 
+		let builds = fs.readdirSync(outputBase + '\\' + engineName);
+		builds.sort(function(a, b){
+			return parseInt(a) < parseInt(b) ? -1 : 1;
+		});
 		JSON[engineName] = {};
 		JSON[engineName].name = engineName;
-		JSON[engineName].builds = fs.readdirSync(outputBase + '\\' + engineName);
+		JSON[engineName].builds = builds;
 	});
 	return JSON;
 }
@@ -669,3 +686,4 @@ function validateEngineSource(engine) {
 	log('validateEngineSource passed!');
 	return true;
 } 
+

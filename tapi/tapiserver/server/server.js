@@ -12,7 +12,8 @@ exports.createClient = function (html, SocketHandle = (function(){}), port = 300
 	if(typeof port != 'number') {	
 		port = 3000;
 	};
-	const page = http.createServer((request, res) => {
+	const page = http.createServer();
+	page.on('request', (request, res) => {
 		if(request.url=='/') {
 			log('requested html page');
 			res.writeHead(200, { 'content-type': 'text/html' });
@@ -20,7 +21,8 @@ exports.createClient = function (html, SocketHandle = (function(){}), port = 300
 		} else if(request.url=='/127.0.0.1') {
 			request.on('data', chunk => {
 				log('requested socket handler');
-				res.end(SocketHandle(chunk.toString()));
+				let results = SocketHandle(chunk.toString());
+				results.then((result) => { res.end(result); });
 			});
 		}
 	});
