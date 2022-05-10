@@ -863,7 +863,7 @@ client.reviewChanges = function() {
 	}
 	body.appendChild(saveButton);
 	
-	client.reverse().changes.forEach(function(change) {
+	client.changes.reverse().forEach(function(change) {
 		let div = newEle('div');
 		div.appendChild(change);
 		body.appendChild(div);
