@@ -223,7 +223,9 @@ function log()
 		let newMsg = document.createElement('span');
 		newMsg.innerHTML = `${msg}<br>`;
 		term.insertBefore(newMsg, term.firstChild);
-	} 
+	} else {
+		console.log(...arguments);
+	}
 }
 
 function panelSet(what, panel) {
@@ -301,6 +303,14 @@ var client = {};
 
 function update(response) {
 	msg('Loaded!');
+	if(typeof response == 'string') {
+		try { response = JSON.parse(response);
+		} catch (error) {
+			msg('JSON parse error');
+			console.error(error);
+		}
+	}
+	debug = response;
 	page.get('engine').className = '';
 	client.changes = [];
 	page.resetTable();
@@ -400,7 +410,7 @@ handles.deleteBuild = function(response) {
 	{
 		msg('Deleted');
 		client.getBuilds();
-		panelSet('', 'panelUR');
+		panelSet('', 'engineDetails');
 		panelSet('', 'panelDL')
 		panelSet('', 'panelDR')
 	} else if(response!=='"\\"DELETED\\""') {
@@ -491,10 +501,6 @@ client.create = function(engine){
 	);
 }
 
-function compilerDebug(r) { 
-	console.log('debugging compiler', r); 
-}
-
 handles.compile = function(response) {
 	msg('handling compile response');
 	if(response)
@@ -516,7 +522,7 @@ client.compile = function() {
 		({func:'compile', args:
 			([])
 		}),
-		compilerDebug
+		handles.compile
 	);
 }
 
@@ -899,6 +905,9 @@ client.initialize = function() {
 	log("F12 for console, tapi (for tapi.units.__search etc), client.results (for search results)");
 	client.getBuilds();
 	setInterval(handles.search, 100);
+	setInterval((function(){
+		client.getBuilds();
+	}),		2500);
 	client.initialized = true;
 }
 

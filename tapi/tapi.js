@@ -601,14 +601,10 @@ exports.getBuild = function(name, number)
     return exports;
 }
 exports.deleteBuild = function(name, number) {
-	exports.engine.version = number;
-	exports.engine.name = name;
-	exports.mainOutput = getBuildFolder();
-	fs.rmSync(exports.mainOutput , {
+	fs.rmSync([outputBase, name, number].join('\\') , {
 		recursive: true,
 		force: true
       });
-	reloadTapi();
 	return JSON.stringify('DELETED');
 }
 exports.commit = function(type, results) {

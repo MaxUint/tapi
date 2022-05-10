@@ -21,6 +21,7 @@ exports.createClient = function (html, SocketHandle = (function(){}), port = 300
 		} else if(request.url=='/127.0.0.1') {
 			request.on('data', chunk => {
 				log('requested socket handler');
+				res.writeHead(200, { 'content-type': 'application/json' });
 				let results = SocketHandle(chunk.toString());
 				results.then((result) => { res.end(result); });
 			});
