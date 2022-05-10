@@ -124,7 +124,7 @@ class unitField {
                             let newValue = ((new Function(variable, func))(this[key][vartype][variable]));
 							let item = page.newPanel(
 								`${this[key].__name} ${vartype}.${variable} changed from '${this[key][vartype][variable]}' to '${newValue}'`,
-								this[key][vartype], false
+								this[key], false
 							);
 							client.changes.push(item);
                             this[key][vartype][variable] = newValue;
@@ -303,6 +303,7 @@ var client = {};
 
 function update(response) {
 	msg('Loaded!');
+	page.resetSearches();
 	if(typeof response == 'string') {
 		try { response = JSON.parse(response);
 		} catch (error) {
@@ -630,6 +631,7 @@ page.toggle = function (id) {
 client.archetype = '';
 
 handles.changeType = function(element) {
+	page.resetSearches();
 	client.archetype = element.value.toLowerCase();
 	client.results = tapi[client.archetype].__search();
 	msg('Found', client.results.__count(), 'results');
@@ -682,14 +684,15 @@ page.grabItem = function(item, archetype) {
 	panelSet(editor(item, archetype), 'panelDR');
 }
 
-page.newPanel = function (name, item, floats = true) {
-	let newItem = newEle('span');
+page.newPanel = function (name, item, floats = true, archetype = 'not set') {
+	if(archetype == 'not set') archetype = client.archetype;
+	let newItem = newEle(floats ? 'span' : 'div');
 	newItem.meta = item.__name;
 	if(floats) newItem.style.float = 'left';
 	newItem.className = 'panelItem';
-	let type = `${client.archetype}`;
+	let clone = structuredClone(tapi[archetype].cache[item.__name]);
 	newItem.onclick = (function(){
-		page.grabItem(item, type);
+		page.grabItem(clone, archetype);
 	});
 	newItem.innerText = `${name}`;
 	return newItem;
@@ -753,7 +756,7 @@ client.editorSave = function() {
 			if(tapi[type].cache[client.workingItem]['__'+varname] != value) {
 				let item = page.newPanel(
 					`${tapi[type].cache[client.workingItem].__name} ${vartype}.${varname} changed from '${tapi[type].cache[client.workingItem]['__'+varname]}' to '${value}'`,
-					tapi[type].cache[client.workingItem], false
+					structuredClone(tapi[type].cache[client.workingItem]), false, type
 					);
 				client.changes.push(item);
 				tapi[type].cache[client.workingItem]['__'+varname]=value;
@@ -761,7 +764,7 @@ client.editorSave = function() {
 		} else {
 			if(tapi[type].cache[client.workingItem][vartype][varname] != value) {
 				let item = page.newPanel(`${tapi[type].cache[client.workingItem].__name} ${vartype}.${varname} changed from '${tapi[type].cache[client.workingItem][vartype][varname]}' to '${value}'`,
-					tapi[type].cache[client.workingItem], false
+					structuredClone(tapi[type].cache[client.workingItem]), false, type
 					);
 				client.changes.push(item);
 				tapi[type].cache[client.workingItem][vartype][varname]=value;
@@ -779,9 +782,9 @@ function editor(item, archetype) {
 	client.workingItem = item.__name;
 	let body = newEle('div');
 	body.style.width="100%";
-	
+	console.log('editor', item);
 	body.appendChild(generateHeader(item.__name));
-	
+	item = structuredClone(tapi[archetype].cache[client.workingItem]);
 	let btnRow = newEle('span');
 	
 	let saveBtn = newEle('button');
@@ -861,8 +864,9 @@ client.reviewChanges = function() {
 	body.appendChild(saveButton);
 	
 	client.changes.forEach(function(change) {
-		body.appendChild(newEle('br'));
-		body.appendChild(change);
+		let div = newEle('div');
+		div.appendChild(change);
+		body.appendChild(div);
 	});
 	
 	panelSet(body, 'panelDR');
@@ -909,6 +913,16 @@ client.initialize = function() {
 		client.getBuilds();
 	}),		2500);
 	client.initialized = true;
+	page.get('searchName').value = '';
+	page.get('searchValue').value = '';
+	page.get('searchVariable').value = '';
+}
+
+page.resetSearches = function() {
+	page.get('searchName').value = '';
+	page.get('searchValue').value = '';
+	page.get('searchVariable').value = '';
+	handles.searchTerms = ['', '', ''];
 }
 
 function buildEnginePanel(){
@@ -942,5 +956,9 @@ client.foreach = function() {
 		msg('foreach Error');
 	}
 	client.reviewChanges();
+}
+
+window.onload = function() {
+
 }
 

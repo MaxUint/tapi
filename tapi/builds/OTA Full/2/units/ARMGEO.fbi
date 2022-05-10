@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=ARMGEO;
+	version=1;
+	side=ARM;
+	objectname=ARMGEO;
+	designation=AE-GPG;
+	name=Geothermal Powerplant;
+	description=Produces Energy;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=9568;
+	buildcostmetal=520;
+	maxdamage=880;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=13078;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_GEO;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=LARGE_BUILDINGEX;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=ARM ENERGY LEVEL2 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=GGGGGGGGGGGGGGGG;
+	corpse=armgeo_dead;
+	germanname=Geotherm. Kraftwerk;
+	germandescription=Liefert Energie;
+	unitnumber=35;
+	frenchname=Centrale géothermique;
+	frenchdescription=Produit de l'énergie;
+	spanishname=Planta Geotérmica;
+	spanishdescription=Genera energía;
+	italianname=Stabilimento Geotermico;
+	italiandescription=Produce energia;
+	energymake=250;
+	buildangle=2048;
+	activatewhenbuilt=1;
+	ovradjust=1;
+}
+
