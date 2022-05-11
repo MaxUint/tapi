@@ -1,0 +1,55 @@
+[UNITINFO]
+{
+	unitname=CORSONAR;
+	version=1;
+	side=CORE;
+	objectname=CORSONAR;
+	designation=FS-4;
+	name=Sonar Station;
+	description=Sonar Station;
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=399;
+	buildcostmetal=20;
+	maxdamage=52;
+	maxslope=10;
+	energyuse=8;
+	buildtime=900;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=175;
+	radardistance=0;
+	soundcategory=CORE_SONAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_BUILDINGEX;
+	selfdestructas=SMALL_BUILDING;
+	category=CORE SPECIAL SONAR LEVEL2 NOTAIR NOTSUB CTRL_R;
+	tedclass=WATER;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=wwww;
+	corpse=corsonar_dead;
+	germanname=Sonarstation;
+	germandescription=Ortet schwimmende Einheiten;
+	unitnumber=137;
+	frenchname=Station sonar;
+	frenchdescription=Sonar;
+	spanishname=Estación de Sonar;
+	spanishdescription=Detecta submarinos;
+	italianname=Stazione Sonar;
+	italiandescription=Stazione sonar;
+	energymake=8;
+	minwaterdepth=10;
+	sonardistance=1223;
+	waterline=12;
+	buildangle=8192;
+	activatewhenbuilt=1;
+	onoffable=1;
+	noshadow=1;
+	ovradjust=1;
+}
+
