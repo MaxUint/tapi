@@ -887,7 +887,6 @@ client.reviewChanges = function() {
 }
 
 client.uid64 = function() {
-	return 'testing'
 	return ''+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16))+(Math.floor(Math.random() * 10**16));
 }
 
