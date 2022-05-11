@@ -1,9 +1,36 @@
-const server = require('./server');
 const tapi = require('../tapi');
-const fs = require('fs');
+
+const express = require('express')
+const app = express()
+
+const path = __dirname + '/';
+
+app.set('view engine', 'ejs')
+
+app.use(logger)
+
+app.use(express.static(path + "public"))
+
+app.use('/127.0.0.1', (req, res) => {
+	req.on('data', chunk => {
+		log('requested socket handler');
+		res.writeHead(200, { 'content-type': 'application/json' });
+		let results = SocketHandler(chunk.toString());
+		results.then((result) => { res.end(result); });
+	});
+})
+
+app.listen(3000)
+
+log('server at http://127.0.0.1:3000/')
+
+function logger(req, res, next) {
+	log('request', req.originalUrl)
+	next()
+}
 
 function log() 
-{
+{	
 	return;
 	console.log(__filename.slice(__filename.lastIndexOf('\\')+1)+' \t: ', ...arguments);
 }
@@ -77,7 +104,3 @@ async function SocketHandler(incoming) {
 	}
 	return '';
 }
-
-html = fs.readFileSync(__dirname + '\\html\\client.html', 'utf8');
-html = html.replace(`<!-###SCRIPT###!->`, fs.readFileSync(__dirname + '\\html\\client.js', 'utf8'));
-server.createClient(html, SocketHandler, port = 3000);
