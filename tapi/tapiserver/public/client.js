@@ -452,7 +452,6 @@ client.loadBuild = function(name = page.get('engineNames').value, number = page.
 	page.get('engine').className = 'disabled';
 	msg('Loading...');
 	client.changes = [];
-	panelSet('', 'panelDR');
 	panelSet('', 'panelDL');
 	
 	pipeCreate(
@@ -468,8 +467,11 @@ client.loadBuild = function(name = page.get('engineNames').value, number = page.
 	
 	if(client.loadedBuilds[[name, number]] != undefined) {
 			update(client.loadedBuilds[[name, number]])
+			tryLastEdit()
 			msg('Loaded!')
 			skipupdate = true
+	} else {
+		panelSet('', 'panelDR')
 	}
 	
 	client.lastBuilt = [name, number];
@@ -503,10 +505,21 @@ client.deleteBuild = function(name, number) {
 		handles.deleteBuild
 	);
 }
+
+function tryLastEdit(){
+	try {
+		let item = tapi[lastEditor[1]].cache[lastEditor[0].__name]
+		panelSet(editor(lastEditor[0], lastEditor[1]), 'panelDR');
+		
+	} catch {
+		panelSet('','panelDR')
+	}
+}
 client.resetPanels = function() {
 	panelSet('', 'engineDetails');
 	panelSet('', 'panelDL')
 	panelSet('', 'panelDR')
+	tryLastEdit()
 	page.get('engine').className = 'disabled'
 	client.changes = [];
 }
@@ -811,7 +824,7 @@ function generateInput(type, name, value, archetype) {
 }
 
 client.changes = [];
-
+lastEditor = []
 client.editorSave = function() {
 	if(syncing) {
 		msg('Error, client syncing')
@@ -851,13 +864,14 @@ client.editorSave = function() {
 client.workingItem = '';
 
 function editor(item, archetype) {
-	
-	client.workingItem = item.__name;
+	client.workingItem = item.__name
+	item = (tapi[archetype].cache[client.workingItem])
+	lastEditor = [item, archetype]
 	let body = newEle('div');
 	body.style.width="100%";
 	console.log('editor', item);
 	body.appendChild(generateHeader(item.__name));
-	item = (tapi[archetype].cache[client.workingItem]);
+	
 	let btnRow = newEle('span');
 	
 	let saveBtn = newEle('button');
@@ -1113,7 +1127,11 @@ function buildEngineSelector(builds) {
 
 function buildEnginePanel(){
 	syncing = false
-	client.reviewChanges()
+	if(lastEditor.length>1) {
+		tryLastEdit()
+	} else {
+		client.reviewChanges()
+	}
 	let body = newEle('span');
 	body.appendChild(generateHeader(tapi.engine.name + ', version ' + tapi.engine.version, 6));
 	if(page.get('engineNames').value != tapi.engine.name) page.get('engineNames').value = tapi.engine.name 
