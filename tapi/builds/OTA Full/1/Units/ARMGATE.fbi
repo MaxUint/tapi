@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=ARMGATE;
+	version=1;
+	side=ARM;
+	objectname=ARMGATE;
+	designation=ARM-GG;
+	name=Galactic Gate;
+	description=Space Teleporter;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=1865294;
+	buildcostmetal=213965;
+	maxdamage=2876;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=3000;
+	buildtime=3742578;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=GATE;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=ATOMIC_BLAST;
+	category=ARM SPECIAL NOWEAPON NOTAIR NOTSUB ;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo;
+	corpse=armgate_dead;
+	germanname=Galaxistor;
+	germandescription=Weltraum-Teleporter;
+	unitnumber=34;
+	frenchname=Téléporteur;
+	frenchdescription=Téléporteur spatial;
+	spanishname=Puerta Galáctica;
+	spanishdescription=Teletransportador espacial;
+	italianname=Cancello Galattico;
+	italiandescription=Teletrasporto spaziale;
+	buildangle=2048;
+	norestrict=1;
+	teleporter=1;
+	ovradjust=1;
+}
+
