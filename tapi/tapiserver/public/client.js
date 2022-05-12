@@ -577,7 +577,6 @@ client.create = function(engine){
 }
 
 handles.compile = function(response) {
-	syncing = false
 	msg('handling compile response');
 	if(response)
 	{
@@ -1141,6 +1140,7 @@ function buildEnginePanel(){
 	let delBtn = newEle('button');
 	delBtn.onclick = function() { 
 		msg('Deleting...')
+		syncing = true
 		page.disableEngineOptions()
 		client.resetPanels()
 		client.deleteBuild(tapi.engine.name, tapi.engine.version);

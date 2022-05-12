@@ -1,0 +1,49 @@
+[UNITINFO]
+{
+	unitname=ARMDRAG;
+	version=1;
+	side=ARM;
+	objectname=ARMDRAG;
+	designation=A-102-C;
+	name=Dragon's Teeth;
+	description=Perimeter Defense;
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=250;
+	buildcostmetal=10;
+	maxdamage=3500;
+	maxwaterdepth=0;
+	maxslope=32;
+	energyuse=0;
+	buildtime=520;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=100;
+	radardistance=0;
+	soundcategory=NONE;
+	energystorage=0;
+	metalstorage=0;
+	category=ARM METAL LEVEL2 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=f;
+	corpse=DragonsTeeth;
+	germanname=Panzersperre;
+	germandescription=Palisadenanlage;
+	unitnumber=26;
+	frenchname=Dent de dragon;
+	frenchdescription=Périmètre de défense;
+	spanishname=Dragon's Teeth;
+	spanishdescription=Defensa de perímetro;
+	italianname=Denti del Drago;
+	italiandescription=Difesa perimetrale;
+	energymake=0;
+	buildangle=8192;
+	isfeature=1;
+	ovradjust=1;
+}
+

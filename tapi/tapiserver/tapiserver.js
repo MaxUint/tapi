@@ -86,7 +86,7 @@ async function SocketHandler(incoming) {
 			}
 			return JSON.stringify('GOOD');
 		} else 
-		if(incoming.func && incoming.id == lockedTo) {
+		if(incoming.func && incoming.id == lockedTo || !locked) {
 			let funcCall = tapi;
 			incoming.func.split('.').forEach(
 				function(func){  

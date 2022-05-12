@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=ARMESTOR;
+	version=1;
+	side=ARM;
+	objectname=ARMESTOR;
+	designation=AE-ESF;
+	name=Energy Storage;
+	description=Increases Energy Storage;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=2430;
+	buildcostmetal=240;
+	maxdamage=1000;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=12710;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_ESTOR;
+	energystorage=3000;
+	metalstorage=0;
+	explodeas=ESTOR_BUILDINGEX;
+	selfdestructas=CRAWL_BLASTSML;
+	category=ARM ENERGY LEVEL1 NOWEAPON  NOTAIR NOTSUB STORAGE;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=o;
+	corpse=armestor_dead;
+	germanname=Energiespeicher;
+	germandescription=Vergrößert Lager für Energievorräte;
+	unitnumber=27;
+	frenchname=Dépôt d'énergie;
+	frenchdescription=Augmente le stockage d'énergie;
+	spanishname=Almacén de Energía;
+	spanishdescription=Incrementa capacidad de alm.energía;
+	italianname=Deposito Energetico;
+	italiandescription=Aumenta l'immagazzinamento di energia;
+	buildangle=4096;
+	activatewhenbuilt=1;
+	ovradjust=1;
+}
+
