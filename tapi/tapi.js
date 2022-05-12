@@ -251,6 +251,7 @@ exports.compile = function(rewrite = false) {
 		exports.downloads.commit(exports.downloads.cache);
         compileMain(exports.downloads.cache, exports.downloads.archetype, formats.downloads, exports.downloads.location);
     }
+	exports.engine.timestamp = Date.now()
     exports.save();
 	return exports;
 }
@@ -526,8 +527,12 @@ function getNewBuildFolder() {
     return engineBase + '\\' + engineCount;
 }
 exports.create = function(engine, fromversion = false) {
-	if(currentBuilds().includes(engine.name)) return false;
-	if(!validateEngineSource(engine)) return false;
+	if(currentBuilds().includes(engine.name)) return 'Error, Name already exists';
+	if(engine.name == '') return 'Error, empty name!'
+	if(engine.name.includes('.')) return 'Error, name includes .'
+	if(engine.name[0] == ' ') return 'Error, name starts with a space'
+	if(!validateEngineSource(engine)) return 'Error, invalid engine source'
+	if(!(/^(?!\.)(?!com[0-9]$)(?!con$)(?!lpt[0-9]$)(?!nul$)(?!prn$)[^\|\*\?\\:<>/$"]*[^\.\|\*\?\\:<>/$"]+$/.test(engine.name))) return 'Error, name not acceptable, try a filename friendly string'
 	reloadTapi();
     exports.engine = engine;
     if (!fromversion) {
@@ -565,7 +570,7 @@ exports.create = function(engine, fromversion = false) {
     }
 	if(!fromversion) exports.compile(true);
 	
-    return exports;
+    return 'Created!';
 }
 exports.RESTART_TAPI = function() {
     pers.deleteCache();
@@ -617,6 +622,13 @@ exports.deleteBuild = function(name, number) {
 		recursive: true,
 		force: true
       });
+	if(fs.readdirSync(outputBase + '\\' + name).length == 0){
+		pers.del(name)
+		fs.rmSync([outputBase, name].join('\\') , {
+		recursive: true,
+		force: true
+      });
+	}
 	return JSON.stringify('DELETED');
 }
 exports.commit = function(type, results) {
@@ -634,6 +646,7 @@ exports.getBuilds = function()
 			return parseInt(a) < parseInt(b) ? -1 : 1;
 		});
 		JSON[engineName] = {};
+		JSON[engineName].timestamp = pers.load(engineName).timestamp
 		JSON[engineName].name = engineName;
 		JSON[engineName].builds = builds;
 	});
