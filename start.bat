@@ -34,5 +34,6 @@ for /F "delims=" %%R in ('
 )
 title TAPISERVER
 :A
-node main.js
+node tapi/client.js
+echo if you have an error, you probably don't have nodejs, install nodejs at https://nodejs.org/en/
 GOTO :A
