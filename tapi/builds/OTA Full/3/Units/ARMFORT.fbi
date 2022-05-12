@@ -1,0 +1,49 @@
+[UNITINFO]
+{
+	unitname=ARMFORT;
+	version=1.2;
+	side=ARM;
+	objectname=ARMFORT;
+	designation=A-102-C;
+	name=Fortification Wall;
+	description=Perimeter Defense;
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=675;
+	buildcostmetal=27;
+	maxdamage=2000;
+	maxwaterdepth=0;
+	maxslope=8;
+	energyuse=0;
+	buildtime=965;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=100;
+	radardistance=0;
+	soundcategory=NONE;
+	energystorage=0;
+	metalstorage=0;
+	category=ARM METAL LEVEL2 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=f;
+	corpse=fortification;
+	germanname=Befestigung;
+	germandescription=Befestigungsmauern;
+	unitnumber=167;
+	frenchname=Mur de fortification;
+	frenchdescription=Périmètre de défense;
+	spanishname=Defensa;
+	spanishdescription=Defensa de perímetro;
+	italianname=Fortificazioni;
+	italiandescription=Mura fortificate;
+	energymake=0;
+	buildangle=0;
+	downloadable=1;
+	isfeature=1;
+}
+

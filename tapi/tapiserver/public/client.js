@@ -577,6 +577,7 @@ client.create = function(engine){
 }
 
 handles.compile = function(response) {
+	syncing = false
 	msg('handling compile response');
 	if(response)
 	{
@@ -593,6 +594,7 @@ client.compile = function() {
 		msg('Error, engine not synced')
 		return
 	}
+	syncing = true
 	page.disableEngineOptions()
 	panelSet('', 'panelDR');
 	msg('Compiling');
