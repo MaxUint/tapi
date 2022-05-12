@@ -252,9 +252,53 @@ function msg() {
 	log(...arguments);
 	page.get('message').innerText = Array.from(arguments).join(' ');
 }
+var badstate = false;
+var forms = {};
+forms.create = ['__Create a new engine', 'name', 'source','__folders', 'units', 'weapons', 'features', 'guis', 'downloads'];
+var times = {}
+times.keepAlive = 500 //ms interval
+times.getBuilds = 1000
+times.search = 100
+times.piper = 100
 
+var pipes = [];
+var delays = {};
+var pipeTimer = 0;
+var timeout = 10000;
+
+function pipeNoneStackedInterval() {
+	pipeTimer -= times.piper
+	if(pipeTimer > 0) 
+		return
+	pipeHandler()
+}
+
+setInterval(pipeNoneStackedInterval, times.piper)
+
+function pipeHandler() {
+	let pipe = pipes.shift();
+	if(typeof pipe == 'undefined') {
+		pipeTimer = 100
+		return;
+	}
+	pipeStart(pipe.req, pipe.hand);
+	pipeTimer = timeout;
+}
 function pipeCreate(request, handler) {
-	client.keeperPause += 2;
+	if(badstate && request.func != 'keepAlive') {
+		return
+	}
+	let pipeObj = {req:request, hand:handler};
+	if(pipes.some(pipe => {
+		if(pipe.req.func == request.func) 
+			return true
+	})) {
+		return
+	}
+	pipes.push(pipeObj)
+}
+
+function pipeStart(request, handler) {
 	request.packet = client.uid64();
 	request.id = client.uniqueID;
 	request.args = JSON.stringify(request.args);
@@ -291,9 +335,15 @@ function pipeSend(request, handler) {
 		if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText != '')
 		{
 			try{
+				log('Received', JSON.parse(xhr.responseText));
 				handler(JSON.parse(xhr.responseText));
+				pipeTimer = 0
+				return
 			} catch {
+				log('Received', xhr.responseText);
 				handler(xhr.responseText);
+				pipeTimer = 0
+				return
 			}
 		}
 		
@@ -303,8 +353,7 @@ function pipeSend(request, handler) {
 	xhr.send(request);
 }
 
-var pipeFun = [];
-var pipeRes = [];
+
 
 var handles = {};
 var client = {};
@@ -439,8 +488,7 @@ client.deleteBuild = function(name, number) {
 }
 handles.getBuilds = function(builds)
 {
-	log('Received', builds, JSON.stringify(builds));
-	
+	if(typeof builds != 'object') return	
 	let buildsPanel = page.get('builds');
 	buildsPanel.innerHTML = '';
 	function makeLoadBuildBtn(name, number) {
@@ -554,9 +602,7 @@ client.RESTART_TAPI = function() {
 	client.getBuilds();
 }
 
-forms = {};
 
-forms.create = ['__Create a new engine', 'name', 'source','__folders', 'units', 'weapons', 'features', 'guis', 'downloads'];
 
 function newEle(type) {
 	return document.createElement(type);
@@ -893,21 +939,19 @@ client.uid64 = function() {
 client.uniqueID = client.uid64();
 
 handles.aliveKeeper = function(response) {
-	if(!client.initialized && response == 'GOOD') {
-		client.initialize();
-		msg('Builds loaded');
+	if(response == 'GOOD') {
+		badstate = false
+		if(page.get('message').innerText == 'Client already open somewhere, waiting 5 seconds')
+			msg('Client online');
 	}
-	if(!client.initialized && response == 'BAD')
+	if(response == 'BAD')
 	{
+		badstate = true
 		msg("Client already open somewhere, waiting 5 seconds");
 	}
 }
-client.keeperPause = 0;
+
 client.keepAlive = function() {
-	if(client.keeperPause) {
-		client.keeperPause--;
-		return;
-	}
 	pipeCreate(
 		({func:'keepAlive', args:
 			([])
@@ -915,8 +959,6 @@ client.keepAlive = function() {
 		handles.aliveKeeper
 	);
 }
-client.keepAlive();
-setInterval(client.keepAlive , 2500);
 
 client.initialized = false;
 
@@ -925,15 +967,12 @@ client.initialize = function() {
 	log("source: hpi_out");
 	log("folders in hpi_out: units, weapons, features, guis, downloads");
 	log("F12 for console, tapi (for tapi.units.__search etc), client.results (for search results)");
-	client.getBuilds();
-	setInterval(handles.search, 100);
-	setInterval((function(){
-		client.getBuilds();
-	}),		4000);
+	client.keepAlive();
+	setInterval(handles.search, times.search);
+	setInterval(client.getBuilds, times.getBuilds);
+	setInterval(client.keepAlive , times.keepAlive);
 	client.initialized = true;
-	page.get('searchName').value = '';
-	page.get('searchValue').value = '';
-	page.get('searchVariable').value = '';
+	page.resetSearches();
 }
 
 page.resetSearches = function() {
@@ -1005,7 +1044,7 @@ client.searchAppRes = function () {
 }
 
 window.onload = function() {
-
+	client.initialize();
 }
 
 
