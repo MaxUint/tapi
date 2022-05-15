@@ -1,0 +1,36 @@
+[CORHRK_ROCKET]
+{
+	id=45;
+	name=Heavy Rockets;
+	rendertype=1;
+	lineofsight=1;
+	vlaunch=1;
+	model=CorKBMissl1;
+	range=500;
+	noautorange=1;
+	weapontimer=1;
+	weaponvelocity=600;
+	metalpershot=0;
+	edgeeffectiveness=0.50;
+	soundstart=Rockhvy3;
+	soundhit=xplomed4;
+	firestarter=100;
+	smokedelay=.1;
+	selfprop=1;
+	smoketrail=1;
+	twophase=1;
+	guidance=1;
+	tolerance=4000;
+	explosiongaf=fx;
+	explosionart=explode3;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom2;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashlg;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=240;
+		}
+}
+

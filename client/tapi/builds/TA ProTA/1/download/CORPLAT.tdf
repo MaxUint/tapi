@@ -1,0 +1,32 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCSA;
+	menu=3;
+	button=4;
+	unitname=CORPLAT;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORCS;
+	menu=3;
+	button=2;
+	unitname=CORPLAT;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORACSUB;
+	menu=2;
+	button=4;
+	unitname=CORPLAT;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=CORCH;
+	menu=3;
+	button=5;
+	unitname=CORPLAT;
+}
+

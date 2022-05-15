@@ -1,0 +1,425 @@
+[GADGET0]
+{
+	totalgadgets=30;
+	panel=CORPAN;
+		[COMMON]
+		{
+			id=0;
+			assoc=0;
+			name=HEADER;
+			xpos=0;
+			ypos=128;
+			width=128;
+			height=352;
+			attribs=0;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+		[VERSION]
+		{
+			major=1;
+			minor=0;
+			revision=0;
+		}
+}
+
+[GADGET1]
+{
+	filename=corbutt;
+		[COMMON]
+		{
+			id=7;
+			assoc=0;
+			name=CORFONT;
+			xpos=0;
+			ypos=0;
+			width=0;
+			height=0;
+			attribs=0;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET2]
+{
+	quickkey=111;
+		[COMMON]
+		{
+			id=1;
+			assoc=8;
+			name=CORORDERS;
+			xpos=3;
+			ypos=4;
+			width=59;
+			height=19;
+			attribs=16;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET3]
+{
+	quickkey=98;
+		[COMMON]
+		{
+			id=1;
+			assoc=8;
+			name=CORBUILD;
+			xpos=65;
+			ypos=4;
+			width=59;
+			height=19;
+			attribs=16;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET4]
+{
+	quickkey=109;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORMOVE;
+			xpos=5;
+			ypos=247;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET5]
+{
+	quickkey=115;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORSTOP;
+			xpos=64;
+			ypos=247;
+			width=55;
+			height=31;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET6]
+{
+	quickkey=112;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORPATROL;
+			xpos=64;
+			ypos=282;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET7]
+{
+	quickkey=97;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORATTACK;
+			xpos=5;
+			ypos=317;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET8]
+{
+	quickkey=103;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORDEFEND;
+			xpos=5;
+			ypos=282;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET9]
+{
+	quickkey=102;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CORFIREORD;
+			xpos=6;
+			ypos=35;
+			width=113;
+			height=20;
+			attribs=256;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET10]
+{
+	quickkey=118;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CORMOVEORD;
+			xpos=6;
+			ypos=59;
+			width=113;
+			height=20;
+			attribs=25;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET11]
+{
+	quickkey=120;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CORONOFF;
+			xpos=6;
+			ypos=92;
+			width=113;
+			height=20;
+			attribs=256;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET12]
+{
+	quickkey=99;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORCAPTURE;
+			xpos=64;
+			ypos=207;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET13]
+{
+	quickkey=101;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORRECLAIM;
+			xpos=5;
+			ypos=172;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET14]
+{
+	quickkey=114;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORREPAIR;
+			xpos=5;
+			ypos=207;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET15]
+{
+	quickkey=108;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORLOAD;
+			xpos=64;
+			ypos=317;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET16]
+{
+	quickkey=107;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CORCLOAK;
+			xpos=6;
+			ypos=116;
+			width=113;
+			height=20;
+			attribs=256;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET17]
+{
+	quickkey=100;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORBLAST;
+			xpos=64;
+			ypos=317;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+
+[GADGET18]
+{
+	quickkey=117;
+		[COMMON]
+		{
+			id=1;
+			assoc=1;
+			name=CORUNLOAD;
+			xpos=64;
+			ypos=172;
+			width=55;
+			height=31;
+			attribs=64;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+		}
+}
+

@@ -1,0 +1,55 @@
+[UNITINFO]
+{
+	unitname=CORGANT;
+	version=1.2;
+	side=CORE;
+	objectname=CORGANT;
+	designation=GKA-DML;
+	name=Krogoth Gantry;
+	description=Builds Krogoth;
+	footprintx=9;
+	footprintz=9;
+	buildcostenergy=9574;
+	buildcostmetal=6587;
+	maxdamage=3050;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=41937;
+	workertime=200;
+	bmcode=0;
+	builder=1;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_GANTRY;
+	energystorage=1400;
+	metalstorage=800;
+	explodeas=LARGE_BUILDINGEX;
+	selfdestructas=LARGE_BUILDING;
+	category=CORE PLANT CTRL_F LEVEL3 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=PLANT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooooooo ooooooooo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo oocccccoo ;
+	corpse=corgant_dead;
+	germanname=Krogoth-Werft;
+	germandescription=Baut Krogoth-Bots;
+	unitnumber=253;
+	frenchname=Chantier de Krogoth;
+	frenchdescription=Construit Krogoth;
+	firestandorders=1;
+	standingfireorder=2;
+	mobilestandorders=1;
+	standingmoveorder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	spanishname=Krogoth Gantry;
+	spanishdescription=Construye Krogoths;
+	italianname=Fabbrica Krogoth;
+	italiandescription=Costruzione Krogoth;
+	downloadable=1;
+}
+

@@ -1,0 +1,55 @@
+[UNITINFO]
+{
+	unitname=CORASP;
+	version=1;
+	side=CORE;
+	objectname=CORASP;
+	designation=CRL-SP1;
+	name=Repair Pad;
+	description=Automatically repairs air units (Upgradable);
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=8540;
+	buildcostmetal=430;
+	maxslope=10;
+	energyuse=0;
+	buildtime=16190;
+	maxwaterdepth=1;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=384;
+	radardistance=0;
+	soundcategory=AIRPLANT;
+	energystorage=50;
+	metalstorage=50;
+	explodeas=BIG_UNIT;
+	selfdestructas=MEDIUM_UNIT;
+	category=CORE BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo oooo oooo oooo;
+	corpse=corasp_dead;
+	germanname=Luftfahrt-Reparaturset;
+	germandescription=Repariert Lufteinheiten automatisch;
+	unitnumber=155;
+	frenchname=Piste de réparations;
+	frenchdescription=Répare automatiquement les avions;
+	spanishname=Plat. Aérea Reparaciones;
+	spanishdescription=Repara aeronaves automáticamente;
+	italianname=Piattaforma Aerei;
+	italiandescription=Ripara automaticamente i velivoli;
+	builddistance=6;
+	energymake=5;
+	buildangle=1024;
+	activatewhenbuilt=1;
+	onoffable=1;
+	sortbias=0;
+	isairbase=1;
+	ovradjust=1;
+	damagemodifier=0.25;
+	canbuild=1;
+}
+

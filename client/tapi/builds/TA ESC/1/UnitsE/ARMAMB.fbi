@@ -1,0 +1,56 @@
+[UNITINFO]
+{
+	unitname=ARMAMB;
+	version=1.2;
+	side=ARM;
+	objectname=ARMAMB;
+	designation=ARM-GUARD;
+	name=Ambusher;
+	description=Pop-up Heavy Cannon;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=57652;
+	maxslope=10;
+	energyuse=0;
+	buildtime=50165;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=576;
+	radardistance=0;
+	soundcategory=GUARD;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=MEDIUM_BUILDING;
+	selfdestructas=LARGE_BUILDING;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV2 CTRL_X;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo oooo oooo oooo;
+	corpse=armguard_dead;
+	germanname=Ambusher;
+	germandescription=Schwere Tarn-Kanone;
+	unitnumber=200;
+	frenchname=Embushor;
+	frenchdescription=Canon lourd Pop-up;
+	firestandorders=1;
+	standingfireorder=2;
+	canstop=1;
+	spanishname=Ambusher;
+	spanishdescription=Cañon de ataque pesado;
+	italianname=Ambusher;
+	italiandescription=Cannone pesante a comparsa;
+	shootme=1;
+	defaultmissiontype=GUARD_NOMOVE;
+	canattack=1;
+	weapon1=CANNON_MRPC;
+	weapon3=RANGE_1344;
+	downloadable=1;
+	wpri_badtargetcategory=AIR;
+	badtargetcategory=AIR;
+	damagemodifier=0.25;
+	antiweapons=1;
+}
+

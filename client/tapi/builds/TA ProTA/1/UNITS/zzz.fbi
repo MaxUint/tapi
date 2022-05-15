@@ -1,0 +1,38 @@
+[UNITINFO]
+{
+	unitname=ZZZ;
+	version=1;
+	side=CORE;
+	objectname=zzz;
+	designation=Kunglig_Kuttare;
+	name=welcome.to/yankspankers;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=190;
+	maxslope=10;
+	energyuse=0;
+	buildtime=494;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=380;
+	soundcategory=ARM_SONAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=MEDIUM_BUILDINGEX;
+	selfdestructas=MEDIUM_BUILDING;
+	category=CORE SPECIAL SONAR LEVEL2 NOTAIR NOTSUB ;
+	tedclass=FORT;
+	copyright=Copyright 1999 Humongous Entertainment. All rights reserved.;
+	yardmap=ooo;
+	corpse=zzz_dead;
+	unitnumber=10324;
+	buildangle=8192;
+	activatewhenbuilt=1;
+	onoffable=1;
+	ovradjust=1;
+	downloadable=1;
+}
+

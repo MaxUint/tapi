@@ -1,0 +1,52 @@
+[UNITINFO]
+{
+	unitname=CORTOAST;
+	version=1.2;
+	side=CORE;
+	objectname=CORTOAST;
+	designation=CRL-PUN;
+	name=Toaster;
+	description=Pop-up Heavy Cannon;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=56885;
+	maxslope=10;
+	energyuse=0;
+	buildtime=49755;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=576;
+	radardistance=0;
+	soundcategory=GUARD;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=MEDIUM_BUILDING;
+	selfdestructas=LARGE_BUILDING;
+	category=CORE BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV2 CTRL_X;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo oooo oooo oooo;
+	corpse=corpun_dead;
+	germanname=Toaster;
+	germandescription=Schwere Tarn-Kanone;
+	unitnumber=201;
+	frenchname=Grille-pain;
+	frenchdescription=Canon lourd Pop-up;
+	firestandorders=1;
+	standingfireorder=2;
+	canstop=1;
+	shootme=1;
+	defaultmissiontype=GUARD_NOMOVE;
+	canattack=1;
+	weapon1=CANNON_MRPC;
+	weapon3=RANGE_1344;
+	downloadable=1;
+	wpri_badtargetcategory=AIR;
+	badtargetcategory=AIR;
+	damagemodifier=0.25;
+	antiweapons=1;
+}
+

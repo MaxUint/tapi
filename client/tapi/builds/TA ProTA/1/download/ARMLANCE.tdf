@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMAAP;
+	menu=2;
+	button=5;
+	unitname=ARMLANCE;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMPLAT;
+	menu=2;
+	button=4;
+	unitname=ARMLANCE;
+}
+

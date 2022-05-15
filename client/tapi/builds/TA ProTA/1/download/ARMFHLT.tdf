@@ -1,0 +1,24 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMCS;
+	menu=2;
+	button=6;
+	unitname=ARMFHLT;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMCH;
+	menu=4;
+	button=6;
+	unitname=ARMFHLT;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMCSA;
+	menu=4;
+	button=6;
+	unitname=ARMFHLT;
+}
+

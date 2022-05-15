@@ -1,0 +1,49 @@
+[UNITINFO]
+{
+	unitname=CORUWMS;
+	version=1.2;
+	side=CORE;
+	objectname=CORUWMS;
+	designation=ME-UW2;
+	name=Underwater Metal Storage;
+	description=Increases Metal Storage;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=1523;
+	buildcostmetal=350;
+	maxdamage=1750;
+	maxslope=20;
+	energyuse=0;
+	buildtime=3874;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=130;
+	radardistance=0;
+	soundcategory=CORE_MSTOR;
+	energystorage=0;
+	metalstorage=1500;
+	explodeas=SMALL_BUILDINGEX;
+	selfdestructas=SMALL_BUILDING;
+	category=CORE METAL LEVEL1 NOWEAPON  NOTAIR NOTSUB STORAGE;
+	tedclass=METAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooooooo;
+	corpse=coruwms_dead;
+	germanname=U-Metalllager;
+	germandescription=Größere Metallvorräte;
+	unitnumber=293;
+	frenchname=Dépôt de Métal Sous-Marin;
+	frenchdescription=Augmente Stockage Métal;
+	spanishname=Almacén Metal Subacuático;
+	spanishdescription=Incrementa el almacenaje de metal;
+	italianname=Deposito di metallo sub;
+	italiandescription=Deposito di metallo sottomarino;
+	buildangle=8192;
+	downloadable=1;
+	minwaterdepth=40;
+}
+

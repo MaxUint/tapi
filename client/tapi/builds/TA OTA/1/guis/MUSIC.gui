@@ -1,0 +1,317 @@
+[GADGET0]
+{
+	totalgadgets=11;
+	panel=;
+	crdefault=;
+	escdefault=;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=205;
+			name=HEADER;
+			xpos=0;
+			ypos=0;
+			width=640;
+			height=480;
+			attribs=52685;
+			colorf=52685;
+			colorb=52685;
+			texturenumber=0;
+			fontnumber=-51;
+			active=-51;
+			commonattribs=-51;
+			help=;
+		}
+		[VERSION]
+		{
+			major=-51;
+			minor=-51;
+			revision=-51;
+		}
+}
+
+[GADGET1]
+{
+	status=0;
+	text=Off|On;
+	quickkey=0;
+	grayedout=0;
+	stages=2;
+		[COMMON]
+		{
+			id=1;
+			assoc=40;
+			name=NOTRAK;
+			xpos=280;
+			ypos=103;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	text=CD Music;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=281;
+			ypos=83;
+			width=120;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	range=114;
+	thick=30;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=243;
+			name=MUSICVOL;
+			xpos=280;
+			ypos=170;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	text=Music Volume;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=288;
+			ypos=152;
+			width=104;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET5]
+{
+	status=0;
+	text=Building|Battle|Victory|Defeat|Unused;
+	quickkey=0;
+	grayedout=0;
+	stages=5;
+		[COMMON]
+		{
+			id=1;
+			assoc=50;
+			name=TRACKTYPE;
+			xpos=280;
+			ypos=313;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET6]
+{
+	status=0;
+	text=;
+	quickkey=0;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=243;
+			name=CDPREV;
+			xpos=281;
+			ypos=262;
+			width=16;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET7]
+{
+	status=0;
+	text=;
+	quickkey=0;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=243;
+			name=CDSTOP;
+			xpos=311;
+			ypos=262;
+			width=16;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET8]
+{
+	status=0;
+	text=;
+	quickkey=0;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=243;
+			name=CDPLAY;
+			xpos=341;
+			ypos=262;
+			width=16;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET9]
+{
+	status=0;
+	text=;
+	quickkey=0;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=243;
+			name=CDNEXT;
+			xpos=371;
+			ypos=262;
+			width=16;
+			height=16;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET10]
+{
+	text=#;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TRACKNUM;
+			xpos=281;
+			ypos=283;
+			width=117;
+			height=13;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET11]
+{
+	status=0;
+	text=Play All|Random|Repeat|Custom;
+	quickkey=0;
+	grayedout=0;
+	stages=4;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=TRACKMODE;
+			xpos=281;
+			ypos=215;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+

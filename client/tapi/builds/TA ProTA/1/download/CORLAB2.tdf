@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=CORACK;
+	menu=2;
+	button=6;
+	unitname=CORLAB;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORCSA;
+	menu=3;
+	button=0;
+	unitname=CORLAB;
+}
+

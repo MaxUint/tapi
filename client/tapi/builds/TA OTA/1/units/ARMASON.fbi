@@ -1,0 +1,55 @@
+[UNITINFO]
+{
+	unitname=ARMASON;
+	version=1.2;
+	side=ARM;
+	objectname=ARMASON;
+	designation=AS-ERS;
+	name=Advanced Sonar Station;
+	description=Extended Sonar;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=2469;
+	buildcostmetal=163;
+	maxdamage=320;
+	maxslope=10;
+	energyuse=22;
+	buildtime=6152;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=185;
+	soundcategory=ARM_SONAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_BUILDINGEX;
+	selfdestructas=SMALL_BUILDING;
+	category=ARM SPECIAL SONAR LEVEL2 NOTAIR NOTSUB CTRL_R;
+	tedclass=WATER;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=wwww;
+	corpse=armason_dead;
+	germanname=Advanced Sonar;
+	germandescription=Verbessertes Sonar;
+	unitnumber=202;
+	frenchname=Sonar Pro;
+	frenchdescription=Sonar avancé;
+	spanishname=Sonar Avanzado;
+	spanishdescription=Sonar mejorado;
+	italianname=Sonar Avanzato;
+	italiandescription=Sonar a lungo raggio;
+	energymake=22;
+	minwaterdepth=24;
+	sonardistance=2250;
+	buildangle=8192;
+	downloadable=1;
+	damagemodifier=0.46;
+	activatewhenbuilt=1;
+	onoffable=1;
+	noshadow=1;
+	waterline=24;
+}
+

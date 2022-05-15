@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMPLAT;
+	menu=2;
+	button=5;
+	unitname=ARMSEAP;
+}
+

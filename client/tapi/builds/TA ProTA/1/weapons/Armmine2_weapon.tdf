@@ -1,0 +1,37 @@
+[armmine2]
+{
+	id=185;
+	name=Blast Mine;
+	rendertype=4;
+	ballistic=1;
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=200;
+	soundstart=largegun;
+	soundhit=exmine2;
+	explosiongaf=fx;
+	explosionart=explode2;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	shakemagnitude=0;
+	shakeduration=0;
+	edgeeffectiveness=1;
+		[DAMAGE]
+		{
+			default=600;
+			armmine1=30;
+			armmine2=30;
+			armmine3=30;
+			armmine4=30;
+			armmine5=30;
+			armmine6=30;
+			cormine1=45;
+			cormine2=45;
+			cormine3=45;
+			cormine4=45;
+			cormine5=45;
+			cormine6=45;
+		}
+}
+

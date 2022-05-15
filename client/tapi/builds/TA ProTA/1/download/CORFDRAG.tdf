@@ -1,0 +1,24 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCS;
+	menu=2;
+	button=8;
+	unitname=CORFDRAG;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORCH;
+	menu=4;
+	button=8;
+	unitname=CORFDRAG;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORCSA;
+	menu=4;
+	button=8;
+	unitname=CORFDRAG;
+}
+

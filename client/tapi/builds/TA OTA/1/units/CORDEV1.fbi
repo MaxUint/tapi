@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=CORDEV1;
+	version=1.2;
+	side=CORE;
+	objectname=CORDEV1;
+	designation=DEDEV;
+	name=Implosion Device;
+	description=Implosion Device;
+	footprintx=8;
+	footprintz=8;
+	buildcostenergy=132500;
+	buildcostmetal=8545;
+	maxdamage=4110;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=732958;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_ESTOR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=NUCLEAR_MISSILE;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=CORE LEVEL2 DEV NOWEAPON NOTAIR NOTSUB ;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooo;
+	germanname=Implosions-Sprengsatz;
+	germandescription=Implosions-Sprengsatz;
+	unitnumber=291;
+	corpse=cordev1_dead;
+	frenchname=Bombe Galactique;
+	frenchdescription=Bombe Galactique;
+	spanishname=Dispositivo de Implosión;
+	spanishdescription=Dispositivo de Implosión;
+	italianname=Dispositivo di implosione;
+	italiandescription=Dispositivo di implosione;
+	downloadable=1;
+	norestrict=1;
+	activatewhenbuilt=1;
+}
+

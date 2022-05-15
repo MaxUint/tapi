@@ -1,0 +1,40 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCS;
+	menu=3;
+	button=1;
+	unitname=CORSY;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORACSUB;
+	menu=2;
+	button=0;
+	unitname=CORSY;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORCSA;
+	menu=3;
+	button=3;
+	unitname=CORSY;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=CORECSA;
+	menu=2;
+	button=3;
+	unitname=CORSY;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=CORECS;
+	menu=2;
+	button=3;
+	unitname=CORSY;
+}
+

@@ -1,0 +1,52 @@
+[UNITINFO]
+{
+	unitname=CORMOHO;
+	version=1;
+	side=CORE;
+	objectname=CORMOHO;
+	designation=MD-2;
+	name=Moho Extractor;
+	description=Advanced Metal Extractor (-15 Energy);
+	footprintx=5;
+	footprintz=5;
+	buildcostenergy=9121;
+	buildcostmetal=725;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=15;
+	buildtime=16250;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=192;
+	radardistance=0;
+	soundcategory=CORE_MOHO;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=MEDIUM_BUILDING;
+	selfdestructas=LARGE_BUILDING;
+	category=CORE BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV2;
+	tedclass=METAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooo ooooo ooooo ooooo ooooo;
+	corpse=cormoho_dead;
+	germanname=Moho-Mine;
+	germandescription=Verbesserter Metallextractor;
+	unitnumber=120;
+	frenchname=Mine Moho;
+	frenchdescription=Extracteur de métal évolué;
+	spanishname=Mina Moho;
+	spanishdescription=Extractor avanzado de metales;
+	italianname=Estrattore Moho;
+	italiandescription=Estrattore di metallo avanzato;
+	buildangle=2048;
+	activatewhenbuilt=1;
+	selfdestructcountdown=1;
+	damagemodifier=0.25;
+	onoffable=1;
+	extractsmetal=0.003;
+	ovradjust=1;
+}
+

@@ -1,0 +1,54 @@
+[UNITINFO]
+{
+	unitname=CORRAD;
+	version=1;
+	side=CORE;
+	objectname=CORRAD;
+	designation=FR-3;
+	name=Radar Tower;
+	description=Radar Tower (10 Energy);
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=800;
+	buildcostmetal=50;
+	maxdamage=51;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=10;
+	buildtime=1137;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=224;
+	radardistance=1792;
+	soundcategory=CORE_RADAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_UNIT;
+	selfdestructas=SMALL_BUILDING;
+	category=CORE BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1 CTRL_R;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo;
+	corpse=corrad_dead;
+	germanname=Radarturm;
+	germandescription=Radarturm;
+	unitnumber=126;
+	frenchname=Tour radar;
+	frenchdescription=Tour radar;
+	spanishname=Torre de Radar;
+	spanishdescription=Torre de Radar;
+	italianname=Torre Radar;
+	italiandescription=Torretta radar;
+	shootme=1;
+	energymake=0;
+	sonardistance=0;
+	activatewhenbuilt=1;
+	onoffable=1;
+	buildangle=0;
+	damagemodifier=0.25;
+}
+

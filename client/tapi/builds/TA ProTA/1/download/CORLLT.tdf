@@ -1,0 +1,24 @@
+[MENUENTRY3]
+{
+	unitmenu=CORCV;
+	menu=2;
+	button=6;
+	unitname=CORLLT;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=CORCH;
+	menu=2;
+	button=6;
+	unitname=CORLLT;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=CORCOM;
+	menu=2;
+	button=6;
+	unitname=CORLLT;
+}
+

@@ -1,0 +1,6 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMCA;
+	unitname=ARMAIVP;
+}
+

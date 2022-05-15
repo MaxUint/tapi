@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=ARMHP;
+	version=1.2;
+	side=ARM;
+	objectname=ARMHP;
+	designation=ARM-H;
+	name=Hovercraft Platform;
+	description=Builds Hovercraft;
+	footprintx=8;
+	footprintz=7;
+	buildcostenergy=3166;
+	maxslope=10;
+	energyuse=0;
+	buildtime=11112;
+	bmcode=0;
+	builder=1;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=220;
+	radardistance=0;
+	soundcategory=ARM_HOVER_PLANT;
+	energystorage=200;
+	metalstorage=200;
+	explodeas=LARGE_BUILDINGEX;
+	selfdestructas=LARGE_BUILDING;
+	category=ARM PLANT LEVEL2 NOWEAPON NOTAIR NOTSUB CTRL_F;
+	tedclass=PLANT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooccccoo ooccccoo ooccccoo ooccccoo ooccccoo ooccccoo ooccccoo;
+	corpse=armhp_dead;
+	germanname=Hovercraft-Plattform;
+	germandescription=Baut Hovercrafts;
+	unitnumber=179;
+	frenchname=Plate-forme de construction;
+	frenchdescription=Construit des Hovercrafts;
+	firestandorders=1;
+	standingfireorder=2;
+	mobilestandorders=1;
+	standingmoveorder=1;
+	canmove=1;
+	canpatrol=1;
+	canstop=1;
+	spanishname=Plataforma Hovercraft;
+	spanishdescription=Construye hovercrafts;
+	italianname=Piattaforma Hovercraft;
+	italiandescription=Costruisce Hovercraft;
+	downloadable=1;
+}
+

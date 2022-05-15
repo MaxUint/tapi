@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORACK;
+	menu=4;
+	button=4;
+	unitname=CORGANT;
+}
+

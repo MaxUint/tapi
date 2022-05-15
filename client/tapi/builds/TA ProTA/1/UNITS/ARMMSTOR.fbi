@@ -1,0 +1,48 @@
+[UNITINFO]
+{
+	unitname=ARMMSTOR;
+	version=1;
+	side=ARM;
+	objectname=ARMMSTOR;
+	designation=AM-MSF;
+	name=Metal Storage;
+	description=Increases Metal Storage;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=550;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=2925;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_MSTOR;
+	energystorage=0;
+	metalstorage=1000;
+	explodeas=SMALL_BUILDINGEX;
+	selfdestructas=SMALL_BUILDING;
+	category=ARM METAL LEVEL1 NOWEAPON  NOTAIR NOTSUB STORAGE;
+	tedclass=METAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooooooooooooooooooooooo;
+	corpse=armmstor_dead;
+	germanname=Metallspeicher;
+	germandescription=Vergrößert Lager für Metallvorräte;
+	unitnumber=51;
+	frenchname=Dépôt de métal;
+	frenchdescription=Augmente le stockage de métal;
+	spanishname=Almacén de Metal;
+	spanishdescription=Incrementa capacidad de alm. metal;
+	italianname=Deposito di Metallo;
+	italiandescription=Aumenta l'immagazzinamento del metallo;
+	buildangle=4096;
+	activatewhenbuilt=1;
+	ovradjust=1;
+}
+

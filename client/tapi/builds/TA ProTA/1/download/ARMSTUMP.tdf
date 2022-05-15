@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMVP;
+	menu=2;
+	button=3;
+	unitname=ARMSTUMP;
+}
+

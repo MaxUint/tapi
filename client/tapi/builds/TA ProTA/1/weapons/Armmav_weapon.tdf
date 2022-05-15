@@ -1,0 +1,25 @@
+[ARMMAV_WEAPON]
+{
+	id=190;
+	name=Gauss Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	minbarrelangle=-15;
+	range=300;
+	weaponvelocity=450;
+	soundhit=xplomed2;
+	tolerance=500;
+	explosiongaf=fx;
+	explosionart=explode5;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom1;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashsm;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=320;
+		}
+}
+

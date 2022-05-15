@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=CORWIN;
+	version=1;
+	side=CORE;
+	objectname=CORWIN;
+	designation=EW-14;
+	name=Wind Generator;
+	description=Produces Energy;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=496;
+	maxdamage=179;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=1687;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_WIND;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_BUILDINGEX;
+	selfdestructas=SMALL_BUILDING;
+	category=CORE ENERGY LEVEL1 NOWEAPON  NOTAIR NOTSUB ;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooooooooooo;
+	corpse=corwin_dead;
+	germanname=Windgenerator;
+	germandescription=Gewinnt Energie;
+	unitnumber=153;
+	frenchname=Eolienne;
+	frenchdescription=Produit de l'énergie;
+	spanishname=Generador Eólico;
+	spanishdescription=Produce energía;
+	italianname=Generatore a Vento;
+	italiandescription=Produce energia;
+	activatewhenbuilt=1;
+	windgenerator=30;
+	ovradjust=1;
+	onoffable=1;
+}
+

@@ -1,0 +1,30 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMCOM;
+	unitname=Fluxor;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMACA;
+	unitname=Fluxor;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMACK;
+	unitname=Fluxor;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=ARMACV;
+	unitname=Fluxor;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=ARMACSUB;
+	unitname=Fluxor;
+}
+

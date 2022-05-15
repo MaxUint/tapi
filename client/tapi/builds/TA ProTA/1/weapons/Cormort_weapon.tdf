@@ -1,0 +1,20 @@
+[CORE_MORT]
+{
+	id=46;
+	name=Plasma Cannon;
+	rendertype=4;
+	ballistic=1;
+	turret=1;
+	minbarrelangle=-35;
+	range=770;
+	soundhit=xplomed3;
+	explosiongaf=fx;
+	explosionart=explode3;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+	startsmoke=1;
+	default=80;
+}
+

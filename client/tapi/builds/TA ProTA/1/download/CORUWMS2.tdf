@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCSA;
+	menu=4;
+	button=3;
+	unitname=CORUWMS;
+}
+

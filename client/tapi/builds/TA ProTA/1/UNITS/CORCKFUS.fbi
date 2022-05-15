@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=CORCKFUS;
+	version=1.2;
+	side=CORE;
+	objectname=CORCKFUS;
+	designation=EF-CK2;
+	name=Cloakable Fusion Reactor;
+	description=Produces Energy;
+	footprintx=5;
+	footprintz=4;
+	buildcostenergy=46225;
+	buildcostmetal=5321;
+	maxdamage=2450;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=111874;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_FUS;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=CORE ENERGY LEVEL3 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooooooooooooooo;
+	corpse=CORckfus_dead;
+	germanname=Getarnter Fusionsreaktor;
+	germandescription=Erzeugt Energie;
+	unitnumber=296;
+	frenchname=Centrale Nucléaire Furtive;
+	frenchdescription=Produit Energie;
+	spanishname=Planta de Fusión Camuflada;
+	spanishdescription=Produce energía;
+	italianname=Imp. di fusione invisibile;
+	italiandescription=Prod. energia: invisibile al nemico;
+	energymake=1050;
+	downloadable=1;
+	cloakcost=300;
+	init_cloaked=1;
+}
+

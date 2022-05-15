@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMASY;
+	menu=2;
+	button=8;
+	unitname=ARMSCRAM;
+}
+

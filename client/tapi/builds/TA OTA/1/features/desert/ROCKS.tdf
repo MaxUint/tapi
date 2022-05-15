@@ -1,0 +1,90 @@
+[DryCrush44]
+{
+	world=Desert;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=4;
+	footprintz=4;
+	height=0;
+	filename=drycrush;
+	seqname=rockcrush44;
+	seqnameshad=rockcrush44shad;
+	seqnamereclamate=rockcrush44rec;
+	metal=50;
+	seqnamedie=rockcrush44boom;
+	featurereclamate=drycrush44scar;
+	featuredead=drycrush44scar;
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[DryCrush44Scar]
+{
+	world=Desert;
+	description=Damaged Terrain;
+	category=scars;
+	animating=0;
+	footprintx=4;
+	footprintz=4;
+	height=0;
+	filename=dryscars;
+	seqname=rockcrush44scar;
+	seqnameshad=;
+	featuredead=drycrush44scar;
+	animtrans=0;
+	shadtrans=1;
+	blocking=0;
+	hitdensity=100;
+	damage=20000;
+}
+
+[DryCrush34]
+{
+	world=Desert;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=4;
+	height=0;
+	filename=drycrush;
+	seqname=rockcrush34;
+	seqnameshad=rockcrush34shad;
+	seqnamereclamate=rockcrush34rec;
+	metal=25;
+	seqnamedie=rockcrush34boom;
+	featurereclamate=drycrush34scar;
+	featuredead=drycrush34scar;
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[DryCrush34Scar]
+{
+	world=Desert;
+	description=Damaged Terrain;
+	category=scars;
+	animating=0;
+	footprintx=3;
+	footprintz=4;
+	height=0;
+	filename=dryscars;
+	seqname=rockcrush34scar;
+	seqnameshad=;
+	featuredead=drycrush34scar;
+	animtrans=0;
+	shadtrans=1;
+	blocking=0;
+	hitdensity=100;
+	damage=20000;
+}
+

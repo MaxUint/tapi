@@ -1,0 +1,64 @@
+[Dark Metal Fan 1]
+{
+	world=Darkmetal;
+	description=Intake Exchanger;
+	category=fans;
+	animating=1;
+	footprintx=8;
+	footprintz=7;
+	height=0;
+	filename=DM_FANS;
+	seqname=dm-wall-fan01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Fan 2]
+{
+	world=Darkmetal;
+	description=Intake Exchanger;
+	category=fans;
+	animating=1;
+	footprintx=8;
+	footprintz=7;
+	height=0;
+	filename=DM_FANS;
+	seqname=dm-wall-fan02;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Fan 3]
+{
+	world=Darkmetal;
+	description=Exhaust Exchanger;
+	category=fans;
+	animating=1;
+	footprintx=24;
+	footprintz=24;
+	height=0;
+	filename=DM_FANS;
+	seqname=dm-floor-fan01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Fan 4]
+{
+	world=Darkmetal;
+	description=Intake Exchanger;
+	category=fans;
+	animating=0;
+	footprintx=8;
+	footprintz=2;
+	height=0;
+	filename=DM_FANS;
+	seqname=dm-wall-fan03;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+

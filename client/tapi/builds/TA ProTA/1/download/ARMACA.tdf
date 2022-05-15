@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMAAP;
+	menu=2;
+	button=0;
+	unitname=ARMACA;
+}
+

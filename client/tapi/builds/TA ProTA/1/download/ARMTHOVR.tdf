@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMHP;
+	menu=2;
+	button=5;
+	unitname=ARMTHOVR;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMFHP;
+	menu=2;
+	button=5;
+	unitname=ARMTHOVR;
+}
+

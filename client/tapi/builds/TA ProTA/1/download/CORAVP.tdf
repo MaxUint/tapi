@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCV;
+	menu=3;
+	button=4;
+	unitname=CORAVP;
+}
+

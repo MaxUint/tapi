@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORASY;
+	menu=3;
+	button=1;
+	unitname=CORARCH;
+}
+

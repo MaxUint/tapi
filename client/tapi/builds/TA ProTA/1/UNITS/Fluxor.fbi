@@ -1,0 +1,55 @@
+[UNITINFO]
+{
+	unitname=FLUXOR;
+	version=1;
+	side=ARM;
+	objectname=ARMGATE;
+	designation=FLUXOR;
+	name=Quantum Fluxor;
+	description=Makes Energy and Metal;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=8000;
+	buildcostmetal=1000;
+	maxdamage=6000;
+	maxslope=20;
+	buildtime=1;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=GATE;
+	energymake=500;
+	energyuse=-1;
+	energystorage=400000;
+	metalstorage=8000;
+	metalmake=25;
+	makesmetal=1;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=COMMANDER_BLAST;
+	category=ARM METAL ENERGY LEVEL3;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	unitnumber=430;
+	yardmap=oooo oooo oooo oooo;
+	corpse=armgate_dead;
+	germanname=Quantum Fluxor;
+	germandescription=Weltraum;
+	frenchname=Quantum Fluxor;
+	frenchdescription=spatial;
+	spanishname=Quantum Fluxor;
+	spanishdescription=espacial;
+	italianname=Quantum Fluxor;
+	italiandescription=spaziale;
+	downloadable=1;
+	maxwaterdepth=255;
+	noshadow=1;
+	activatewhenbuilt=1;
+	onoffable=1;
+	ovradjust=1;
+}
+

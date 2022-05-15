@@ -1,0 +1,24 @@
+[MENUENTRY2]
+{
+	unitmenu=ARMCK;
+	menu=2;
+	button=9;
+	unitname=ARMRL;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMCV;
+	menu=2;
+	button=9;
+	unitname=ARMRL;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=ARMCH;
+	menu=2;
+	button=9;
+	unitname=ARMRL;
+}
+

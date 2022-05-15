@@ -1,0 +1,30 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMACA;
+	unitname=ACKFUS;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMACK;
+	unitname=ACKFUS;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMACV;
+	unitname=ACKFUS;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=AAIACK;
+	unitname=ACKFUS;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=AAIACV;
+	unitname=ACKFUS;
+}
+

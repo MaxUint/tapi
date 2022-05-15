@@ -1,0 +1,310 @@
+[GADGET0]
+{
+	totalgadgets=11;
+	panel=;
+	crdefault=;
+	escdefault=;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=0;
+			name=visuals.GUI;
+			xpos=0;
+			ypos=0;
+			width=639;
+			height=480;
+			attribs=0;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=1;
+			help=;
+		}
+		[VERSION]
+		{
+			major=1;
+			minor=0;
+			revision=1;
+		}
+}
+
+[GADGET1]
+{
+	status=0;
+	text=Off|On;
+	quickkey=79;
+	grayedout=0;
+	stages=2;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=SHADING;
+			xpos=278;
+			ypos=245;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	status=0;
+	text=Off|On;
+	quickkey=102;
+	grayedout=0;
+	stages=2;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=ANTI;
+			xpos=278;
+			ypos=313;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	range=114;
+	thick=20;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=0;
+			name=GAMMA;
+			xpos=278;
+			ypos=99;
+			width=122;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	text=Gamma;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=TEXT;
+			xpos=282;
+			ypos=80;
+			width=118;
+			height=14;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=2;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET5]
+{
+	range=114;
+	thick=26;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=243;
+			name=VIDSLDR;
+			xpos=278;
+			ypos=181;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET6]
+{
+	text=640x480;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=VIDVAL;
+			xpos=281;
+			ypos=165;
+			width=118;
+			height=13;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET7]
+{
+	text=Screen Size;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=VIDTEXT;
+			xpos=277;
+			ypos=143;
+			width=122;
+			height=14;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET8]
+{
+	status=0;
+	text=Off|On;
+	quickkey=124;
+	grayedout=0;
+	stages=2;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=BSHADOWS;
+			xpos=278;
+			ypos=381;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=109;
+			help=;
+		}
+}
+
+[GADGET9]
+{
+	text=Shadows;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=TEXT;
+			xpos=279;
+			ypos=358;
+			width=118;
+			height=18;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=104;
+			help=;
+		}
+}
+
+[GADGET10]
+{
+	text=Anti-aliasing;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=TEXT;
+			xpos=276;
+			ypos=292;
+			width=120;
+			height=17;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=104;
+			help=;
+		}
+}
+
+[GADGET11]
+{
+	text=Shading;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=TEXT;
+			xpos=274;
+			ypos=224;
+			width=123;
+			height=17;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=104;
+			help=;
+		}
+}
+

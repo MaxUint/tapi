@@ -1,0 +1,666 @@
+[GADGET0]
+{
+	totalgadgets=25;
+	panel=様様様様;
+	crdefault=;
+	escdefault=;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=205;
+			name=HEADER;
+			xpos=128;
+			ypos=-164;
+			width=511;
+			height=164;
+			attribs=52685;
+			colorf=52685;
+			colorb=52685;
+			texturenumber=0;
+			fontnumber=-51;
+			active=1;
+			commonattribs=-51;
+			help=;
+		}
+		[VERSION]
+		{
+			major=-51;
+			minor=-51;
+			revision=-51;
+		}
+}
+
+[GADGET1]
+{
+		[COMMON]
+		{
+			id=12;
+			assoc=0;
+			name=CONSOLE;
+			xpos=2;
+			ypos=131;
+			width=519;
+			height=33;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	maxchars=63;
+	text=;
+		[COMMON]
+		{
+			id=3;
+			assoc=212;
+			name=TALK;
+			xpos=16;
+			ypos=138;
+			width=350;
+			height=19;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=-12;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	status=0;
+	text=Options|Options;
+	quickkey=0;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=SENDTO;
+			xpos=375;
+			ypos=137;
+			width=120;
+			height=20;
+			attribs=16394;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	totalgadgets=11;
+	panel=様様様様;
+	crdefault=;
+	escdefault=;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=205;
+			name=HEADER;
+			xpos=128;
+			ypos=319;
+			width=512;
+			height=126;
+			attribs=52685;
+			colorf=52685;
+			colorb=52685;
+			texturenumber=0;
+			fontnumber=-51;
+			active=1;
+			commonattribs=-51;
+			help=;
+		}
+		[VERSION]
+		{
+			major=-51;
+			minor=-51;
+			revision=-51;
+		}
+}
+
+[GADGET5]
+{
+	status=0;
+	text=All|Allies|Enemies|Custom;
+	quickkey=-68;
+	grayedout=0;
+	stages=4;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=SENDTYPE;
+			xpos=15;
+			ypos=53;
+			width=126;
+			height=25;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET6]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER0;
+			xpos=206;
+			ypos=12;
+			width=120;
+			height=22;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET7]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER1;
+			xpos=206;
+			ypos=35;
+			width=119;
+			height=22;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET8]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER9;
+			xpos=370;
+			ypos=104;
+			width=115;
+			height=20;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET9]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER2;
+			xpos=206;
+			ypos=59;
+			width=111;
+			height=21;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET10]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER3;
+			xpos=206;
+			ypos=82;
+			width=122;
+			height=21;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET11]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER4;
+			xpos=206;
+			ypos=104;
+			width=120;
+			height=20;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET12]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER5;
+			xpos=370;
+			ypos=12;
+			width=120;
+			height=22;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET13]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER6;
+			xpos=370;
+			ypos=35;
+			width=118;
+			height=21;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET14]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER7;
+			xpos=370;
+			ypos=58;
+			width=121;
+			height=21;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET15]
+{
+	status=0;
+	text=BUTTON NAME;
+	quickkey=-68;
+	grayedout=0;
+	stages=1;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=PLAYER8;
+			xpos=370;
+			ypos=80;
+			width=116;
+			height=21;
+			attribs=16393;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET16]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO0;
+			xpos=181;
+			ypos=12;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET17]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO1;
+			xpos=181;
+			ypos=35;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET18]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO2;
+			xpos=181;
+			ypos=58;
+			width=20;
+			height=21;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET19]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO3;
+			xpos=181;
+			ypos=82;
+			width=20;
+			height=19;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET20]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO4;
+			xpos=181;
+			ypos=104;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET21]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO5;
+			xpos=346;
+			ypos=12;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET22]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO6;
+			xpos=346;
+			ypos=35;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET23]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO7;
+			xpos=346;
+			ypos=58;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET24]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO8;
+			xpos=346;
+			ypos=81;
+			width=20;
+			height=20;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET25]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=LOGO9;
+			xpos=346;
+			ypos=104;
+			width=21;
+			height=19;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+

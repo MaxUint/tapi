@@ -1,0 +1,16 @@
+[MENUENTRY2]
+{
+	unitmenu=ARMCH;
+	menu=4;
+	button=1;
+	unitname=ARMTIDE;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMCOM;
+	menu=4;
+	button=1;
+	unitname=ARMTIDE;
+}
+

@@ -1,0 +1,168 @@
+[GADGET0]
+{
+	totalgadgets=5;
+	panel=;
+	crdefault=CANCEL;
+	escdefault=CANCEL;
+	defaultfocus=OPTIONS;
+		[COMMON]
+		{
+			id=0;
+			assoc=0;
+			name=HEADER;
+			xpos=130;
+			ypos=-33;
+			width=510;
+			height=33;
+			attribs=0;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+		[VERSION]
+		{
+			major=1;
+			minor=0;
+			revision=0;
+		}
+}
+
+[GADGET1]
+{
+	status=0;
+	text=Options Menu;
+	quickkey=79;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=78;
+			name=OPTIONS;
+			xpos=8;
+			ypos=6;
+			width=120;
+			height=21;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	status=0;
+	text=Share;
+	quickkey=83;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=243;
+			name=SHARE;
+			xpos=255;
+			ypos=6;
+			width=120;
+			height=20;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	status=0;
+	text=Allies;
+	quickkey=65;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=ALLIES;
+			xpos=132;
+			ypos=6;
+			width=120;
+			height=20;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=100;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	status=0;
+	text=;
+	quickkey=8;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CANCEL;
+			xpos=191;
+			ypos=6;
+			width=114;
+			height=20;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=0;
+			commonattribs=100;
+			help=;
+		}
+}
+
+[GADGET5]
+{
+	status=0;
+	text=Control;
+	quickkey=0;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=CONTROL;
+			xpos=379;
+			ypos=6;
+			width=120;
+			height=20;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+

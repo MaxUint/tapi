@@ -1,0 +1,48 @@
+[UNITINFO]
+{
+	unitname=ALL_MINE4;
+	version=1.2;
+	side=ALL;
+	objectname=ALL_MINE4;
+	designation=GTK5;
+	name=Perimeter Beacon;
+	description=Provides Line of Sight (Cloakable, Radar Jammed);
+	footprintx=1;
+	footprintz=1;
+	buildcostenergy=2048;
+	buildcostmetal=128;
+	maxdamage=80;
+	maxwaterdepth=0;
+	maxslope=15;
+	energyuse=5;
+	buildtime=1500;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=512;
+	radardistance=0;
+	radardistancejam=8;
+	soundcategory=MINE5;
+	energystorage=0;
+	metalstorage=0;
+	category=ALL NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1 CTRL_R;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=o;
+	unitnumber=10215;
+	defaultmissiontype=Standby_Mine;
+	downloadable=1;
+	cloakcost=5;
+	mincloakdistance=10;
+	init_cloaked=1;
+	activatewhenbuilt=1;
+	onoffable=1;
+	energymake=0;
+	ai_weight=weight ALL_MINE4 0;
+	ai_limit=limit ALL_MINE4 0;
+	immunetoparalyzer=1;
+}
+

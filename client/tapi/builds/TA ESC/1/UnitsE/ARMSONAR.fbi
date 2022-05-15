@@ -1,0 +1,56 @@
+[UNITINFO]
+{
+	unitname=ARMSONAR;
+	version=1;
+	side=ARM;
+	objectname=ARMSONAR;
+	designation=AS-EWDW;
+	name=Sonar Station;
+	description=Locates Units (-15 Energy);
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=1209;
+	buildcostmetal=60;
+	maxdamage=100;
+	maxslope=10;
+	energyuse=15;
+	buildtime=1368;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=448;
+	radardistance=0;
+	soundcategory=ARM_SONAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_UNIT;
+	selfdestructas=SMALL_BUILDING;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1 CTRL_R;
+	tedclass=WATER;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=wwww;
+	corpse=arm2sonar_dead;
+	germanname=Sonarstation;
+	germandescription=Ortet schwimmende Einheiten;
+	unitnumber=64;
+	frenchname=Station sonar;
+	frenchdescription=Détecte les unités navales;
+	spanishname=Estación de Sonar;
+	spanishdescription=Detecta submarinos;
+	italianname=Stazione Sonar;
+	italiandescription=Individua le unità anfibie;
+	energymake=0;
+	minwaterdepth=8;
+	sonardistance=896;
+	buildangle=8192;
+	activatewhenbuilt=1;
+	onoffable=1;
+	noshadow=1;
+	ovradjust=1;
+	waterline=12;
+	damagemodifier=0.25;
+}
+

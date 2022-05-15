@@ -1,0 +1,359 @@
+[GADGET0]
+{
+	totalgadgets=13;
+	panel=;
+	crdefault=;
+	escdefault=;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=205;
+			name=Speeds.GUI;
+			xpos=0;
+			ypos=0;
+			width=640;
+			height=480;
+			attribs=52685;
+			colorf=52685;
+			colorb=52685;
+			texturenumber=0;
+			fontnumber=-51;
+			active=-51;
+			commonattribs=-51;
+			help=;
+		}
+		[VERSION]
+		{
+			major=-51;
+			minor=-51;
+			revision=-51;
+		}
+}
+
+[GADGET1]
+{
+	range=113;
+	thick=34;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=1;
+			name=GAME;
+			xpos=281;
+			ypos=102;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	text=Game Speed;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=283;
+			ypos=82;
+			width=121;
+			height=15;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	range=113;
+	thick=34;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=3;
+			name=SCREEN;
+			xpos=281;
+			ypos=159;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	text=Screen Scroll;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=282;
+			ypos=139;
+			width=121;
+			height=15;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET5]
+{
+	range=114;
+	thick=34;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=50;
+			name=TXTSCROL;
+			xpos=281;
+			ypos=215;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET6]
+{
+	text=Screen Text Delay;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TXTTEXT;
+			xpos=284;
+			ypos=194;
+			width=117;
+			height=15;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET7]
+{
+	status=0;
+	text=Left Click|Right Click;
+	quickkey=76;
+	grayedout=0;
+	stages=2;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=LEFTCLICK;
+			xpos=281;
+			ypos=383;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=-101;
+			help=;
+		}
+}
+
+[GADGET8]
+{
+	text=Interface;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=301;
+			ypos=363;
+			width=78;
+			height=18;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=99;
+			fontnumber=0;
+			active=1;
+			commonattribs=-56;
+			help=;
+		}
+}
+
+[GADGET9]
+{
+	text=;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=GAMETEXT;
+			xpos=298;
+			ypos=93;
+			width=65;
+			height=19;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=99;
+			fontnumber=0;
+			active=1;
+			commonattribs=-56;
+			help=;
+		}
+}
+
+[GADGET10]
+{
+	text=Unit Text Acks;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=279;
+			ypos=306;
+			width=122;
+			height=17;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=101;
+			fontnumber=0;
+			active=1;
+			commonattribs=56;
+			help=;
+		}
+}
+
+[GADGET11]
+{
+	range=115;
+	thick=17;
+	knobpos=0;
+	knobsize=10;
+		[COMMON]
+		{
+			id=4;
+			assoc=5;
+			name=MAXLINES;
+			xpos=281;
+			ypos=271;
+			width=121;
+			height=16;
+			attribs=1;
+			colorf=4;
+			colorb=0;
+			texturenumber=101;
+			fontnumber=0;
+			active=1;
+			commonattribs=56;
+			help=;
+		}
+}
+
+[GADGET12]
+{
+	text=Text Lines;
+	link=;
+		[COMMON]
+		{
+			id=5;
+			assoc=243;
+			name=TEXT;
+			xpos=283;
+			ypos=250;
+			width=118;
+			height=17;
+			attribs=18;
+			colorf=15;
+			colorb=0;
+			texturenumber=101;
+			fontnumber=0;
+			active=1;
+			commonattribs=56;
+			help=;
+		}
+}
+
+[GADGET13]
+{
+	status=0;
+	text=Off|Medium|Full;
+	quickkey=79;
+	grayedout=0;
+	stages=3;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=UNITCHAT;
+			xpos=282;
+			ypos=326;
+			width=120;
+			height=20;
+			attribs=1;
+			colorf=0;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+

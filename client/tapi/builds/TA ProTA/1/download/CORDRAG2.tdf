@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCSA;
+	menu=2;
+	button=10;
+	unitname=CORDRAG;
+}
+

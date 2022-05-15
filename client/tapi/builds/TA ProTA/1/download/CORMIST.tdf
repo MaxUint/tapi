@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=CORVP;
+	menu=2;
+	button=4;
+	unitname=CORMIST;
+}
+

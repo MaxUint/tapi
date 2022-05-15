@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=CORACSUB;
+	menu=2;
+	button=1;
+	unitname=CORASON;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORACSA;
+	menu=2;
+	button=1;
+	unitname=CORASON;
+}
+

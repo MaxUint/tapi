@@ -1,0 +1,32 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCS;
+	menu=2;
+	button=0;
+	unitname=CORSONAR;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORCH;
+	menu=4;
+	button=0;
+	unitname=CORSONAR;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORCOM;
+	menu=4;
+	button=0;
+	unitname=CORSONAR;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=CORCSA;
+	menu=4;
+	button=0;
+	unitname=CORSONAR;
+}
+

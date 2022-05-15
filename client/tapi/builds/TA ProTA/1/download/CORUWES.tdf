@@ -1,0 +1,16 @@
+[MENUENTRY2]
+{
+	unitmenu=CORCH;
+	menu=4;
+	button=2;
+	unitname=CORUWES;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORCOM;
+	menu=4;
+	button=2;
+	unitname=CORUWES;
+}
+

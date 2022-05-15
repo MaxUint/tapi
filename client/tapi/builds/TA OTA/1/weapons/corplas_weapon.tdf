@@ -1,0 +1,22 @@
+[CORPLAS_WEAPON]
+{
+	id=138;
+	name=Immolator;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	range=320;
+	explosiongaf=fx;
+	explosionart=explode2;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=10;
+			armpw=80;
+		}
+}
+

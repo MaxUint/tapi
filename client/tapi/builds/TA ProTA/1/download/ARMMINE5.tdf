@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMMLV;
+	menu=2;
+	button=4;
+	unitname=ARMMINE5;
+}
+

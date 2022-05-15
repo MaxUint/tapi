@@ -1,0 +1,24 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMACA;
+	menu=2;
+	button=2;
+	unitname=ARMARAD;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=ARMACK;
+	menu=2;
+	button=2;
+	unitname=ARMARAD;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMACV;
+	menu=2;
+	button=2;
+	unitname=ARMARAD;
+}
+

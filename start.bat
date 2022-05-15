@@ -34,6 +34,11 @@ for /F "delims=" %%R in ('
 )
 title TAPISERVER
 :A
-node tapi/client.js
-echo if you have an error, you probably don't have nodejs, install nodejs at https://nodejs.org/en/
+WHERE node
+IF %ERRORLEVEL% NEQ 0 (
+	ECHO NODE NOT INSTALLED https://nodejs.org/en/
+) else (
+	node client/main.js
+)
+timeout /t 15
 GOTO :A

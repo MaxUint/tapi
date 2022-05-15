@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=CORAAP;
+	menu=2;
+	button=5;
+	unitname=CORTITAN;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORPLAT;
+	menu=2;
+	button=4;
+	unitname=CORTITAN;
+}
+

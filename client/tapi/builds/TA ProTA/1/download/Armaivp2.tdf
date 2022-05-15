@@ -1,0 +1,24 @@
+[MENUENTRY2]
+{
+	unitmenu=ARMAIVP;
+	unitname=ARMFAV;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMAIVP;
+	unitname=ARMFLASH;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=ARMAIVP;
+	unitname=ARMSTUMP;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=ARMAIVP;
+	unitname=ARMSAM;
+}
+

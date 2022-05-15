@@ -1,0 +1,24 @@
+[MENUENTRY1]
+{
+	unitmenu=CORACA;
+	menu=3;
+	button=0;
+	unitname=CORTRON;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORACK;
+	menu=3;
+	button=0;
+	unitname=CORTRON;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORACV;
+	menu=3;
+	button=0;
+	unitname=CORTRON;
+}
+

@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCSA;
+	menu=3;
+	button=1;
+	unitname=CORVP;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORACV;
+	menu=2;
+	button=6;
+	unitname=CORVP;
+}
+

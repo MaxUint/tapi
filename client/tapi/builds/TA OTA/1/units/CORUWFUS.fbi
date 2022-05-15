@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=CORUWFUS;
+	version=1.2;
+	side=CORE;
+	objectname=CORUWFUS;
+	designation=EF-UW2;
+	name=Underwater Fusion Plant;
+	description=Produces Energy;
+	footprintx=5;
+	footprintz=5;
+	buildcostenergy=57349;
+	buildcostmetal=7210;
+	maxdamage=1425;
+	maxslope=16;
+	energyuse=0;
+	buildtime=124838;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=110;
+	radardistance=0;
+	soundcategory=CORE_UWFUSION;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=CORE ENERGY LEVEL3 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooooooo;
+	corpse=coruwfus_dead;
+	germanname=Unterwasser-Fusionsreaktor;
+	germandescription=Liefert Energie;
+	unitnumber=196;
+	frenchname=Centrale Atom. sous-marine;
+	frenchdescription=Produit de l'énergie;
+	spanishname=Planta de Fusión;
+	spanishdescription=Planta de fusión submarina;
+	italianname=Imp. di Fusione subacqueo;
+	italiandescription=Impianto di Fusione sottomarino;
+	energymake=1200;
+	buildangle=8192;
+	downloadable=1;
+	activatewhenbuilt=1;
+	minwaterdepth=15;
+}
+

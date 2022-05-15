@@ -1,0 +1,152 @@
+[GADGET0]
+{
+	totalgadgets=5;
+	panel=NULL;
+	crdefault=;
+	escdefault=PREVMENU;
+	defaultfocus=;
+		[COMMON]
+		{
+			id=0;
+			assoc=0;
+			name=HEADER;
+			xpos=141;
+			ypos=24;
+			width=330;
+			height=390;
+			attribs=52685;
+			colorf=52685;
+			colorb=52685;
+			texturenumber=0;
+			fontnumber=-51;
+			active=1;
+			commonattribs=-51;
+			help=;
+		}
+		[VERSION]
+		{
+			major=-51;
+			minor=-51;
+			revision=-51;
+		}
+}
+
+[GADGET1]
+{
+	status=0;
+	text=OK;
+	quickkey=76;
+	grayedout=0;
+	stages=0;
+		[COMMON]
+		{
+			id=1;
+			assoc=0;
+			name=OK;
+			xpos=191;
+			ypos=336;
+			width=96;
+			height=20;
+			attribs=2;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=54;
+			help=;
+		}
+}
+
+[GADGET2]
+{
+	hotornot=0;
+		[COMMON]
+		{
+			id=6;
+			assoc=0;
+			name=MAPPIC;
+			xpos=46;
+			ypos=114;
+			width=125;
+			height=125;
+			attribs=0;
+			colorf=15;
+			colorb=0;
+			texturenumber=0;
+			fontnumber=0;
+			active=1;
+			commonattribs=0;
+			help=;
+		}
+}
+
+[GADGET3]
+{
+	text=Description;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=DESCRIPTION;
+			xpos=49;
+			ypos=269;
+			width=235;
+			height=20;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=-127;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET4]
+{
+	text=Size;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=SIZE;
+			xpos=49;
+			ypos=288;
+			width=235;
+			height=20;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=-127;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+
+[GADGET5]
+{
+	text=mapname;
+		[COMMON]
+		{
+			id=5;
+			assoc=0;
+			name=MAPNAME;
+			xpos=50;
+			ypos=71;
+			width=242;
+			height=19;
+			attribs=1;
+			colorf=15;
+			colorb=0;
+			texturenumber=-127;
+			fontnumber=0;
+			active=1;
+			commonattribs=102;
+			help=;
+		}
+}
+

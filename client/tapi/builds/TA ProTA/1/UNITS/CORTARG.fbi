@@ -1,0 +1,49 @@
+[UNITINFO]
+{
+	unitname=CORTARG;
+	version=1.2;
+	side=CORE;
+	objectname=CORTARG;
+	designation=RTF-I2;
+	name=Targeting Facility;
+	description=Automatic Radar Targeting;
+	footprintx=5;
+	footprintz=4;
+	buildcostenergy=70574;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=1050;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=CORE_TARG;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=LARGE_BUILDINGEX;
+	selfdestructas=LARGE_BUILDING;
+	category=CORE SPECIAL LEVEL3 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooooooooooooooo;
+	corpse=cortarg_dead;
+	germanname=Peilstation;
+	germandescription=Automatische Radar-Zielerfassung;
+	unitnumber=259;
+	frenchname=Installation de Ciblage;
+	frenchdescription=Ciblage Radar Automatique;
+	spanishname=Complejo Búsqueda Blancos;
+	spanishdescription=Radar de puntería automático;
+	italianname=Dispositivo di puntamento;
+	italiandescription=Radar per puntamento automatico;
+	buildangle=4096;
+	onoffable=1;
+	downloadable=1;
+	activatewhenbuilt=1;
+	istargetingupgrade=1;
+	damagemodifier=0.5;
+}
+

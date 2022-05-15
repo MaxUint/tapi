@@ -1,0 +1,25 @@
+[CORLEVLR_WEAPON]
+{
+	id=172;
+	name=Light Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	range=225;
+	weaponvelocity=550;
+	soundstart=canlite3;
+	soundhit=xplosml3;
+	tolerance=6000;
+	explosiongaf=fx;
+	explosionart=explode2;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=180;
+		}
+}
+

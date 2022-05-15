@@ -1,0 +1,16 @@
+[MENUENTRY1]
+{
+	unitmenu=CORHP;
+	menu=2;
+	button=3;
+	unitname=CORAH;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORFHP;
+	menu=2;
+	button=3;
+	unitname=CORAH;
+}
+

@@ -1,0 +1,48 @@
+[UNITINFO]
+{
+	unitname=ARMFDRAG;
+	version=1.2;
+	side=ARM;
+	objectname=ARMFDRAG;
+	designation=A-F24-C;
+	name=Sea Dragon's Teeth;
+	description=Perimeter Defense;
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=600;
+	buildcostmetal=30;
+	maxslope=32;
+	energyuse=0;
+	buildtime=1240;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=128;
+	radardistance=0;
+	soundcategory=NONE;
+	energystorage=0;
+	metalstorage=0;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=w;
+	corpse=FloatingTeeth;
+	germanname=Marine-Barrikade;
+	germandescription=Schwimmende Barrikade;
+	unitnumber=166;
+	frenchname=Dent de dragon navale;
+	frenchdescription=Dent de dragon flottante;
+	spanishname=Dragon's Teeth;
+	spanishdescription=Dragon's Teeth flotante;
+	italianname=Denti del Drago-SN;
+	italiandescription=Denti del Drago galleggiante;
+	energymake=0;
+	minwaterdepth=1;
+	buildangle=8192;
+	downloadable=1;
+	waterline=12;
+	isfeature=1;
+}
+

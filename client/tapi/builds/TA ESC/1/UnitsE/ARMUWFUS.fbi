@@ -1,0 +1,51 @@
+[UNITINFO]
+{
+	unitname=ARMUWFUS;
+	version=1.2;
+	side=ARM;
+	objectname=ARMUWFUS;
+	designation=AE-FPW;
+	name=Underwater Fusion Reactor;
+	description=Produces Energy (1K, Adjacency Bonus);
+	footprintx=5;
+	footprintz=5;
+	buildcostenergy=54287;
+	buildcostmetal=7110;
+	maxdamage=3078;
+	buildtime=105004;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=128;
+	radardistance=0;
+	soundcategory=ARM_UWFUSION;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=NUCLEAR_BLASTSML;
+	selfdestructas=ATOMIC_BLAST;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP ALL LEV2;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=ooooo ooooo ooooo ooooo ooooo;
+	corpse=arm2uwfus_dead;
+	germanname=Unterwasser-Fusionsreaktor;
+	germandescription=Liefert Energie;
+	unitnumber=184;
+	frenchname=Centrale Atom. sous-marine;
+	frenchdescription=Produit de l'énergie;
+	spanishname=Planta de Fusión;
+	spanishdescription=Planta de fusión submarina;
+	italianname=Impianto di Fusione;
+	italiandescription=Impianto di Fusione sottomarino;
+	energymake=1000;
+	downloadable=1;
+	activatewhenbuilt=0;
+	minwaterdepth=34;
+	maxwaterdepth=255;
+	energyuse=-500;
+	damagemodifier=0.25;
+}
+

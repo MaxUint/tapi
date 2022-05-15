@@ -1,0 +1,57 @@
+[UNITINFO]
+{
+	unitname=CORINT;
+	version=1;
+	side=CORE;
+	objectname=CORINT;
+	designation=F-PS2;
+	name=Intimidator;
+	description=Long Range Plasma Cannon (6K Energy/Shot - Upgradable);
+	footprintx=6;
+	footprintz=6;
+	buildcostenergy=187560;
+	maxslope=10;
+	energyuse=0;
+	buildtime=124315;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=1;
+	sightdistance=576;
+	radardistance=0;
+	soundcategory=COR_INT;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=ATOMIC_BLASTSML;
+	category=CORE BLDG NAIR NSUB NSHP NLND NEXP ALL LEV2 CTRL_L;
+	tedclass=FORT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooo oooooo oooooo oooooo oooooo oooooo;
+	corpse=corint_dead;
+	germanname=Intimidator;
+	germandescription=Langstrecken-Plasmawerfer;
+	unitnumber=113;
+	frenchname=Intimidator;
+	frenchdescription=Canon à plasma de longue portée;
+	firestandorders=1;
+	standingfireorder=0;
+	canstop=1;
+	spanishname=Intimidator;
+	spanishdescription=Cañón de plasma de largo alcance;
+	italianname=Intimidator;
+	italiandescription=Cannone al plasma a lungo raggio;
+	shootme=1;
+	defaultmissiontype=GUARD_NOMOVE;
+	canattack=1;
+	weapon1=CANNON_LRPC_CORE;
+	weapon3=RANGE_5376;
+	badtargetcategory=MOB;
+	wpri_badtargetcategory=MOB;
+	antiweapons=1;
+	ovradjust=1;
+	damagemodifier=0.25;
+	canbuild=1;
+}
+

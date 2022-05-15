@@ -1,0 +1,24 @@
+[MENUENTRY2]
+{
+	unitmenu=ARMCH;
+	unitname=ARMAIVP;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMCSA;
+	unitname=ARMAIVP;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=AAICK;
+	unitname=ARMAIVP;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=AAICV;
+	unitname=ARMAIVP;
+}
+

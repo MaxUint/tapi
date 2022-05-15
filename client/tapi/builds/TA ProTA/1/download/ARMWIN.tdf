@@ -1,0 +1,32 @@
+[MENUENTRY2]
+{
+	unitmenu=ARMCK;
+	menu=2;
+	button=1;
+	unitname=ARMWIN;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=ARMCV;
+	menu=2;
+	button=1;
+	unitname=ARMWIN;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=ARMCH;
+	menu=2;
+	button=1;
+	unitname=ARMWIN;
+}
+
+[MENUENTRY5]
+{
+	unitmenu=ARMCOM;
+	menu=2;
+	button=1;
+	unitname=ARMWIN;
+}
+

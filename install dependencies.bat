@@ -1,7 +1,11 @@
 @echo off
-call "tapi/install dependencies"
-echo.
-echo.
-echo if you have an error, you probably don't have nodejs, install nodejs at https://nodejs.org/en/
-echo.
-pause
+:A
+WHERE npm
+echo INSTALLING...
+IF %ERRORLEVEL% NEQ 0 (
+	ECHO NPM NOT FOUND, TRY REINSTALLING https://nodejs.org/en/
+) else (
+	npm install express
+)
+timeout /t 15
+GOTO :A

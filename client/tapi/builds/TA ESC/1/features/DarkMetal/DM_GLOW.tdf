@@ -1,0 +1,80 @@
+[Dark Metal Glow 1]
+{
+	world=Darkmetal;
+	description=Overflow Vent;
+	category=glow;
+	animating=1;
+	footprintx=2;
+	footprintz=2;
+	height=0;
+	filename=DM_GLOW;
+	seqname=dm-eov-sq-sml01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Glow 2]
+{
+	world=Darkmetal;
+	description=Outflow Vent;
+	category=glow;
+	animating=1;
+	footprintx=2;
+	footprintz=2;
+	height=0;
+	filename=DM_GLOW;
+	seqname=dm-eov-sq-sml02;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Glow 3]
+{
+	world=Darkmetal;
+	description=Heat Dissipator;
+	category=glow;
+	animating=1;
+	footprintx=3;
+	footprintz=3;
+	height=0;
+	filename=DM_GLOW;
+	seqname=dm-eov-donut01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Glow 4]
+{
+	world=Darkmetal;
+	description=Heat Discharger;
+	category=glow;
+	animating=1;
+	footprintx=5;
+	footprintz=3;
+	height=0;
+	filename=DM_GLOW;
+	seqname=dm-eov-rect01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+
+[Dark Metal Glow 5]
+{
+	world=Darkmetal;
+	description=Heat Exchanger;
+	category=glow;
+	animating=1;
+	footprintx=4;
+	footprintz=4;
+	height=0;
+	filename=DM_GLOW;
+	seqname=dm-eov-circ01;
+	hitdensity=0;
+	indestructible=1;
+	nodisplayinfo=0;
+}
+

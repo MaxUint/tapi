@@ -1,0 +1,53 @@
+[UNITINFO]
+{
+	unitname=ARMRAD;
+	version=1;
+	side=ARM;
+	objectname=ARMRAD;
+	designation=AS-EWDL;
+	name=Radar Tower;
+	description=Locates Units (10 Energy);
+	footprintx=2;
+	footprintz=2;
+	buildcostenergy=750;
+	buildcostmetal=49;
+	maxdamage=51;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=10;
+	buildtime=1137;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=224;
+	radardistance=1792;
+	soundcategory=ARM_RADAR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=SMALL_UNIT;
+	selfdestructas=SMALL_BUILDING;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP NNUK ALL LEV1 CTRL_R;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooo;
+	corpse=armrad_dead;
+	germanname=Radarturm;
+	germandescription=Tech Level 2;
+	unitnumber=56;
+	frenchname=Tour radar;
+	frenchdescription=Niveau Tech 1;
+	spanishname=Torre de Radar ;
+	spanishdescription=Torre de Radar ;
+	italianname=Torre Radar;
+	italiandescription=Torretta radar;
+	energymake=0;
+	buildangle=0;
+	activatewhenbuilt=1;
+	onoffable=1;
+	ovradjust=1;
+	damagemodifier=0.25;
+}
+

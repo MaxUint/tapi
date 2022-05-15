@@ -1,0 +1,53 @@
+[UNITINFO]
+{
+	unitname=ACKFUS;
+	version=1.2;
+	side=ARM;
+	objectname=ARMCKFUS;
+	designation=AE-CKF;
+	name=Cloakable Fusion Reactor;
+	description=Produces Energy;
+	footprintx=5;
+	footprintz=4;
+	buildcostenergy=42058;
+	buildcostmetal=5420;
+	maxdamage=2200;
+	maxwaterdepth=0;
+	maxslope=10;
+	buildtime=105487;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_FUS;
+	energymake=2000;
+	energyuse=0;
+	energystorage=2000;
+	metalstorage=500;
+	metalmake=5;
+	explodeas=ATOMIC_BLAST;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=ARM METAL ENERGY LEVEL3 NOWEAPON NOTAIR NOTSUB;
+	tedclass=ENERGY;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=oooooooooooooooooooo;
+	corpse=armckfus_dead;
+	unitnumber=432;
+	frenchname=Réacteur nucléaire-Camoufle;
+	frenchdescription=Produit de l'énergie;
+	germanname=Fusionreaktor-Getarnt;
+	germandescription=Liefert Energie;
+	spanishname=Reactor de Fusión-Camuflado;
+	spanishdescription=Genera energía;
+	italianname=Reattore a Fusione-Nascosto;
+	italiandescription=Produce energia;
+	buildangle=4096;
+	downloadable=1;
+	cloakcost=1;
+	init_cloaked=1;
+}
+

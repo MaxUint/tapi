@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=ARMGATE;
+	version=1;
+	side=ARM;
+	objectname=ARMGATE;
+	designation=ARM-KL2;
+	name=Galactic Gate;
+	description=Teleports Units;
+	footprintx=4;
+	footprintz=4;
+	buildcostenergy=32760;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=250;
+	buildtime=25700;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=512;
+	radardistance=0;
+	soundcategory=ARM_TPORT;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=ATOMIC_BLASTSML;
+	selfdestructas=ESTOR_BUILDING;
+	category=ARM BLDG NAIR NSUB NSHP NLND NEXP ALL LEV0 CTRL_T;
+	tedclass=PLANT;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=cccc cccc cccc cccc;
+	corpse=armgate_dead;
+	unitnumber=23405;
+	activatewhenbuilt=0;
+	onoffable=1;
+	buildangle=1024;
+	ovradjust=1;
+	downloadable=1;
+	ai_weight=weight ARMGATE 0;
+	ai_limit=limit ARMGATE 0;
+	canattack=1;
+	weapon1=GATE_RANGE;
+	weapon3=RANGE_32000;
+	defaultmissiontype=GUARD_NOMOVE;
+	antiweapons=1;
+	damagemodifier=0.25;
+	canstop=1;
+}
+

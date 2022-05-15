@@ -1,0 +1,8 @@
+[MENUENTRY1]
+{
+	unitmenu=ARMLAB;
+	menu=2;
+	button=3;
+	unitname=ARMHAM;
+}
+
