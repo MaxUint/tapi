@@ -246,7 +246,9 @@ function panelSet(what, panel) {
 		newMsg.innerHTML = `${what}<br>`;
 		panel.appendChild(newMsg);
 	} else {
-		panel.appendChild(what);
+		try {
+			panel.appendChild(what);
+		} catch {}
 	}
 }
 
@@ -460,15 +462,13 @@ client.compile = function() {
 
 handles.RESTART_TAPI = function(response) {
 	msg(response.msg)
-	location.reload()
 }
 
 client.RESTART_TAPI = function() {
 	let okayed = confirm('Are you sure you want to delete everything?');
 	if(!okayed) return;
-	page.resetTable();
-	page.get('engine').className = 'disabled'
-	network.sendsync('RESTART_TAPI', handles.RESTART_TAPI)
+	network.send('RESTART_TAPI', handles.RESTART_TAPI)
+	setTimeout(function(){window.location = '127.0.0.1'},2000);
 }
 
 
@@ -677,7 +677,7 @@ function generateInput(type, name, value, archetype, vartype = false, metaname =
 	input.value = value;
 	input.type=archetype;
 	input.style.display = "inline-block";
-	input.style.width = "65%";
+	input.style.width = "60%";
 	let label = newEle('span');
 	label.innerText = name;
 	label.style.display = "inline-block";
@@ -1418,7 +1418,7 @@ function generateSpecialInput(type, name, value, archetype, vartype = false, met
 	input.value = value;
 	input.type=archetype;
 	input.style.display = "inline-block";
-	input.style.width = "65%";
+	input.style.width = "60%";
 	let label = newEle('span');
 	label.innerText = name;
 	label.style.display = "inline-block";
@@ -1463,6 +1463,12 @@ function validateEditorSave() {
 	if(reds || yellows) return reds+yellows+confirmMsg
 
 	return ''
+}
+
+function BuildFromPreset() {
+	if(badstate) { msg('wait until synced!'); return}
+	alert('this pre-builds from an OTA hpi_in export, make sure you have dumped OTA hpi to hpi_in')
+	document.querySelectorAll('button')[0].click();i=['OTA FULL','hpi_in','units','weapons','features','guis','download','gamedata','anims','bitmaps','fonts','objects3d','scripts','sounds','textures','unitpics'];Array.from(document.querySelectorAll('[id*=var]')).forEach(function(e){e.value=i.shift()});Array.from(document.querySelectorAll('button')).forEach(function(b){if(b.innerText=='post') b.click()});
 }
 
 /* create auto complete

@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		 <link rel="stylesheet" href="style.css">
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -14,6 +14,7 @@
 			<div class="panelRow1">
 				<div id="panelUL" style="background-color:#cccccc" class="panel">
 					<button onclick = "page.createAsk()">New Engine</button>
+					<button onclick = "BuildFromPreset()">Build OTA</button>
 					<button onclick="client.RESTART_TAPI()">BIG RED BUTTON</button>
 					<button onclick="client.loadLast()">Revert all changes</button>
 					<button onclick="client.reviewChanges()">Review current changes</button>

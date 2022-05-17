@@ -94,7 +94,7 @@
 			colorb=0;
 			texturenumber=0;
 			fontnumber=0;
-			active=;
+			active=1;
 			commonattribs=0;
 			help=;
 		}
@@ -121,7 +121,7 @@
 			colorb=0;
 			texturenumber=0;
 			fontnumber=0;
-			active=;
+			active=1;
 			commonattribs=0;
 			help=;
 		}

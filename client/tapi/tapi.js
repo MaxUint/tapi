@@ -498,7 +498,15 @@ function formatTDF(tdf) {
         let i2 = tdf.slice(i + 1).indexOf('*/');
         tdf = tdf.slice(0, i) + tdf.slice(i2 + i + 2);
     }
-    return tdf.split('\n').map(l => l = l.trim()).join('\n'); //trim white-spaces
+    return tdf.split('\n').map(
+		function(l){
+			l = l.trim();
+			if(l.includes('=') && !l.includes(';')) {
+				l+=';';
+			}
+			return l;
+		}
+		).join('\n'); //trim white-spaces
 }
 
 function isValidate(target, text) {
@@ -624,7 +632,7 @@ exports.RESTART_TAPI = function() {
     });
     makeExist(__dirname + '\\' + 'builds');
 	console.clear()
-	exit //intentional error causing
+	process.exit(1);
 };
 exports.getBuild = function(name, number)
 {

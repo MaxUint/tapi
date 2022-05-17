@@ -423,7 +423,7 @@
 	category=corals;
 	animating=0;
 	footprintx=7;
-	footprintz=1;
+	footprintz=10;
 	height=120;
 	filename=Coral;
 	seqname=Coral20;

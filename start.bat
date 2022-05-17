@@ -40,5 +40,5 @@ IF %ERRORLEVEL% NEQ 0 (
 ) else (
 	node client/main.js
 )
-timeout /t 15
+timeout /t 1
 GOTO :A

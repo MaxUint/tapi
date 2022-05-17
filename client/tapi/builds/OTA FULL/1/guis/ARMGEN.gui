@@ -237,7 +237,7 @@
 			ypos=59;
 			width=113;
 			height=20;
-			attribs=25;
+			attribs=256;
 			colorf=15;
 			colorb=0;
 			texturenumber=0;

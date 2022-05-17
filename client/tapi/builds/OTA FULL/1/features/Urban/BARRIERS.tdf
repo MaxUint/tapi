@@ -267,7 +267,7 @@
 	height=20;
 	filename=barriers;
 	seqname=barrier13;
-	seqnameshad=barriershad1;
+	seqnameshad=barriershad13;
 	animtrans=0;
 	shadtrans=1;
 	blocking=1;

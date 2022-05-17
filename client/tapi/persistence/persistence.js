@@ -22,7 +22,7 @@ exports.load = function(location) {
 }
 
 exports.deleteCache = function() {
-	log('flushing .dats')
+	log('flushing ', __dirname + '\\data')
 	fs.rmSync(__dirname + '\\data', { recursive: true, force: true });
 	fs.mkdirSync(__dirname + '\\data');
 }
