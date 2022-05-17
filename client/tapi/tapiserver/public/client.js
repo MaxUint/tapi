@@ -201,15 +201,17 @@ const tapi = {};
 colors = {}
 	colors.units = 'blue/red'
 	colors.weapons = 'orange'
-	colors.features = 'grey'
+	colors.features = 'purple'
 	colors.guis = 'yellow'
 	colors.downloads = 'black'
+	colors.gamedata = 'green'
 	
-tapi.units = new archClass('units');
-tapi.weapons = new archClass('weapons');
-tapi.features = new archClass('features');
-tapi.guis = new archClass('guis');
-tapi.downloads = new archClass('downloads');
+tapi.units = new archClass('units')
+tapi.weapons = new archClass('weapons')
+tapi.features = new archClass('features')
+tapi.guis = new archClass('guis')
+tapi.downloads = new archClass('downloads')
+tapi.gamedata = new archClass('gamedata')
 /* END */
 
 var verbose = false;
@@ -254,7 +256,7 @@ function msg() {
 }
 
 var forms = {};
-forms.create = ['__Create a new engine', 'name', 'source','__folders', 'units', 'weapons', 'features', 'guis', 'downloads'];
+
 
 var handles = {};
 var client = {};
@@ -278,6 +280,7 @@ function update(response) {
 	tapi.features = new archClass('features');
 	tapi.guis = new archClass('guis');
 	tapi.downloads = new archClass('downloads');
+	tapi.gamedata = new archClass('gamedata')
 	let engine = response;
 	
 	tapi.engine = engine.engine;
@@ -315,6 +318,12 @@ function update(response) {
 		firstBuilt = firstBuilt ? firstBuilt : "downloads";
 		tapi.downloads.cache = makeUnitField(engine.downloads.cache);
 		page.get('archetype').innerHTML += '<option value="Downloads">'+tapi.engine.folders.downloads+'</option>';
+	}
+	if(engine.gamedata.built) {
+		tapi.gamedata.built = true;
+		firstBuilt = firstBuilt ? firstBuilt : "gamedata";
+		tapi.gamedata.cache = makeUnitField(engine.gamedata.cache);
+		page.get('archetype').innerHTML += '<option value="gamedata">'+tapi.engine.folders.gamedata+'</option>';
 	}
 	client.archetype = firstBuilt;
 	page.get('archetype').options[0].selected = true;
@@ -385,6 +394,7 @@ function tryLastEdit(){
 	try {
 		let item = tapi[lastEditor[1]].cache[lastEditor[0].__name]
 		panelSet(editor(item, lastEditor[1]), 'panelDR');
+		
 		
 	} catch {
 		panelSet('','panelDR')
@@ -483,8 +493,8 @@ function getAskFields() {
 }
 function destoryAsk(form) {
 	try{
-	form = page.get('askPanel');
-	form.parentNode.removeChild(form);
+		form = page.get('askPanel');
+		form.parentNode.removeChild(form);
 	} catch {}
 }
 function ask(form, handler) {
@@ -516,20 +526,35 @@ function ask(form, handler) {
 	askPanel.appendChild(finish);
 	panelSet(askPanel, 'panelDL');
 }
-
+forms.create = 
+['__Create a new engine', 'name', 'source',
+'__folders', 'units', 'weapons', 'features', 'guis', 'downloads', 'gamedata',
+'__other', 'anims', 'bitmaps', 'fonts', 'objects3d', 'scripts', 'sounds', 'textures', 'unitpics'];
 handles.createAsk = function (formData) {
 	msg('creating...(may take a while!)');
 	let folderBinds = ({
-		units:formData.units, 
-		weapons:formData.weapons, 
-		features:formData.features, 
-		guis:formData.guis, 
-		downloads:formData.downloads
+		'units':formData.units, 
+		'weapons':formData.weapons, 
+		'features':formData.features, 
+		'guis':formData.guis, 
+		'downloads':formData.downloads,
+		'gamedata': formData.gamedata
 	});
+	let others =({
+		'anims':formData.anims,
+		'bitmaps':formData.bitmaps,
+		'fonts':formData.fonts,
+		'objects3d':formData.objects3d,
+		'scripts':formData.scripts,
+		'sounds':formData.sounds,
+		'textures':formData.textures,
+		'unitpics':formData.unitpics
+	})
 	let engine = ({	
-		name:(formData.name), 
-		source:(formData.source), 
-		folders:(folderBinds)
+		'name':(formData.name), 
+		'source':(formData.source), 
+		'folders':(folderBinds),
+		'other':(others)
 	});
 	client.create(engine);
 }
@@ -603,6 +628,7 @@ page.grabItem = function(item, archetype) {
 page.newPanel = function (name, item, floats = true, archetype = 'not set') {
 	if(archetype == 'not set') archetype = client.archetype;
 	let newItem = newEle(floats ? 'span' : 'div');
+	newItem.setAttribute('archetype', archetype)
 	let color = colors[archetype];
 	if(archetype == 'units') {
 		color = item.normal.side == 'ARM' ? color.split('/')[0] : color.split('/')[1]
@@ -612,8 +638,8 @@ page.newPanel = function (name, item, floats = true, archetype = 'not set') {
 	if(floats) newItem.style.float = 'left';
 	newItem.className = 'panelItem';
 	let clone = (tapi[archetype].cache[item.__name]);
-	newItem.onclick = (function(){
-		page.grabItem(clone, archetype);
+	newItem.onclick = (function(element){
+		page.grabItem(clone, element.target.getAttribute('archetype'));
 	});
 	newItem.innerText = `${name}`;
 	return newItem;
@@ -645,6 +671,7 @@ function generateHeader(text, size = 4) {
 }
 
 function generateInput(type, name, value, archetype, vartype = false, metaname = false) {
+	if(isspecial(name)) return generateSpecialInput(type, name, value, archetype, vartype, metaname)
 	let input = newEle('input');
 	input.id = `editor.${type}.${name}`;
 	input.value = value;
@@ -677,6 +704,8 @@ lastEditor = []
 client.editorSave = function() {
 	if(badstate) return msg('Cannot save, client in badstate')
 	if(syncing) return msg('Cannot save, client syncing')
+	let valMsg = validateEditorSave();
+	if(valMsg && !confirm(valMsg)) return
 	let inputs = Array.from(document.querySelectorAll('input[id*=editor]'));
 	inputs.forEach(function(input){
 		let id = input.id;
@@ -742,7 +771,17 @@ function newInput(type){
 	body.appendChild(btn)
 	return body
 }
-
+function editorColouring(archetype, item) {
+	let col = colors[archetype]
+	if(archetype == 'units') {
+		let side = item.normal.side.toLowerCase() == 'arm' ? 0 : 1
+		col = col.split('/')[side]
+	}
+	let panelDR = document.getElementById('panelDR')
+	panelDR.style.background = col
+	let newCol = getComputedStyle(panelDR).background.replace('rgb(','').split(')')[0]
+	panelDR.style.background = `rgba(${newCol}, 0.2)`
+}
 function editor(item, archetype) {
 	editorArchetype = archetype
 	panelSet(editorMenus[archetype](), 'editorDetails')
@@ -825,7 +864,16 @@ function editor(item, archetype) {
 		body.appendChild(newEle('br'))
 	}
 	
+	setTimeout(function(){
+		Array.from(document.querySelectorAll('[special]')).forEach(function(element) {
+			element.onchange(element)
+	})}, 100)
+	setTimeout(function() {
+		editorColouring(archetype, item)
+	}, 100)
+	
 	return body;	
+	
 }
 
 client.reviewChanges = function() {
@@ -1172,7 +1220,7 @@ editorMenus.weapons = function(){
 	idBtn.onclick = function(){
 		let fids = []
 		let ids = tapi.weapons.cache.__getall('normal', 'id')
-		for(let i = 0; i<255; i++) {
+		for(let i = 0; i<252; i++) {
 			if(!ids.includes(i)) {
 				fids.push(i)
 			}
@@ -1198,6 +1246,12 @@ editorMenus.guis = function(){
 };
 
 editorMenus.downloads = function(){
+	let body = newEle('div')
+	body.appendChild(editorMenus.header())
+	return body
+};
+
+editorMenus.gamedata = function(){
 	let body = newEle('div')
 	body.appendChild(editorMenus.header())
 	return body
@@ -1248,4 +1302,171 @@ function getAll(vartype, varname) {
 	alert(`all ${varname}'s in ${lastEditor[1]} \n\n${results}`)
 }
 
+let vc = {}
+vc.green = 'rgba(0, 255, 0, 0.5)'
+vc.yellow = 'rgba(255, 255, 0, 0.5)'
+vc.red = 'rgba(255, 0, 0, 0.5)'
+//'rgba(255, 255, 0, 0.5)' = green
+//'rgba(0, 255, 0, 0.5)' = yellow
 
+let specVal = {}, valFile = {}
+function valWeapScript(str) {
+	str = str.toLowerCase()
+	let scripts = tapi.engine.files.scripts
+	if(!scripts) return vc.yellow
+	if(scripts.includes(str)) return vc.green
+	return vc.red
+}
+function valWeapName(str) {
+	if(!tapi.weapons.built) return vc.yellow
+	if(tapi.weapons.cache[str]) return vc.green
+	return vc.red
+}
+valFile.sounds = function(str) {
+	str = str.toLowerCase()
+	let snds = tapi.engine.files.sounds
+	if(!snds) return vc.yellow
+	if(snds.includes(str+'.wav')) return vc.green
+	return vc.red
+}
+valFile.objects3d = function (str) {
+	str = str.toLowerCase()
+	from = tapi.engine.files.objects3d
+	if(!from) return vc.yellow
+	if(from.includes(str+'.3do')) return vc.green
+	return vc.red
+}
+valFile.anims = function(str) {
+	str = str.toLowerCase()
+	from = tapi.engine.files.anims
+	if(!from) return vc.yellow
+	if(from.includes(str)) return vc.green
+	return vc.red
+}
+function valSide(str) {
+	if(['ARM', 'CORE'].includes(str.toUpperCase())) return vc.green
+	return vc.red
+}
+function valGameData(value) {
+	if(Object.keys(tapi.gamedata.cache.__searchMeta('name', value)).length > 1) return vc.green
+	return vc.red
+}
+function valFeatures(value) {
+	if(Object.keys(tapi.features.cache.__searchMeta('name', value)).length > 1) return vc.green
+	return vc.red
+}
+function valId(id, element) {
+	id = parseInt(id)
+	let old = parseInt(element.getAttribute('old'))
+	let ids = tapi[lastEditor[1]].cache.__getall('normal', 'id')
+	ids[ids.indexOf(old)] = undefined
+	if(ids.includes(id)) return vc.red
+	return vc.green
+}
+//Validate functions validate if a certain value is completely fine (green), or bad/conflicting (red)
+//valFile.[folder] checks if the file exists for the entry, like a sound.wav
+specVal.side = valSide //lol
+specVal.id = valId
+
+specVal.weapon1 = valWeapName
+specVal.weapon2 = valWeapName
+specVal.weapon3 = valWeapName
+
+specVal.explodeas = valWeapName
+specVal.selfdestructas = valWeapName
+
+specVal.explosionart = valFile.anims
+specVal.waterexplosionart = valFile.anims
+specVal.lavaexplosionart = valFile.anims
+specVal.objectname = valFile.objects3d
+
+specVal.soundcategory = valGameData
+specVal.movementclass = valGameData //Movement class overrides FBI movement tags
+
+specVal.soundstart = valFile.sounds
+specVal.soundhit = valFile.sounds
+specVal.soundtrigger = valFile.sounds
+specVal.sound = valFile.sounds
+
+
+specVal.corpse = valFeatures //FEATURES AREN'T EVEN BUILT CORRECTLY IDIOT x'D
+
+//specVal.movementclass = ?
+
+//specVal.defaultmissiontype = ?
+//specVal.wpri_badtargetcategory =?
+
+let specials = Object.keys(specVal);
+function isspecial(name){
+	return specials.includes(name)
+}
+
+
+function generateSpecialInput(type, name, value, archetype, vartype = false, metaname = false) {
+	let input = newEle('input');
+	input.setAttribute('old', value)
+	input.setAttribute('special', 'true')
+	input.setAttribute('name', name)
+	input.onchange = function(element) {
+		if(element.target) {
+			element.target.style.background = specVal[element.target.getAttribute('name')](element.target.value, element.target)
+			return
+		}
+		element.style.background = specVal[element.getAttribute('name')](element.value, element)
+	}
+	input.id = `editor.${type}.${name}`;
+	input.value = value;
+	input.type=archetype;
+	input.style.display = "inline-block";
+	input.style.width = "65%";
+	let label = newEle('span');
+	label.innerText = name;
+	label.style.display = "inline-block";
+	label.style.width = "35%";
+	
+	if(vartype && metaname) {
+		let delBtn = newEle('button')
+		delBtn.innerText = 'delete'
+		delBtn.onclick = function(){
+			deleteOne(metaname, vartype, name)
+		}
+		label.appendChild(delBtn)
+	}
+	
+	let combined = newEle('div');
+	combined.style.width="100%";
+	combined.appendChild(label);
+	combined.appendChild(input);
+	return combined;
+}
+
+function fastEdits() {
+	Array.from(document.querySelectorAll('[special]')).forEach(function(element) {
+		element.onchange(element)
+	});
+}; setInterval(fastEdits, 250);
+
+function validateEditorSave() {
+	let reds = '', yellows = ''
+	Array.from(document.querySelectorAll('[special]')).forEach(function(element) {
+		if(element.style.background == (vc.red+' none repeat scroll 0% 0%')) reds += (element.getAttribute('name') + ' = "' + element.value + '"\n')
+	});
+	Array.from(document.querySelectorAll('[special]')).forEach(function(element) {
+		if(element.style.background == (vc.yellow+' none repeat scroll 0% 0%')) yellows += (element.getAttribute('name') + ' = "' + element.value + '"\n')
+	});
+	
+	if(reds) reds = ('Major errors\n\n' + reds + '\n\n')
+	if(yellows) yellows = ('Unable to verify due to missing information\n\n' + yellows + '\n\n')
+	
+	let confirmMsg = 'Are you sure you want to save?'
+	
+	if(reds || yellows) return reds+yellows+confirmMsg
+
+	return ''
+}
+
+/* create auto complete
+
+document.querySelectorAll('button')[0].click();i=['OTA FULL','hpi_in','units','weapons','features','guis','download','gamedata','anims','bitmaps','fonts','objects3d','scripts','sounds','textures','unitpics'];Array.from(document.querySelectorAll('[id*=var]')).forEach(function(e){e.value=i.shift()});document.querySelectorAll('button')[7].click()
+
+*/

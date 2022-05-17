@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=CORPLAT;
-	menu=2;
-	button=0;
-	unitname=CORCSA;
-}
-

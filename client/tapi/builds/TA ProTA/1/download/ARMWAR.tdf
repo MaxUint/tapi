@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=ARMALAB;
-	menu=2;
-	button=1;
-	unitname=ARMWAR;
-}
-

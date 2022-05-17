@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=CORAVP;
-	menu=2;
-	button=5;
-	unitname=CORVROC;
-}
-

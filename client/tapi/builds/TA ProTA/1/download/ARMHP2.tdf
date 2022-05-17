@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=ARMCSA;
-	menu=3;
-	button=5;
-	unitname=ARMHP;
-}
-

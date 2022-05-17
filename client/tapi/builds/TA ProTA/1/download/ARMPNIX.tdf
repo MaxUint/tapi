@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=ARMAAP;
-	menu=2;
-	button=3;
-	unitname=ARMPNIX;
-}
-

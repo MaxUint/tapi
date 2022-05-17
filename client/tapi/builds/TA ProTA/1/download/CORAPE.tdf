@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=CORAAP;
-	menu=2;
-	button=4;
-	unitname=CORAPE;
-}
-

@@ -1,4 +1,4 @@
-let output = "C:\\Users\\Zom\\Documents\\GitHub\\tapi\\tapi\\hpi_in" //Edit this to be hpi_in where tapi is installed
+let output = `C:\Users\Zom\Documents\GitHub\tapi\client\tapi\hpi_in` //Edit this to be hpi_in where tapi is installed
 
 const fs = require('fs')
 function HPIDump(file) {

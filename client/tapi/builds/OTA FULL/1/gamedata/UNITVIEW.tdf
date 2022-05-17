@@ -1,0 +1,8 @@
+[RESOURCES]
+{
+	website=www.cavedog.com/;
+	logo=bitmaps\small_cavedog_logo.pcx;
+	armbackground=bitmaps\armbkg.pcx;
+	corebackground=bitmaps\corebkg.pcx;
+}
+

@@ -1,8 +1,0 @@
-[MENUENTRY1]
-{
-	unitmenu=ARMAVP;
-	menu=2;
-	button=8;
-	unitname=ARMMANNI;
-}
-

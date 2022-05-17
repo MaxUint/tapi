@@ -20,7 +20,8 @@ const formats = {
     'weapons': '.tdf',
     'features': '.tdf',
     'guis': '.gui',
-    'downloads': '.tdf'
+    'downloads': '.tdf',
+	'gamedata': '.tdf'
 };
 
 function makeUnitField(cache, excluded = {}, mergeExclude = {}) {
@@ -196,13 +197,14 @@ class archClass {
         return true;
     };
 }
-exports.units = new archClass('units');
-exports.weapons = new archClass('weapons');
-exports.features = new archClass('features');
-exports.guis = new archClass('guis');
-exports.downloads = new archClass('downloads');
+exports.units = new archClass('units')
+exports.weapons = new archClass('weapons')
+exports.features = new archClass('features')
+exports.guis = new archClass('guis')
+exports.downloads = new archClass('downloads')
+exports.gamedata = new archClass('gamedata')
 const bind = function(archetype, target, rebind) {
-    if (!['units', 'weapons', 'features', 'guis', 'downloads'].includes(archetype)) {
+    if (!['units', 'weapons', 'features', 'guis', 'downloads', 'gamedata'].includes(archetype)) {
         log("Invalid tdf archetype, choose 'units' 'weapons' 'features' 'guis' or 'downloads'");
         return false;
     }
@@ -251,6 +253,10 @@ exports.compile = function(rewrite = false) {
     if (exports.downloads.built) {
 		exports.downloads.commit(exports.downloads.cache);
         compileMain(exports.downloads.cache, exports.downloads.archetype, formats.downloads, exports.downloads.location);
+    }
+	if (exports.gamedata.built) {
+		exports.gamedata.commit(exports.gamedata.cache);
+        compileMain(exports.gamedata.cache, exports.gamedata.archetype, formats.gamedata, exports.gamedata.location);
     }
 	exports.engine.timestamp = Date.now()
     exports.save();
@@ -436,12 +442,15 @@ function getTdfName(gadgetObj, archetype) {
         return gadgetObj.__gadgetname;
     }
     if (archetype == 'features') {
-        return gadgetObj.normal.seqname;
+        return gadgetObj.normal.world+'.'+gadgetObj.__gadgetname;
     }
     if (archetype == 'downloads') {
         return gadgetObj.normal.unitname + '.' + gadgetObj.__gadgetname;
     }
     if (archetype == 'guis') {
+        return gadgetObj.__filename + '.' + gadgetObj.__gadgetname;
+    }
+	if (archetype == 'gamedata') {
         return gadgetObj.__filename + '.' + gadgetObj.__gadgetname;
     }
 }
@@ -498,11 +507,12 @@ function isValidate(target, text) {
 }
 
 function reloadTapi() {
-	exports.units = new archClass('units');
-	exports.weapons = new archClass('weapons');
-	exports.features = new archClass('features');
-	exports.guis = new archClass('guis');
-	exports.downloads = new archClass('downloads');
+	exports.units = new archClass('units')
+	exports.weapons = new archClass('weapons')
+	exports.features = new archClass('features')
+	exports.guis = new archClass('guis')
+	exports.downloads = new archClass('downloads')
+	exports.gamedata = new archClass('gamedata')
 }
 exports.load = function(name) {
 	reloadTapi();
@@ -538,13 +548,35 @@ exports.create = function(engine, fromversion = false) {
 	if(engine.name == '') return 'Error, empty name!'
 	if(engine.name.includes('.')) return 'Error, name includes .'
 	if(engine.name[0] == ' ') return 'Error, name starts with a space'
-	if(!validateEngineSource(engine)) return 'Error, invalid engine source'
-	if(!(/^(?!\.)(?!com[0-9]$)(?!con$)(?!lpt[0-9]$)(?!nul$)(?!prn$)[^\|\*\?\\:<>/$"]*[^\.\|\*\?\\:<>/$"]+$/.test(engine.name))) return 'Error, name not acceptable, try a filename friendly string'
+	let validateMsg = validateEngineSource(engine)
+	if(validateMsg) return validateMsg
+	if(!(/^(?!\.)(?!com[0-9]$)(?!con$)(?!lpt[0-9]$)(?!nul$)(?!prn$)[^\|\*\?\\:<>/$"]*[^\.\|\*\?\\:<>/$"]+$/.test(engine.name))) return 'Error, name not acceptable, try a filename friendly string' 
 	reloadTapi();
     exports.engine = engine;
     if (!fromversion) {
+		//NEW VALIDATED ENGINE CREATION
+		if(exports.engine.other) { 
+			exports.engine.files = {}
+			if(exports.engine.other.anims) 
+				exports.engine.files.anims = ReadTAFolder(engine.source + '//' + exports.engine.other.anims)
+			if(exports.engine.other.bitmaps) 
+				exports.engine.files.bitmaps = ReadTAFolder(engine.source + '//' + exports.engine.other.bitmaps)
+			if(exports.engine.other.fonts) 
+				exports.engine.files.fonts = ReadTAFolder(engine.source + '//' + exports.engine.other.fonts)
+			if(exports.engine.other.objects3d) 
+				exports.engine.files.objects3d = ReadTAFolder(engine.source + '//' + exports.engine.other.objects3d)
+			if(exports.engine.other.scripts) 
+				exports.engine.files.scripts = ReadTAFolder(engine.source + '//' + exports.engine.other.scripts)
+			if(exports.engine.other.sounds) 
+				exports.engine.files.sounds = ReadTAFolder(engine.source + '//' + exports.engine.other.sounds)
+			if(exports.engine.other.textures) 
+				exports.engine.files.textures = ReadTAFolder(engine.source + '//' + exports.engine.other.textures)
+			if(exports.engine.other.unitpics) 
+				exports.engine.files.unitpics = ReadTAFolder(engine.source + '//' + exports.engine.other.unitpics)
+		}
         exports.init(engine.source);
     } else {
+		//LOADING PRE EXISTING VALIDATED ENGINE
         exports.init(getBuildFolder());
     }
     if (typeof engine.version == 'undefined') {
@@ -573,6 +605,11 @@ exports.create = function(engine, fromversion = false) {
     if (typeof engine.folders.downloads != 'undefined') {
 		if(engine.folders.downloads) {
 			if(!exports.downloads.bind(engine.folders.downloads, true)) return false;
+		}
+    }
+	if (typeof engine.folders.gamedata != 'undefined') {
+		if(engine.folders.gamedata) {
+			if(!exports.gamedata.bind(engine.folders.gamedata, true)) return false;
 		}
     }
 	if(!fromversion) exports.compile(true);
@@ -622,6 +659,11 @@ exports.getBuild = function(name, number)
 			if(!exports.downloads.bind(engine.folders.downloads, true)) return false;
 		}
     }
+	  if (typeof engine.folders.gamedata != 'undefined') {
+		if(engine.folders.gamedata) {
+			if(!exports.gamedata.bind(engine.folders.gamedata, true)) return false;
+		}
+    }
     return exports;
 }
 exports.deleteBuild = function(name, number) {
@@ -669,55 +711,149 @@ function currentBuilds() {
 }
 
 function validateEngineSource(engine) {
-	if(!fs.existsSync(engine.source)) return false;
-	let atLeastOne = false;
+	if(!fs.existsSync(engine.source)) return 'Invalid Source';
+	let atLeastOne = false
+	
 	if(engine.folders.units) {
 		log('validating units');
 		atLeastOne++;
 		let source = engine.source + '\\' + engine.folders.units;
-		if(!fs.existsSync(source)) return false;
+		if(!fs.existsSync(source)) return 'units not be found';
 		let contents = fs.readdirSync(source);
-		if(!contents.join(',').toLowerCase().includes(formats.units)) return false;
+		if(!contents.join(',').toLowerCase().includes(formats.units)) return 'units incorrect type';
 	}
 	if(engine.folders.weapons) {
 		log('validating weapons');
 		atLeastOne++;
 		let source = engine.source + '\\' + engine.folders.weapons;
-		if(!fs.existsSync(source)) return false;
+		if(!fs.existsSync(source)) return 'weapons not be found';
 		let contents = fs.readdirSync(source);
-		if(!contents.join(',').toLowerCase().includes(formats.weapons)) return false;
+		if(!contents.join(',').toLowerCase().includes(formats.weapons)) return 'weapons incorrect type';
 	}
 	if(engine.folders.features) {
 		log('validating features');
 		atLeastOne++;
 		let source = engine.source + '\\' + engine.folders.features;
-		if(!fs.existsSync(source)) return false;
+		if(!fs.existsSync(source)) return 'featurtes not found';
 		let contents = fs.readdirSync(source);
 		if(contents.length > 0 && !contents[0].includes('.')) {
 			contents = fs.readdirSync(source+'\\'+contents[0]);
-			if(!contents.join(',').toLowerCase().includes(formats.features)) return false;
+			if(!contents.join(',').toLowerCase().includes(formats.features)) return 'features incorrect type';
 		}
 	}
 	if(engine.folders.guis) {
 		log('validating guis');
 		atLeastOne++;
 		let source = engine.source + '\\' + engine.folders.guis;
-		if(!fs.existsSync(source)) return false;
+		if(!fs.existsSync(source)) return 'guis not found';
 		let contents = fs.readdirSync(source);
-		if(!contents.join(',').toLowerCase().includes(formats.guis)) return false;
+		if(!contents.join(',').toLowerCase().includes(formats.guis)) return 'guis incorrect type';
 	}
 	if(engine.folders.downloads) {
 		log('validating downloads');
 		atLeastOne++;
 		let source = engine.source + '\\' + engine.folders.downloads;
-		if(!fs.existsSync(source)) return false;
+		if(!fs.existsSync(source)) return 'downloads not found';
 		let contents = fs.readdirSync(source);
-		if(!contents.join(',').toLowerCase().includes(formats.downloads)) return false;
+		if(!contents.join(',').toLowerCase().includes(formats.downloads)) return 'downloads incorrect type';
 	}
-	if(!atLeastOne) return false;
-	log('validateEngineSource passed!');
-	return true;
-} 
+	if(engine.folders.gamedata) {
+		log('validating gamedata');
+		atLeastOne++;
+		let source = engine.source + '\\' + engine.folders.gamedata;
+		if(!fs.existsSync(source)) return 'gamedata not found';
+		let contents = fs.readdirSync(source);
+		if(!contents.join(',').toLowerCase().includes(formats.gamedata)) return 'gamedata incorrect type';
+	}
 
-exports.openhpi = function() {
+	if(engine.other) {
+		if(engine.other.anims) {
+			log('validating anims')
+			let source = engine.source + '\\' + engine.other.anims
+			if(!fs.existsSync(source)) return 'anims not found'
+		}
+		if(engine.other.bitmaps) {
+			log('validating bitmaps')
+			let source = engine.source + '\\' + engine.other.bitmaps
+			if(!fs.existsSync(source)) return 'bitmaps not found'
+		}
+		if(engine.other.fonts) {
+			log('validating fonts')
+			let source = engine.source + '\\' + engine.other.fonts
+			if(!fs.existsSync(source)) return false
+		}
+		if(engine.other.objects3d) {
+			log('validating objects3d')
+			let source = engine.source + '\\' + engine.other.objects3d
+			if(!fs.existsSync(source)) return 'objects3d not found'
+		}
+		if(engine.other.scripts) {
+			log('validating scripts')
+			let source = engine.source + '\\' + engine.other.scripts
+			if(!fs.existsSync(source)) return 'scripts not found'
+		}
+		if(engine.other.sounds) {
+			log('validating sounds')
+			let source = engine.source + '\\' + engine.other.sounds
+			if(!fs.existsSync(source)) return 'sounds not found'
+		}
+		if(engine.other.textures) {
+			log('validating textures')
+			let source = engine.source + '\\' + engine.other.textures
+			if(!fs.existsSync(source)) return 'textures not found'
+		}
+		if(engine.other.unitpics) {
+			log('validating unitpics')
+			let source = engine.source + '\\' + engine.other.unitpics
+			if(!fs.existsSync(source)) return 'unitpics not found'
+		}
+	}
+	
+	if(!atLeastOne) return 'Empty create received';
+	log('validateEngineSource passed!');
+	return '';
+} 
+function ExplodeGafNames(array, source) {
+	let newArray = []
+	array.forEach(function(item){
+		if(item.toLowerCase().slice(-4) == '.gaf') {
+			newArray = [...newArray, ...GetGafNames(source+'\\'+item)]
+		} else {
+			newArray.push(item)
+		}
+	})
+	return newArray
 }
+function isASCII(str) {
+    return !/[^ -~]+/g.test(str);
+}
+function GetGafNames(file){
+    let end = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+    let gaf = fs.readFileSync(file)
+    let names = [], ls, le
+    
+    for(let i = 0, x = 0; i < 1000 && x < 10; i++, x++) {
+        le = gaf.lastIndexOf(end)
+        ls = le
+
+        let str, primed, c
+        for(let n = 0; n < 25 && !str; n++, ls--){
+            c = gaf[ls]
+            if(!primed && c == 0) le--
+            if(c != 0) primed = true
+            if(primed && c == 0) str = gaf.slice(ls+1, le+1).toString()
+        }
+        gaf = gaf.slice(0, ls)
+        if(str && isASCII(str)) {
+			x = 0
+            names.push(str.toLowerCase())
+        }
+    }
+    return names
+}
+function ReadTAFolder(source) {
+	let files = fs.readdirSync(source).map(function(file) { return file.toLowerCase() })
+	let parsedFiles = ExplodeGafNames(files, source)
+	return parsedFiles
+}
+
