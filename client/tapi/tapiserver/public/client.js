@@ -226,13 +226,6 @@ page.get = function(id) { return document.getElementById(id); }
 function log() 
 {
 	if(verbose) {
-		debug = Array.prototype.slice.call(arguments);
-		let msg = debug.join(' ');
-		let term = page.get('terminal');
-		let newMsg = document.createElement('span');
-		newMsg.innerHTML = `${msg}<br>`;
-		term.insertBefore(newMsg, term.firstChild);
-	} else {
 		console.log(...arguments);
 	}
 }
@@ -273,7 +266,6 @@ function update(response) {
 			console.error(error);
 		}
 	}
-	debug = response;
 	page.get('engine').className = '';
 	client.changes = [];
 	page.resetTable();
@@ -335,7 +327,7 @@ function update(response) {
 handles.loadBuild = function(response)
 {
 	msg('Loaded!')
-	console.log(response)
+	//console.log(response)
 	client.loadedBuilds[client.lastBuilt] = response
 	page.enableEngineOptions()
 	if(skipupdate) {
@@ -683,6 +675,10 @@ function generateInput(type, name, value, archetype, vartype = false, metaname =
 	label.style.display = "inline-block";
 	label.style.width = "35%";
 	
+	if(labelNames.includes(name) && metaname) {
+		label.appendChild(makeLabelFrom(name))
+	}
+	
 	if(vartype && metaname) {
 		let delBtn = newEle('button')
 		delBtn.innerText = 'delete'
@@ -712,7 +708,6 @@ client.editorSave = function() {
 		let vartype = id.split('.')[1];
 		let varname = id.split('.')[2];
 		let type = input.getAttribute('type');
-		console.log(5, type)
 		let value = input.value;
 		if(vartype == 'meta') {
 			if(tapi[type].cache[client.workingItem]['__'+varname] != value) {	
@@ -1143,18 +1138,12 @@ if(axios){
 	
 	network.syncon = function(){
 		syncing = true
-		console.log('-------------')
-		console.log('SYNC STARTED!')
-		console.log('-------------')
 		page.get("panelDL").style.backgroundColor = "rgb(155, 155, 155)"
 		page.get("panelDR").style.backgroundColor = "rgb(155, 155, 155)"
 	}
 	
 	network.syncoff = function(){
 		syncing = false
-		console.log('-------------')
-		console.log('SYNC STOPPED!')
-		console.log('-------------')
 		page.get("panelDL").style.backgroundColor = "rgb(204, 221, 255)" 
 		page.get("panelDR").style.backgroundColor = "rgb(255, 204, 204)" 
 	}
@@ -1302,6 +1291,9 @@ function getAll(vartype, varname) {
 	alert(`all ${varname}'s in ${lastEditor[1]} \n\n${results}`)
 }
 
+
+/* EDITOR VALIDATIONS */
+
 let vc = {}
 vc.green = 'rgba(0, 255, 0, 0.5)'
 vc.yellow = 'rgba(255, 255, 0, 0.5)'
@@ -1319,14 +1311,20 @@ function valWeapScript(str) {
 }
 function valWeapName(str) {
 	if(!tapi.weapons.built) return vc.yellow
-	if(tapi.weapons.cache[str]) return vc.green
-	return vc.red
-}
+	let t = Object.keys(tapi.weapons.cache.__searchMeta('gadgetname', str))
+	t.shift()
+	let col = vc.red;
+	t.forEach(function(tstr) {
+		if(tstr.toLowerCase() == str.toLowerCase()) col = vc.green
+	})
+	return col
+};
+
 valFile.sounds = function(str) {
 	str = str.toLowerCase()
 	let snds = tapi.engine.files.sounds
 	if(!snds) return vc.yellow
-	if(snds.includes(str+'.wav')) return vc.green
+	if(snds.includes(str) || snds.includes(str+'.wav')) return vc.green
 	return vc.red
 }
 valFile.objects3d = function (str) {
@@ -1347,14 +1345,48 @@ function valSide(str) {
 	if(['ARM', 'CORE'].includes(str.toUpperCase())) return vc.green
 	return vc.red
 }
-function valGameData(value) {
-	if(Object.keys(tapi.gamedata.cache.__searchMeta('name', value)).length > 1) return vc.green
-	return vc.red
+
+function valWeapName(str) {
+	if(!tapi.weapons.built) return vc.yellow
+	let t = Object.keys(tapi.weapons.cache.__searchMeta('gadgetname', str))
+	t.shift()
+	let col = vc.red;
+	t.forEach(function(tstr) {
+		if(tapi.weapons.cache[tstr].__gadgetname.toLowerCase() == str.toLowerCase()) col = vc.green
+	})
+	return col
+};
+
+function valGameDataName(str) {
+	if(!tapi.gamedata.built) return vc.yellow
+	let t = Object.keys(tapi.gamedata.cache.__search('name', str))
+	t.shift()
+	let col = vc.red;
+	t.forEach(function(tstr) {
+		if(tapi.gamedata.cache[tstr].normal.name.toLowerCase()  == str.toLowerCase()) col = vc.green
+	})
+	return col
 }
-function valFeatures(value) {
-	if(Object.keys(tapi.features.cache.__searchMeta('name', value)).length > 1) return vc.green
-	return vc.red
+function valGameDataGadget(str) {
+	if(!tapi.gamedata.built) return vc.yellow
+	let t = Object.keys(tapi.gamedata.cache.__searchMeta('gadgetname', str))
+	t.shift()
+	let col = vc.red;
+	t.forEach(function(tstr) {
+		if(tapi.gamedata.cache[tstr].__gadgetname.toLowerCase()  == str.toLowerCase()) col = vc.green
+	})
+	return col
 }
+function valFeatures(str) {
+	if(!tapi.features.built) return vc.yellow
+	let t = Object.keys(tapi.features.cache.__searchMeta('gadgetname', str))
+	t.shift()
+	let col = vc.red;
+	t.forEach(function(tstr) {
+		if(tapi.features.cache[tstr].__gadgetname.toLowerCase() == str.toLowerCase()) col = vc.green
+	})
+	return col
+} 
 function valId(id, element) {
 	id = parseInt(id)
 	let old = parseInt(element.getAttribute('old'))
@@ -1363,6 +1395,33 @@ function valId(id, element) {
 	if(ids.includes(id)) return vc.red
 	return vc.green
 }
+
+function valNum(number, range) {
+	if(number != parseInt(number)) return vc.red
+	if(!range) return  vc.green
+	number = parseInt(number)
+	if(number >= range[0] && number && number <= range[1]) return vc.green
+	return vc.red
+}
+function valFloat(number, range) {
+	if(number != parseFloat(number)) return vc.red
+	if(!range) return  vc.green
+	number = parseFloat(number)
+	if(number >= range[0] && number && number <= range[1]) return vc.green
+	return vc.red
+}
+function hasOtherVals(){
+	let vals = Array.from(arguments)
+	vals.forEach(function(val) {
+		
+	})
+	return 0
+}
+function OtherVal(val) {
+	
+}
+
+let conflicts = '';
 //Validate functions validate if a certain value is completely fine (green), or bad/conflicting (red)
 //valFile.[folder] checks if the file exists for the entry, like a sound.wav
 specVal.side = valSide //lol
@@ -1380,22 +1439,80 @@ specVal.waterexplosionart = valFile.anims
 specVal.lavaexplosionart = valFile.anims
 specVal.objectname = valFile.objects3d
 
-specVal.soundcategory = valGameData
-specVal.movementclass = valGameData //Movement class overrides FBI movement tags
+specVal.soundcategory = valGameDataGadget
+specVal.movementclass = valGameDataName //Movement class overrides FBI movement tags
 
 specVal.soundstart = valFile.sounds
 specVal.soundhit = valFile.sounds
 specVal.soundtrigger = valFile.sounds
 specVal.sound = valFile.sounds
 
+//When TA units are looking for targets they sorta sort available targets by target categories and pick the "best" target
+//specVal.category is always fine others must be .category
+
 
 specVal.corpse = valFeatures //FEATURES AREN'T EVEN BUILT CORRECTLY IDIOT x'D
 
-//specVal.movementclass = ?
+// CUSTOM VALIDATIONS
+/*
+let hacks = {}
+specVal.rendertype = function(value) {
+	return valNum(value, [0,7])
+}
+specVal.lineofsight = function() {
+	if(OtherVal('ballistic')) {
+		conflicts.push('lineofsight overridden by ballistic')
+		return vc.red
+	}
+}
+specVal.smoketrail = function() {
+	if(!hasOtherVals('lineofsight')) {
+		conflicts.push('smoketrail requires line of sight')
+		return vc.red
+	}
+}
+specVal.smokedelay = function() {
+	if(!hasOtherVals('lineofsight')) {
+		conflicts.push('smokedelay requires line of sight')
+		return vc.red
+	}
+}
+specVal.dropped = function() {
+	if(OtherVal('turret')) {
+		conflicts.push('dropped conflicts with turret')
+		return vc.red
+	}
+}
+specVal.turret = function() {
+	let col = vc.gree
+	if(!hacks.launchturret && OtherVal('vlaunch')) {
+		conflicts.push('turret overrides vlaunch')
+		col = vc.yellow
+	}
+	if(OtherVal('dropped')) {
+		conflicts.push('turret conflicts with dropped')
+		col = vc.red
+	}
+	return col
+}
+specVal.vlaunch = function() {
+	let col = vc.green
+	if(hasOtherVals('tolerance')) {
+		conflicts.push('vlaunch overrides tolerance')
+		col = vc.yellow
+	}
+	if(!hasOtherVals('selfprop')) {
+		conflicts.push('vlaunch requires selfprop')
+		col = vc.red
+	}
+	if(!hacks.launchturret && hasOtherVals('turret')) {
+		conflicts.push('vlaunc conflicts with turret')
+		col = vc.red
+	}
+	return col
+}
 
-//specVal.defaultmissiontype = ?
-//specVal.wpri_badtargetcategory =?
-
+//*/
 let specials = Object.keys(specVal);
 function isspecial(name){
 	return specials.includes(name)
@@ -1423,6 +1540,10 @@ function generateSpecialInput(type, name, value, archetype, vartype = false, met
 	label.innerText = name;
 	label.style.display = "inline-block";
 	label.style.width = "35%";
+	
+	if(labelNames.includes(name)) {
+		label.appendChild(makeLabelFrom(name))
+	}
 	
 	if(vartype && metaname) {
 		let delBtn = newEle('button')
@@ -1469,6 +1590,25 @@ function BuildFromPreset() {
 	if(badstate) { msg('wait until synced!'); return}
 	alert('this pre-builds from an OTA hpi_in export, make sure you have dumped OTA hpi to hpi_in')
 	document.querySelectorAll('button')[0].click();i=['OTA FULL','hpi_in','units','weapons','features','guis','download','gamedata','anims','bitmaps','fonts','objects3d','scripts','sounds','textures','unitpics'];Array.from(document.querySelectorAll('[id*=var]')).forEach(function(e){e.value=i.shift()});Array.from(document.querySelectorAll('button')).forEach(function(b){if(b.innerText=='post') b.click()});
+}
+
+
+function makeLabelFrom(name) {
+	let wrapper = newEle('span')
+	wrapper.className = 'tooltip'
+	
+	let image = newEle('img')
+	image.src = 'tooltip Icon.png'
+	
+	wrapper.appendChild(image)
+	
+	let text = newEle('span')
+	text.className = 'tooltiptext'
+	text.innerText = labelTexts[labelNames.indexOf(name)]
+	
+	wrapper.appendChild(text)
+	
+	return wrapper;
 }
 
 /* create auto complete
