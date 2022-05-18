@@ -1,0 +1,32 @@
+[MENUENTRY1]
+{
+	unitmenu=CORCOM;
+	menu=5;
+	button=1;
+	unitname=CORPLAS;
+}
+
+[MENUENTRY2]
+{
+	unitmenu=CORCK;
+	menu=5;
+	button=2;
+	unitname=CORPLAS;
+}
+
+[MENUENTRY3]
+{
+	unitmenu=CORCV;
+	menu=5;
+	button=2;
+	unitname=CORPLAS;
+}
+
+[MENUENTRY4]
+{
+	unitmenu=CORCA;
+	menu=5;
+	button=2;
+	unitname=CORPLAS;
+}
+

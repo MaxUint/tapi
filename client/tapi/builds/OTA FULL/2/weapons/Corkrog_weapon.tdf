@@ -1,0 +1,119 @@
+[CORKROG_HEAD]
+{
+	id=149;
+	name=Annihilator Weapon;
+	rendertype=0;
+	lineofsight=1;
+	turret=1;
+	range=700;
+	reloadtime=4;
+	energypershot=2000;
+	weaponvelocity=1000;
+	areaofeffect=8;
+	soundstart=annigun1;
+	soundhit=xplolrg1;
+	firestarter=90;
+	beamweapon=1;
+	color=144;
+	color2=217;
+	tolerance=500;
+	explosiongaf=fx;
+	explosionart=explode5;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom1;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashsm;
+		[DAMAGE]
+		{
+			default=2500;
+		}
+}
+
+[CORKROG_FIRE]
+{
+	id=150;
+	name=Gauss Cannon;
+	rendertype=4;
+	lineofsight=1;
+	turret=1;
+	minbarrelangle=-15;
+	range=300;
+	reloadtime=1.6;
+	weaponvelocity=450;
+	areaofeffect=8;
+	soundstart=Krogun1;
+	soundhit=xplomed2;
+	tolerance=500;
+	explosiongaf=fx;
+	explosionart=explode5;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2oboom1;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplashsm;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=480;
+		}
+}
+
+[CORKROG_ROCKET]
+{
+	id=151;
+	name=Heavy Rockets;
+	rendertype=1;
+	lineofsight=1;
+	vlaunch=1;
+	model=fmdmisl;
+	range=900;
+	reloadtime=1.4;
+	weapontimer=5;
+	flighttime=15;
+	weaponvelocity=550;
+	startvelocity=250;
+	weaponacceleration=200;
+	turnrate=63000;
+	areaofeffect=80;
+	metalpershot=0;
+	soundstart=rocklit1;
+	soundhit=xplosml2;
+	firestarter=70;
+	smokedelay=.1;
+	guidance=1;
+	tracks=1;
+	selfprop=1;
+	smoketrail=1;
+	tolerance=9000;
+	explosiongaf=fx;
+	explosionart=explode3;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	lavaexplosiongaf=fx;
+	lavaexplosionart=lavasplash;
+	startsmoke=1;
+		[DAMAGE]
+		{
+			default=131;
+			armthund=383;
+			armbrawl=383;
+			armpeep=383;
+			armfig=383;
+			armca=383;
+			armaca=383;
+			armatlas=383;
+			armpnix=383;
+			armhawk=383;
+			armlance=383;
+			corfink=383;
+			corveng=383;
+			corvamp=383;
+			corhurc=383;
+			cortitan=383;
+			coraca=383;
+			corshad=383;
+			corape=383;
+			corca=383;
+			corvalk=383;
+		}
+}
+

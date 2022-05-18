@@ -1,0 +1,53 @@
+[Help]
+{
+	line0 = CTRL+A|Select all units;
+	line1 = CTRL+B|Select all construction units except the Commander;
+	line2 = CTRL+C|Select the Commander;
+	line3 = CTRL+D|Destruct selected unit(s);
+	line4 = CTRL+F|Select all factories;
+	line5 = CTRL+S|Select all units currently on the screen;
+	line6 = CTRL+V|Select all aircraft;
+	line7 = CTRL+Z|Select all units of same type;
+	line8 = CTRL+1 - 9|Assign the currently selected units to a squad;
+	line9 = ALT+1 - 9|Select squad;
+	line10 = SHIFT|Hold down to queue up multiple commands;
+	line11 = ESC|Cancels the current command;
+	line12 = |;
+	line13 = A|Give an attack order;
+	line14 = B|Select the Build menu for the current unit;
+	line15 = C|Give a capture order;
+	line16 = D|Use the Disintegrator Gun;
+	line17 = E|Give a reclaim order;
+	line18 = F|Toggles fire orders;
+	line19 = G|Give a guard order;
+	line20 = H|Share resources with another player;
+	line21 = K|Toggles selected unit's cloaking capabilities;
+	line22 = M|Give a move order;
+	line23 = N|Scroll to the next unit off screen;
+	line24 = O|Select the Orders menu for the current unit;
+	line25 = P|Give a patrol order;
+	line26 = R|Give a repair order;
+	line27 = S|Give a stop order (cancel previous orders);
+	line28 = T|Track the selected unit;
+	line29 = V|Toggles move orders;
+	line30 = 1 - 9|Select the menu for the current unit;
+	line31 = |;
+	line32 = -|Reduce the game speed;
+	line33 = +|Increase the game speed;
+	line34 = , (comma)|Select the previous menu for that unit;
+	line35 = . (period)|Select the next menu for that unit;
+	line36 = ~ (tilde)|Toggle damage bars on the units;
+	line37 = TAB|Multiplayer options;
+	line38 = SPACEBAR|Activate the game status bar;
+	line39 = ENTER|Activate the message bar;
+	line40 = PAUSE|Pause the game;
+	line41 = CTRL+F9|Screen capture;
+	line42 = F1|Display information on selected unit;
+	line43 = F2|Display the Options menu;
+	line44 = F3|Selects the unit that last reported;
+	line45 = F4|Bring up the multiplayer scorecard;
+	line46 = F12|Clear all chat messages;
+	line47 = CTRL+F5 - F8|Applies a map bookmark at cursor location;
+	line48 = F5 - F8|Centers the screen on a map bookmark;
+}
+

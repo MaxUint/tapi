@@ -1,0 +1,27 @@
+[armmine6]
+{
+	id=189;
+	name=Nuclear Mine;
+	rendertype=4;
+	ballistic=1;
+	range=480;
+	reloadtime=3.6;
+	weaponvelocity=250;
+	areaofeffect=350;
+	soundstart=largegun;
+	soundhit=xplonuk3;
+	explosiongaf=fx;
+	explosionart=explode2;
+	edgeeffectiveness=0.15;
+	waterexplosiongaf=fx;
+	waterexplosionart=h2o;
+	shakemagnitude=0;
+	shakeduration=0;
+		[DAMAGE]
+		{
+			default=4500;
+			armcom=2900;
+			corcom=2900;
+		}
+}
+

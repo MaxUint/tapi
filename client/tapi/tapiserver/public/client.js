@@ -1191,6 +1191,15 @@ editorMenus.header = function(){
 	body.appendChild(select)
 	body.appendChild(btn)
 	body.appendChild(btn2)
+	
+	
+	let btnDupe = newEle('button')
+	btnDupe.innerText = 'Duplicate Item'
+	btnDupe.onclick = function() {
+		 duplicateItem(lastEditor[0])
+	}
+	body.appendChild(btnDupe)
+	
 	return body
 }
 
@@ -1609,6 +1618,40 @@ function makeLabelFrom(name) {
 	wrapper.appendChild(text)
 	
 	return wrapper;
+}
+
+
+function validNewItem(str) {
+	if(!tapi[lastEditor[1]].cache[str]) return true
+	return false
+}
+function duplicateItem(item) {
+	let newItem = structuredClone(item)
+	let newName = newItem.__name+'_', foundName
+	for(let c = 0; c < 25; c++){
+		let tryName = newName + String.fromCharCode(65 + c)
+		if(validNewItem(tryName)) {
+			foundName = tryName
+			break
+		}
+	}
+	if(!foundName) {
+		msg('Error finding free name')
+		return
+	}
+	if(newItem.normal.id) {
+		let nid = 1
+		let ids = tapi[lastEditor[1]].cache.__getall('normal', 'id')
+		while(ids.includes(nid)) {
+			nid++
+		}
+		newItem.normal.id = nid		
+	}
+	newItem.__name = foundName
+	newItem.__gadgetname = foundName
+	tapi[lastEditor[1]].cache[foundName] = newItem
+	msg('duplicate successful!')
+	panelSet(editor(newItem, lastEditor[1]), 'panelDR');
 }
 
 /* create auto complete

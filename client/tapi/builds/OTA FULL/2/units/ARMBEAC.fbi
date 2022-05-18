@@ -1,0 +1,50 @@
+[UNITINFO]
+{
+	unitname=ARMBEAC;
+	version=1.2;
+	side=ARM;
+	objectname=ARMBEAC;
+	designation=BEC;
+	name=Alien Beacon;
+	description=Alien Beacon;
+	footprintx=8;
+	footprintz=8;
+	buildcostenergy=423100;
+	buildcostmetal=5214;
+	maxdamage=11000;
+	maxwaterdepth=0;
+	maxslope=10;
+	energyuse=0;
+	buildtime=253958;
+	workertime=0;
+	bmcode=0;
+	builder=0;
+	threed=1;
+	zbuffer=1;
+	noautofire=0;
+	sightdistance=210;
+	radardistance=0;
+	soundcategory=ARM_ESTOR;
+	energystorage=0;
+	metalstorage=0;
+	explodeas=NUCLEAR_MISSILE;
+	selfdestructas=NUCLEAR_MISSILE;
+	category=ARM BEACON LEVEL2 NOWEAPON NOTAIR NOTSUB ;
+	tedclass=SPECIAL;
+	copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+	yardmap=yyyooyyy yyyooyyy yyooooyy oooooooo oooooooo yyooooyy yyyooyyy yyyooyyy;
+	germanname=Matrix-Konverter;
+	germandescription=Außeridischer Matrix-Konverter;
+	unitnumber=273;
+	corpse=Armbeac_dead;
+	frenchname=Balise Extraterrestre;
+	frenchdescription=Balise Extraterrestre;
+	spanishname=Faro alienígena;
+	spanishdescription=Faro alienígena;
+	italianname=Manufatto alieno;
+	italiandescription=Manufatto alieno;
+	downloadable=1;
+	activatewhenbuilt=1;
+	norestrict=1;
+}
+
