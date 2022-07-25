@@ -490,12 +490,12 @@ function formatTDF(tdf) {
     tdf = tdf.replaceAll('\t', ''); //remove tabs
     while (tdf.includes('//')) { //remove //comments
         let i = tdf.indexOf('//');
-        let i2 = tdf.slice(i + 1).indexOf('\n');
+        let i2 = tdf.slice(i + 2).indexOf('\n');
         tdf = tdf.slice(0, i) + tdf.slice(i2 + i + 2);
     }
     while (tdf.includes('/*')) { //remove /* comments
         let i = tdf.indexOf('/*');
-        let i2 = tdf.slice(i + 1).indexOf('*/');
+        let i2 = tdf.slice(i + 2).indexOf('*/');
         tdf = tdf.slice(0, i) + tdf.slice(i2 + i + 2);
     }
     return tdf.split('\n').map(
